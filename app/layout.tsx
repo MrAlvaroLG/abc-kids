@@ -19,8 +19,8 @@ const fredoka = Fredoka({
 });
 
 export const metadata: Metadata = {
-    title: "ABC Kids - Guardería Infantil",
-    description: "Centro de educación infantil y guardería",
+    title: "ABC Kids - Day Care",
+    description: "Education and daycare center",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="es">
+        <html lang="en">
         <body className={`${poppins.variable} ${fredoka.variable} antialiased`}>
             {children}
         </body>
