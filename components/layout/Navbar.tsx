@@ -1,29 +1,49 @@
 'use client'
 
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, GlobeAltIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
+    const [language, setLanguage] = useState<'es' | 'en'>('en')
+
+    const toggleLanguage = () => {
+        setLanguage(language === 'es' ? 'en' : 'es')
+    }
 
     return (
         <div className="sticky top-0 z-50 bg-surface shadow-md rounded-2xl md:shadow-none md:rounded-none">
             <div className="flex items-center justify-between p-4">
                 {/*logo*/}
                 <div className="">Logo</div>
-                {/*hamburger button*/}
-                <button 
-                    className="block md:hidden"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    <div className={`transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}>
-                        {isOpen ? (
-                            <XMarkIcon className="h-7 w-7" />
-                        ) : (
-                            <Bars3Icon className="h-7 w-7" />
-                        )}
-                    </div>
-                </button>
+                
+                {/* Botones de idioma y menú */}
+                <div className="flex items-center gap-7">
+                    {/* Botón de idioma */}
+                    <button 
+                        className="flex items-center gap-1 md:hidden"
+                        onClick={toggleLanguage}
+                    >
+                        <GlobeAltIcon className="h-6 w-6" />
+                        <span className="text-sm font-medium uppercase">
+                            {language === 'es' ? 'EN' : 'ES'}
+                        </span>
+                    </button>
+                    
+                    {/* Botón hamburguesa */}
+                    <button 
+                        className="block md:hidden"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        <div className={`transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}>
+                            {isOpen ? (
+                                <XMarkIcon className="h-7 w-7" />
+                            ) : (
+                                <Bars3Icon className="h-7 w-7" />
+                            )}
+                        </div>
+                    </button>
+                </div>
             </div>
 
             {/* Menú móvil desplegable */}
