@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className={`${poppins.variable} ${fredoka.variable} antialiased`}>
+        <body className={`${poppins.variable} ${fredoka.variable} bg-bg antialiased`}>
             {children}
         </body>
         </html>
