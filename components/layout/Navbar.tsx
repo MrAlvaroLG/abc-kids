@@ -12,7 +12,16 @@ export default function Navbar() {
     }
 
     return (
-        <div className="sticky top-0 z-50 bg-surface shadow-md rounded-2xl md:shadow-none md:rounded-none">
+        <>
+            {/* Overlay invisible - cierra el menú al hacer clic fuera */}
+            {isOpen && (
+                <div 
+                    className="fixed inset-0 z-40 bg-transparent"
+                    onClick={() => setIsOpen(false)}
+                />
+            )}
+
+            <div className="sticky top-0 z-50 bg-surface shadow-md rounded-2xl md:shadow-none md:rounded-none">
             <div className="flex items-center justify-between p-4">
                 {/*logo*/}
                 <div className="">Logo</div>
@@ -47,15 +56,61 @@ export default function Navbar() {
             </div>
 
             {/* Menú móvil desplegable */}
-            <div className={`transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+            <div className={`transition-all duration-500 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 <nav className="flex flex-col gap-4 p-4 w-full text-lg">
-                    <a href="/programs">Programs</a>
-                    <a href="/blog">Blog</a>
-                    <a href="/contact">Contact</a>
-                    <a href="/about">About Us</a>
-                    <a href="/terms">Our Terms</a>
+                    <a 
+                        href="/programs"
+                        className={`transition-all duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
+                        style={{ 
+                            transitionDelay: isOpen ? '0ms' : '0ms',
+                            transitionTimingFunction: isOpen ? 'cubic-bezier(0.68, -0.55, 0.265, 1.55)' : 'ease-out'
+                        }}
+                    >
+                        Programs
+                    </a>
+                    <a 
+                        href="/blog"
+                        className={`transition-all duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
+                        style={{ 
+                            transitionDelay: isOpen ? '50ms' : '0ms',
+                            transitionTimingFunction: isOpen ? 'cubic-bezier(0.68, -0.55, 0.265, 1.55)' : 'ease-out'
+                        }}
+                    >
+                        Blog
+                    </a>
+                    <a 
+                        href="/contact"
+                        className={`transition-all duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
+                        style={{ 
+                            transitionDelay: isOpen ? '100ms' : '0ms',
+                            transitionTimingFunction: isOpen ? 'cubic-bezier(0.68, -0.55, 0.265, 1.55)' : 'ease-out'
+                        }}
+                    >
+                        Contact
+                    </a>
+                    <a 
+                        href="/about"
+                        className={`transition-all duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
+                        style={{ 
+                            transitionDelay: isOpen ? '150ms' : '0ms',
+                            transitionTimingFunction: isOpen ? 'cubic-bezier(0.68, -0.55, 0.265, 1.55)' : 'ease-out'
+                        }}
+                    >
+                        About Us
+                    </a>
+                    <a 
+                        href="/terms"
+                        className={`transition-all duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
+                        style={{ 
+                            transitionDelay: isOpen ? '200ms' : '0ms',
+                            transitionTimingFunction: isOpen ? 'cubic-bezier(0.68, -0.55, 0.265, 1.55)' : 'ease-out'
+                        }}
+                    >
+                        Our Terms
+                    </a>
                 </nav>
             </div>
         </div>
+        </>
     );
 }
