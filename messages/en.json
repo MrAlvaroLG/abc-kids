@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "programs": "Programs",
+    "blog": "Blog",
+    "contact": "Contact",
+    "about": "About Us",
+    "terms": "Terms"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish",
+    "switch": "Switch language"
+  }
+}
