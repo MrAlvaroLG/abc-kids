@@ -28,15 +28,15 @@ export default function LanguageSwitcher() {
         >
             <div className={`p-1 md:p-2 rounded-lg  ${
                 locale === 'en' 
-                    ? 'bg-linear-to-br from-red-500 via-yellow-500 to-red-600' 
-                    : 'bg-linear-to-br from-blue-500 via-red-500 to-blue-600'
+                    ? 'bg-linear-to-br from-blue-500 via-red-500 to-blue-600' 
+                    : 'bg-linear-to-br from-red-500 via-yellow-500 to-red-600'
             }`}>
                 <LanguageIcon className="h-5 w-5 md:h-7 md:w-7 text-white" />
             </div>
             <span className={`text-xl md:text-2xl font-semibold uppercase ${
-                locale === 'en' ? 'text-blue' : 'text-blue'
+                locale === 'en' ? 'text-blue' : 'text-red-600'
             }`}>
-                {locale === 'en' ? 'ES' : 'EN'}
+                {locale === 'en' ? 'EN' : 'ES'}
             </span>
         </button>
     );
