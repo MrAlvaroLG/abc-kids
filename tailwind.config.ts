@@ -22,8 +22,8 @@ export default {
             danger: '#DC562E',
             bg: '#EBEBEB',
             surface: '#FFFFFF',
-            'text-dark': '#0B1220',
-            'text-light': '#FFFFFF',
+            dark: '#0B1220',
+            light: '#FFFFFF',
         },
         fontFamily: {
             sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
