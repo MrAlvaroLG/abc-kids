@@ -27,7 +27,7 @@ export default function LanguageSwitcher() {
             title={locale === 'en' ? 'Cambiar a Español' : 'Switch to English'}
         >
             <div 
-                className={`flex items-center gap-2 p-2 rounded-lg md:transition-all md:duration-500 ${
+                className={`flex items-center gap-2 px-2 py-1.5 md:py-1 rounded-lg md:transition-all md:duration-500 ${
                     locale === 'en' 
                         ? 'bg-linear-to-br from-[#0288D1] via-[#C62828] to-[#0288D1]' 
                         : 'bg-linear-to-br from-[#C62828] via-[#FBC02D] to-[#C62828]'

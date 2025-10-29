@@ -21,7 +21,7 @@ export default function Navbar() {
             )}
 
         <div className="sticky top-0 z-50 bg-surface shadow-md rounded-2xl md:shadow-none md:rounded-none">
-            <div className="flex items-center justify-between p-4">
+            <div className="flex items-center justify-between px-4 py-2">
                 {/*logo*/}
                 <Link href="/" className="transition-transform hover:scale-105 duration-300">
                     <Image 
@@ -29,10 +29,49 @@ export default function Navbar() {
                         alt="ABC Kids Logo" 
                         width={9101} 
                         height={6744}
-                        className="h-11 md:h-15 w-auto"
+                        className="h-11 md:h-13 w-auto"
                         priority
                     />
                 </Link>
+                
+                {/* Navegación desktop - oculto en móvil */}
+                <nav className="hidden md:flex items-center gap-12 text-2xl font-semibold">
+                    <Link 
+                        href="/programs"
+                        className="relative text-navy-900 hover:text-accent transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 group"
+                    >
+                        {t('programs')}
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300 ease-out"></span>
+                    </Link>
+                    <Link 
+                        href="/blog"
+                        className="relative text-navy-900 hover:text-accent transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 group"
+                    >
+                        {t('blog')}
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300 ease-out"></span>
+                    </Link>
+                    <Link 
+                        href="/contact"
+                        className="relative text-navy-900 hover:text-accent transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 group"
+                    >
+                        {t('contact')}
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300 ease-out"></span>
+                    </Link>
+                    <Link 
+                        href="/about"
+                        className="relative text-navy-900 hover:text-accent transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 group"
+                    >
+                        {t('about')}
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300 ease-out"></span>
+                    </Link>
+                    <Link 
+                        href="/terms"
+                        className="relative text-navy-900 hover:text-accent transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 group"
+                    >
+                        {t('terms')}
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300 ease-out"></span>
+                    </Link>
+                </nav>
                 
                 <div className="flex items-center gap-2">
                     {/* Selector de idioma - visible siempre */}
@@ -63,7 +102,7 @@ export default function Navbar() {
             </div>
 
             {/* Menú móvil desplegable */}
-            <div className={`transition-all duration-400 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+            <div className={`md:hidden transition-all duration-400 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 <nav className="flex flex-col gap-4 px-4 pb-4 w-full text-lg font-semibold">
                     <Link 
                         href="/programs"
