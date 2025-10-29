@@ -10,5 +10,18 @@
     "en": "Inglés",
     "es": "Español",
     "switch": "Cambiar idioma"
+  },
+  "hero": {
+    "title": "Donde cada niño es una pieza única",
+    "subtitle": "del rompecabezas perfecto",
+    "description": "En ABC Kids creamos un ambiente seguro, divertido y educativo donde tu hijo desarrollará todo su potencial. Con más de 15 años de experiencia, somos el hogar lejos del hogar.",
+    "cta": {
+      "primary": "Agendar Tour Gratuito",
+      "secondary": "Ver Programas"
+    },
+    "trust": {
+      "primary": "Únete a nuestra familia",
+      "secondary": "Más de 500 familias confían en nosotros"
+    }
   }
 }

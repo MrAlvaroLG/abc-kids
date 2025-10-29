@@ -10,5 +10,18 @@
     "en": "English",
     "es": "Spanish",
     "switch": "Switch language"
+  },
+  "hero": {
+    "title": "Where every child is a unique piece",
+    "subtitle": "of the perfect puzzle",
+    "description": "At ABC Kids we create a safe, fun and educational environment where your child will develop their full potential. With over 15 years of experience, we are your home away from home.",
+    "cta": {
+      "primary": "Schedule Free Tour",
+      "secondary": "View Programs"
+    },
+    "trust": {
+      "primary": "Join our family",
+      "secondary": "More than 500 families trust us"
+    }
   }
 }
