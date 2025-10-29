@@ -21,23 +21,21 @@ export default function LanguageSwitcher() {
     return (
         <button
             onClick={toggleLanguage}
-            className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-all duration-300"
+            className="flex flex-row items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-all duration-300"
             aria-label="Change language"
             disabled={isPending}
             title={locale === 'en' ? 'Cambiar a Español' : 'Switch to English'}
         >
-            <div className={`p-1 md:p-2 rounded-lg  ${
+            <div className={`flex items-center gap-2 p-2 md:p-3 rounded-lg ${
                 locale === 'en' 
-                    ? 'bg-linear-to-br from-blue-500 via-red-500 to-blue-600' 
-                    : 'bg-linear-to-br from-red-500 via-yellow-500 to-red-600'
+                    ? 'bg-linear-to-br from-[#0288D1] via-[#C62828] to-[#0288D1]' 
+                    : 'bg-linear-to-br from-[#C62828] via-[#FBC02D] to-[#C62828]'
             }`}>
-                <LanguageIcon className="h-5 w-5 md:h-7 md:w-7 text-white" />
+                <LanguageIcon className="h-6 w-6 md:h-7 md:w-7 text-white" />
+                <span className="text-xl md:text-2xl font-semibold uppercase text-white">
+                    {locale === 'en' ? 'EN' : 'ES'}
+                </span>
             </div>
-            <span className={`text-xl md:text-2xl font-semibold uppercase ${
-                locale === 'en' ? 'text-blue' : 'text-red-600'
-            }`}>
-                {locale === 'en' ? 'EN' : 'ES'}
-            </span>
         </button>
     );
 }
