@@ -29,7 +29,7 @@ export default function Navbar() {
                         alt="ABC Kids Logo" 
                         width={9101} 
                         height={6744}
-                        className="h-11 md:h-16 w-auto"
+                        className="h-11 md:h-15 w-auto"
                         priority
                     />
                 </Link>
