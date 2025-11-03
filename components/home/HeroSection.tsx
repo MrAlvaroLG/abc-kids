@@ -37,7 +37,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section className="relative min-h-screen overflow-hidden bg-linear-to-br from-bg via-surface to-bg">
+        <section className="relative overflow-hidden bg-linear-to-br from-bg via-surface to-bg">
             {/* Animated Background Shapes */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div 
@@ -182,12 +182,42 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </div>
-            </div>
 
-            {/* Scroll Indicator - Hidden on small mobile */}
-            <div className="hidden sm:block absolute bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-                <div className="w-6 h-10 border-2 border-navy-900/30 rounded-full flex justify-center p-2">
-                    <div className="w-1.5 h-3 bg-accent rounded-full animate-scroll" />
+                {/* Scroll Indicator - Enhanced and more prominent */}
+                <div className={`hidden sm:flex flex-col items-center gap-3 group cursor-pointer mt-12 md:mt-16 lg:mt-20 pb-8 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+                    {/* Animated text */}
+                    <div className="flex flex-col items-center gap-2 animate-bounce">
+                        <p className="text-sm md:text-base font-semibold text-navy-900/70 group-hover:text-accent transition-colors duration-300">
+                            {t('scroll')}
+                        </p>
+                        <div className="flex gap-1">
+                            <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                            <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse delay-100" />
+                            <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse delay-200" />
+                        </div>
+                    </div>
+                    
+                    {/* Mouse icon */}
+                    <div className="relative">
+                        <div className="w-7 h-11 md:w-8 md:h-12 border-2 border-navy-900/30 rounded-full flex justify-center p-2 group-hover:border-accent transition-colors duration-300 bg-surface/50 backdrop-blur-sm shadow-lg">
+                            <div className="w-1.5 h-3 bg-accent rounded-full animate-scroll" />
+                        </div>
+                        {/* Glow effect on hover */}
+                        <div className="absolute inset-0 rounded-full bg-accent/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+
+                    {/* Decorative arrow */}
+                    <svg 
+                        className="w-5 h-5 md:w-6 md:h-6 text-accent animate-bounce delay-300" 
+                        fill="none" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth="2" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                    >
+                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
                 </div>
             </div>
         </section>

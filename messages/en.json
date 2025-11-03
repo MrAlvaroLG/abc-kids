@@ -22,6 +22,57 @@
     "trust": {
       "primary": "Join our family",
       "secondary": "More than 500 families trust us"
+    },
+    "scroll": "Discover more"
+  },
+  "trustSection": {
+    "title": "They trust us",
+    "subtitle": "Thousands of families choose us every day",
+    "stats": {
+      "experience": {
+        "number": "15",
+        "suffix": "+",
+        "label": "Years of Experience",
+        "description": "Caring for little ones with love and dedication"
+      },
+      "families": {
+        "number": "500",
+        "suffix": "+",
+        "label": "Happy Families",
+        "description": "Satisfied parents who trust us"
+      },
+      "googleRating": {
+        "number": "4.4",
+        "suffix": "⭐",
+        "label": "Google Rating",
+        "description": "Based on 28 verified Google reviews"
+      }
+    },
+    "testimonials": {
+      "title": "What our parents say on Google",
+      "role": "Verified Google Review",
+      "items": [
+        {
+          "name": "Aidelyn Brage",
+          "text": "I'm so happy with the care my child receives at ABC Kidz Preschool Daycare! The staff is kind, patient, and always professional. The place is clean, safe, and very well organized. Highly recommended!",
+          "rating": 5
+        },
+        {
+          "name": "Jessica Summers",
+          "text": "ABC kidz is a more than great daycare/school for kids to attend they are very friendly professional and caring for our little ones my son that went into kindergarten wants to come back here everyday with his sisters",
+          "rating": 5
+        },
+        {
+          "name": "Mariana Garcia",
+          "text": "One of the best experiences for our child and us as parents! The attention, affection, and quality of care are exceptional ✨ We will miss them so much, so grateful for the work they did with my little one ✨",
+          "rating": 5
+        },
+        {
+          "name": "Maria Parra",
+          "text": "Excellent service, the teachers are lovely. I go to work knowing my baby is well cared for and learning 🥰",
+          "rating": 5
+        }
+      ]
     }
   }
 }

@@ -22,6 +22,57 @@
     "trust": {
       "primary": "Únete a nuestra familia",
       "secondary": "Más de 500 familias confían en nosotros"
+    },
+    "scroll": "Descubre más"
+  },
+  "trustSection": {
+    "title": "Confían en nosotros",
+    "subtitle": "Miles de familias nos eligen cada día",
+    "stats": {
+      "experience": {
+        "number": "15",
+        "suffix": "+",
+        "label": "Años de Experiencia",
+        "description": "Cuidando a los pequeños con amor y dedicación"
+      },
+      "families": {
+        "number": "500",
+        "suffix": "+",
+        "label": "Familias Felices",
+        "description": "Padres satisfechos que confían en nosotros"
+      },
+      "googleRating": {
+        "number": "4.4",
+        "suffix": "⭐",
+        "label": "Calificación Google",
+        "description": "Basado en 28 reseñas verificadas de Google"
+      }
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros padres en Google",
+      "role": "Reseña verificada de Google",
+      "items": [
+        {
+          "name": "Aidelyn Brage",
+          "text": "Estoy encantada con el cuidado que recibe mi hijo en la guardería ABC Kidz. El personal es amable, paciente y siempre profesional. El lugar es limpio, seguro y muy bien organizado. ¡Lo recomiendo ampliamente!",
+          "rating": 5
+        },
+        {
+          "name": "Jessica Summers",
+          "text": "ABC Kidz es una guardería excelente para los niños. Son muy amables, profesionales y cariñosos con nuestros pequeños. Mi hijo, que ya empezó el kínder, quiere volver todos los días con sus hermanas.",
+          "rating": 5
+        },
+        {
+          "name": "Mariana Garcia",
+          "text": "Una de las mejores experiencias para nuestro niño y nosotros como padres! La atención, el cariño y la calidad de cuidado son excepcionales ✨ Vamos a extrañarlas mucho, muy agradecida por el trabajo que hicieron con mi peque✨",
+          "rating": 5
+        },
+        {
+          "name": "Maria Parra",
+          "text": "Excelente servicio las maestras son un amor me voy a mi trabajo con la seguridad que mi bebé está bien cuidado y aprendiendo 🥰",
+          "rating": 5
+        }
+      ]
     }
   }
 }

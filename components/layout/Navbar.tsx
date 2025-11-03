@@ -35,7 +35,7 @@ export default function Navbar() {
                 </Link>
                 
                 {/* Navegación desktop - oculto en móvil */}
-                <nav className="hidden md:flex items-center gap-12 text-2xl font-semibold">
+                <nav className="hidden lg:flex items-center gap-12 text-2xl font-semibold">
                     <Link 
                         href="/programs"
                         className="relative text-navy-900 hover:text-accent transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 group"
@@ -79,7 +79,7 @@ export default function Navbar() {
                     
                     {/* Botón hamburguesa - solo móvil */}
                     <button 
-                        className="block md:hidden w-8 h-8 relative hover:scale-110 transition-transform duration-300 group"
+                        className="block lg:hidden w-8 h-8 relative hover:scale-110 transition-transform duration-300 group"
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
                     >
@@ -102,8 +102,8 @@ export default function Navbar() {
             </div>
 
             {/* Menú móvil desplegable */}
-            <div className={`md:hidden transition-all duration-400 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                <nav className="flex flex-col gap-4 px-4 pb-4 w-full text-lg font-semibold">
+            <div className={`lg:hidden transition-all duration-400 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                <nav className="flex flex-col gap-4 px-4 pb-4 w-full text-lg md:text-xl font-semibold">
                     <Link 
                         href="/programs"
                         className={`text-navy-900 transition-all duration-400 ease-out ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
