@@ -74,5 +74,53 @@
         }
       ]
     }
+  },
+  "programsSection": {
+    "title": "Nuestros Programas",
+    "subtitle": "Educación adaptada a cada etapa del desarrollo",
+    "cta": "Ver Todos los Programas",
+    "viewDetails": "Ver detalles",
+    "back": "Volver",
+    "programs": {
+      "infants": {
+        "name": "Infants",
+        "ageRange": "0-12 meses",
+        "tagline": "Primeros pasos hacia el descubrimiento",
+        "description": "Cuidado especializado para los más pequeños con enfoque en desarrollo sensorial y vínculos afectivos.",
+        "features": [
+          "Atención personalizada 1:4",
+          "Estimulación temprana diaria",
+          "Horarios flexibles de alimentación",
+          "Comunicación constante con padres"
+        ],
+        "highlight": "Certificación en primeros auxilios pediátricos"
+      },
+      "toddlers": {
+        "name": "Toddlers",
+        "ageRange": "1-2 años",
+        "tagline": "Exploradores en acción",
+        "description": "Desarrollo de habilidades motoras y sociales a través del juego y la exploración segura.",
+        "features": [
+          "Ratio 1:6 para mejor atención",
+          "Actividades sensoriales diarias",
+          "Desarrollo del lenguaje",
+          "Introducción a rutinas sociales"
+        ],
+        "highlight": "Programa bilingüe desde el primer día"
+      },
+      "preschool": {
+        "name": "Preschool",
+        "ageRange": "3-5 años",
+        "tagline": "Preparación para el futuro",
+        "description": "Preparación académica y social con currículo estructurado para el éxito escolar.",
+        "features": [
+          "Currículo pre-K completo",
+          "Lectoescritura y matemáticas",
+          "Arte, música y movimiento",
+          "Preparación para kindergarten"
+        ],
+        "highlight": "95% de nuestros graduados superan evaluaciones"
+      }
+    }
   }
 }

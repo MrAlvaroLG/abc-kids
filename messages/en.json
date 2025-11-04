@@ -74,5 +74,53 @@
         }
       ]
     }
+  },
+  "programsSection": {
+    "title": "Our Programs",
+    "subtitle": "Education adapted to each stage of development",
+    "cta": "View All Programs",
+    "viewDetails": "View details",
+    "back": "Back",
+    "programs": {
+      "infants": {
+        "name": "Infants",
+        "ageRange": "0-12 months",
+        "tagline": "First steps towards discovery",
+        "description": "Specialized care for the littlest ones with focus on sensory development and emotional bonding.",
+        "features": [
+          "Personalized 1:4 attention",
+          "Daily early stimulation",
+          "Flexible feeding schedules",
+          "Constant parent communication"
+        ],
+        "highlight": "Pediatric first aid certification"
+      },
+      "toddlers": {
+        "name": "Toddlers",
+        "ageRange": "1-2 years",
+        "tagline": "Explorers in action",
+        "description": "Development of motor and social skills through play and safe exploration.",
+        "features": [
+          "1:6 ratio for better attention",
+          "Daily sensory activities",
+          "Language development",
+          "Introduction to social routines"
+        ],
+        "highlight": "Bilingual program from day one"
+      },
+      "preschool": {
+        "name": "Preschool",
+        "ageRange": "3-5 years",
+        "tagline": "Preparing for the future",
+        "description": "Academic and social preparation with structured curriculum for school success.",
+        "features": [
+          "Complete pre-K curriculum",
+          "Reading, writing and math",
+          "Art, music and movement",
+          "Kindergarten preparation"
+        ],
+        "highlight": "95% of our graduates exceed assessments"
+      }
+    }
   }
 }
