@@ -123,4 +123,84 @@
       }
     }
   }
+  ,
+  "ctaSection": {
+    "title": "¿Listo para que tu hijo sea parte de nuestra familia?",
+    "subtitle": "Completa el formulario y agenda un tour gratuito para conocer nuestras instalaciones y equipo.",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "date": "Fecha preferida",
+      "submit": "Agendar tour gratuito",
+      "sending": "Enviando..."
+    },
+    "disclaimer": "Nos pondremos en contacto por correo para confirmar tu visita."
+  },
+  "locationSection": {
+    "title": "Visítanos",
+    "subtitle": "Estamos ubicados en el corazón de Tampa. Ven a conocer nuestras instalaciones.",
+    "address": {
+      "label": "Dirección"
+    },
+    "phone": {
+      "label": "Teléfono"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "scheduleTitle": "Horario de Atención",
+    "schedule": {
+      "monday": "Lunes",
+      "tuesday": "Martes",
+      "wednesday": "Miércoles",
+      "thursday": "Jueves",
+      "friday": "Viernes",
+      "saturday": "Sábado",
+      "sunday": "Domingo",
+      "closed": "Cerrado"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "¿Tienes alguna pregunta? Estamos aquí para ayudarte.",
+      "name": "Nombre completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+1 (813) 123-4567",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos cómo podemos ayudarte...",
+      "submit": "Enviar mensaje",
+      "sent": "¡Mensaje enviado!",
+      "disclaimer": "We'll respond to your message within 24 hours."
+    }
+  },
+  "footer": {
+    "description": "Creando un ambiente seguro, divertido y educativo donde cada niño desarrolla todo su potencial.",
+    "followUs": "Síguenos",
+    "quickLinks": "Enlaces Rápidos",
+    "ourPrograms": "Nuestros Programas",
+    "contactInfo": "Información de Contacto",
+    "links": {
+      "about": "Sobre Nosotros",
+      "programs": "Programas",
+      "admissions": "Admisiones",
+      "blog": "Blog",
+      "contact": "Contacto"
+    },
+    "programs": {
+      "infants": "Infantes (0-12 meses)",
+      "toddlers": "Niños Pequeños (1-2 años)",
+      "preschool": "Preescolar (3-5 años)",
+      "afterSchool": "Después de la Escuela"
+    },
+    "schedule": {
+      "weekdays": "Lun - Vie: 7:00 AM - 6:00 PM",
+      "weekend": "Sáb - Dom: Cerrado"
+    },
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones",
+    "accessibility": "Accesibilidad"
+  }
 }

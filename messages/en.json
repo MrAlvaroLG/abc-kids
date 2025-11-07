@@ -123,4 +123,85 @@
       }
     }
   }
+
+  ,
+  "ctaSection": {
+    "title": "Ready for your child to be part of our family?",
+    "subtitle": "Fill out the form and schedule a free tour to visit our facilities and meet our team.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "date": "Preferred date",
+      "submit": "Schedule free tour",
+      "sending": "Sending..."
+    },
+    "disclaimer": "We'll contact you by email to confirm your visit."
+  },
+  "locationSection": {
+    "title": "Visit Us",
+    "subtitle": "We're located in the heart of Tampa. Come see our facilities.",
+    "address": {
+      "label": "Address"
+    },
+    "phone": {
+      "label": "Phone"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "scheduleTitle": "Business Hours",
+    "schedule": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed"
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Have any questions? We're here to help.",
+      "name": "Full name",
+      "namePlaceholder": "John Doe",
+      "email": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+1 (813) 123-4567",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "submit": "Send message",
+      "sent": "Message sent!",
+      "disclaimer": "We'll respond to your message within 24 hours."
+    }
+  },
+  "footer": {
+    "description": "Creating a safe, fun, and educational environment where every child develops their full potential.",
+    "followUs": "Follow Us",
+    "quickLinks": "Quick Links",
+    "ourPrograms": "Our Programs",
+    "contactInfo": "Contact Information",
+    "links": {
+      "about": "About Us",
+      "programs": "Programs",
+      "admissions": "Admissions",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "programs": {
+      "infants": "Infants (0-12 months)",
+      "toddlers": "Toddlers (1-2 years)",
+      "preschool": "Preschool (3-5 years)",
+      "afterSchool": "After School"
+    },
+    "schedule": {
+      "weekdays": "Mon - Fri: 7:00 AM - 6:00 PM",
+      "weekend": "Sat - Sun: Closed"
+    },
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "accessibility": "Accessibility"
+  }
 }
