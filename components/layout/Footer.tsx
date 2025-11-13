@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { 
     MapPinIcon,
     PhoneIcon,
@@ -23,7 +23,6 @@ export default function Footer() {
     const quickLinks = [
         { label: t('links.about'), href: '/about' },
         { label: t('links.programs'), href: '/programs' },
-        { label: t('links.admissions'), href: '/admissions' },
         { label: t('links.blog'), href: '/blog' },
         { label: t('links.contact'), href: '/contact' }
     ];

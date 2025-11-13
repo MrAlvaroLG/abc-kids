@@ -26,27 +26,12 @@
     "scroll": "Discover more"
   },
   "trustSection": {
-    "title": "They trust us",
-    "subtitle": "Thousands of families choose us every day",
-    "stats": {
-      "experience": {
-        "number": "15",
-        "suffix": "+",
-        "label": "Years of Experience",
-        "description": "Caring for little ones with love and dedication"
-      },
-      "families": {
-        "number": "500",
-        "suffix": "+",
-        "label": "Happy Families",
-        "description": "Satisfied parents who trust us"
-      },
-      "googleRating": {
-        "number": "4.4",
-        "suffix": "⭐",
-        "label": "Google Rating",
-        "description": "Based on 28 verified Google reviews"
-      }
+    "title": "Trusted by families",
+    "subtitle": "What parents who trust us day by day have to say",
+    "googleRating": {
+      "label": "Google Rating",
+      "verified": "Verified Reviews",
+      "reviews": "reviews"
     },
     "testimonials": {
       "title": "What our parents say on Google",
@@ -203,5 +188,365 @@
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
     "accessibility": "Accessibility"
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contact - ABC Kids | Child Care Center in Tampa",
+      "description": "Contact us for more information about our child care programs in Tampa. We're here to answer all your questions. Call us at (813) 512-2511.",
+      "keywords": "contact abc kids, tampa daycare contact, child care tampa, schedule daycare tour, tampa daycare information"
+    },
+    "hero": {
+      "badge": "We're here to help",
+      "title": "Contact Us",
+      "subtitle": "Have questions about our programs? We're here to help. Contact us and we'll respond within 24 hours.",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Hours",
+      "hoursValue": "Mon - Fri 7AM - 6PM"
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Fill out the form and we'll get back to you as soon as possible.",
+      "name": "Full name",
+      "namePlaceholder": "John Doe",
+      "email": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+1 (813) 123-4567",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "subjects": {
+        "general": "General inquiry",
+        "tour": "Schedule a tour",
+        "enrollment": "Enrollment information",
+        "programs": "Program questions",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "submit": "Send message",
+      "sent": "Message sent!",
+      "disclaimer": "We'll respond to your message within 24 hours."
+    },
+    "info": {
+      "address": {
+        "title": "Address",
+        "directions": "Get directions"
+      },
+      "phone": {
+        "title": "Phone",
+        "call": "Call now"
+      },
+      "email": {
+        "title": "Email",
+        "send": "Send email"
+      },
+      "schedule": {
+        "title": "Business Hours",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "closed": "Closed"
+      },
+      "social": {
+        "title": "Follow Us on Social Media",
+        "subtitle": "Stay up to date with our latest news and events."
+      },
+      "responseTime": {
+        "title": "Quick Response Guaranteed",
+        "subtitle": "We're committed to responding to all inquiries within 24 hours."
+      }
+    },
+    "map": {
+      "title": "Our Location",
+      "subtitle": "1745 W Fletcher Ave, Tampa, FL 33612",
+      "directions": "Get directions",
+      "whatsapp": "Message on WhatsApp"
+    }
+  },
+  "programsPage": {
+    "meta": {
+      "title": "Educational Programs - ABC Kids | Child Care in Tampa",
+      "description": "Discover our programs for infants, toddlers and preschool. Quality bilingual education with curriculum adapted to each stage of development in Tampa, FL.",
+      "keywords": "Tampa child programs, bilingual education, infant care, toddler program, preschool Tampa, Tampa daycare, child care"
+    },
+    "hero": {
+      "badge": "Excellence Programs",
+      "title": "Programs Designed for Your Child's Success",
+      "subtitle": "From the first months to kindergarten preparation, we offer specialized programs that nurture the comprehensive development of each child.",
+      "features": {
+        "academic": "Academic Excellence",
+        "academicDesc": "Structured and adapted curriculum",
+        "care": "Care with Love",
+        "careDesc": "Personalized and caring attention",
+        "bilingual": "Bilingual Education",
+        "bilingualDesc": "English and Spanish from day one"
+      }
+    },
+    "benefits": {
+      "title": "Why choose our programs?",
+      "subtitle": "Commitment to excellence in every detail of your child's care and education",
+      "items": {
+        "ratio": {
+          "title": "Optimal Teacher-Child Ratio",
+          "description": "We maintain small groups to ensure personalized attention and a safe learning environment."
+        },
+        "care": {
+          "title": "Care with Love",
+          "description": "Our team creates strong emotional bonds, providing the affection and attention your child needs."
+        },
+        "curriculum": {
+          "title": "Comprehensive Curriculum",
+          "description": "Programs designed to develop cognitive, social, emotional and physical skills."
+        },
+        "safety": {
+          "title": "Guaranteed Safety",
+          "description": "Certified facilities with staff trained in first aid and safety protocols."
+        },
+        "flexible": {
+          "title": "Flexible Schedules",
+          "description": "We adapt our schedules to your family's needs with full-time and part-time options."
+        },
+        "communication": {
+          "title": "Constant Communication",
+          "description": "Daily updates on your child's activities, meals and development through our app."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to start this adventure?",
+      "subtitle": "Schedule a free tour and meet our facilities, programs and educational team.",
+      "scheduleTour": "Schedule Free Tour",
+      "callNow": "Call Now",
+      "phone": {
+        "label": "Phone"
+      },
+      "location": {
+        "label": "Location"
+      },
+      "hours": {
+        "label": "Hours"
+      }
+    }
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "About Us - ABC Kids | Our Story and Values",
+      "description": "Learn about ABC Kids' story, mission and values. Over 15 years providing quality education and child care in Tampa, FL.",
+      "keywords": "about ABC Kids, Tampa daycare, history, values, mission, educational team, Tampa child care"
+    },
+    "hero": {
+      "badge": "Our Story",
+      "title": "Creating Bright Futures Since 2009",
+      "subtitle": "We are more than a daycare. We are a family committed to the comprehensive development of each child, providing quality education with love and dedication.",
+      "features": {
+        "care": {
+          "title": "Care with Love",
+          "description": "Every child is treated as part of our family, with genuine affection and personalized attention."
+        },
+        "excellence": {
+          "title": "Educational Excellence",
+          "description": "Quality educational programs that prepare children for a bright future."
+        },
+        "community": {
+          "title": "United Community",
+          "description": "We build strong relationships with families, working together for the wellbeing of each child."
+        }
+      }
+    },
+    "story": {
+      "label": "Our Story",
+      "title": "It Started with a Dream and a Lot of Heart",
+      "imageCaption": "Our facilities",
+      "paragraph1": "ABC Kids was born in 2009 from the dream of creating a space where every child could develop their full potential in a safe, loving and stimulating environment. Since then, we have been home away from home for hundreds of families in Tampa.",
+      "paragraph2": "Our founder, with over 15 years of experience in early childhood education, wanted to create a different center: one where children were not only cared for, but truly loved and educated with an excellent curriculum.",
+      "paragraph3": "Today, we are proudly recognized by our community as a benchmark in bilingual education and quality child care, always maintaining that family touch that characterizes us.",
+      "mission": {
+        "title": "Our Mission",
+        "text": "To provide the highest quality education and child care, creating an environment where every child can grow, learn and develop in all dimensions: physical, cognitive, social and emotional."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The principles that guide every decision and action at ABC Kids",
+      "items": {
+        "love": {
+          "title": "Love and Care",
+          "description": "Every child is treated with the love and care they deserve, creating strong and lasting emotional bonds."
+        },
+        "safety": {
+          "title": "Safety First",
+          "description": "Certified facilities and trained staff to guarantee the wellbeing of every child at all times."
+        },
+        "education": {
+          "title": "Quality Education",
+          "description": "Structured curriculum adapted to each stage of development, preparing children for success."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "Constant commitment to continuous improvement and the highest standards in early childhood education."
+        },
+        "community": {
+          "title": "Community",
+          "description": "We build strong relationships with families, working together for the wellbeing of each child."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We incorporate modern pedagogical methods and technology to enrich the learning experience."
+        }
+      }
+    },
+    "team": {
+      "label": "Our Team",
+      "title": "The Heart of ABC Kids",
+      "subtitle": "Passionate professionals dedicated to your child's care and development",
+      "introTitle": "A team that makes a difference",
+      "introParagraph1": "At ABC Kids, our team is the true heart of everything we do. Each member has been carefully selected not only for their experience and skills, but for their genuine love for children and their commitment to quality early childhood education.",
+      "introParagraph2": "We are a diverse group of passionate educators, each bringing their unique experience, but all united by a common mission: to create an environment where every child can flourish, learn and feel truly loved.",
+      "qualitiesTitle": "What makes us special",
+      "qualities": [
+        "Genuine passion for child development and wellbeing",
+        "Years of experience working with children of all ages",
+        "Bilingual team (English-Spanish) for better communication with all families",
+        "Small groups that allow personalized attention to each child",
+        "Continuous training in first aid, safety and best educational practices",
+        "Commitment to creating an environment where every child feels valued and heard"
+      ],
+      "closingStatement": "Because for us, every child is not just a student, they are part of our ABC Kids family."
+    },
+    "cta": {
+      "title": "Want to meet us in person?",
+      "subtitle": "Schedule a free tour and discover why Tampa families trust us.",
+      "scheduleTour": "Schedule Free Tour",
+      "callNow": "Call Now"
+    }
+  },
+  "termsPage": {
+    "meta": {
+      "title": "Terms and Conditions - ABC Kids | Policies and Services",
+      "description": "Read our terms and conditions, enrollment policies, hours and payments. Download the complete parents handbook.",
+      "keywords": "ABC Kids terms, Tampa daycare policies, parents handbook, service conditions, enrollment"
+    },
+    "hero": {
+      "title": "Terms and Conditions",
+      "subtitle": "Important information about our services, policies and procedures",
+      "lastUpdated": "Last updated",
+      "date": "November 2024"
+    },
+    "sections": {
+      "enrollment": {
+        "title": "Enrollment and Admission",
+        "items": [
+          {
+            "subtitle": "Enrollment Process",
+            "content": "To enroll your child at ABC Kids, you must complete all required forms, including emergency contact information, medical authorizations and pediatrician data. Enrollment is completed once the initial registration fee is paid."
+          },
+          {
+            "subtitle": "Required Documentation",
+            "content": [
+              "Child's birth certificate",
+              "Updated immunization record",
+              "Recent physical exam (not older than 6 months)",
+              "Emergency contact form",
+              "Signed authorizations for activities and medications"
+            ]
+          },
+          {
+            "subtitle": "Age and Requirements",
+            "content": "We accept children from 6 weeks to 5 years old. All children must be up to date with their vaccinations according to Florida state requirements."
+          }
+        ]
+      },
+      "hours": {
+        "title": "Hours and Operation",
+        "items": [
+          {
+            "subtitle": "Operating Hours",
+            "content": "We are open Monday through Friday from 7:00 AM to 6:00 PM. We remain closed on federal holidays and during year-end holidays according to annual calendar."
+          },
+          {
+            "subtitle": "Drop-off and Pick-up",
+            "content": [
+              "Children must be dropped off and picked up personally by parents or authorized guardians",
+              "Signature required on check-in and check-out log",
+              "Arrivals after 9:30 AM may disrupt scheduled activities",
+              "Late pick-ups (after 6:00 PM) incur additional charges of $1 per minute"
+            ]
+          },
+          {
+            "subtitle": "Holidays",
+            "content": "The center remains closed on federal holidays. An annual calendar is provided at the beginning of the school year with all closure dates."
+          }
+        ]
+      },
+      "payment": {
+        "title": "Payments and Fees",
+        "items": [
+          {
+            "subtitle": "Registration and Monthly Fee",
+            "content": "A non-refundable initial registration fee is required at enrollment. Monthly fees are paid in advance on the first day of each month."
+          },
+          {
+            "subtitle": "Payment Methods",
+            "content": [
+              "Bank transfer or ACH (preferred)",
+              "Credit or debit card",
+              "Check or money order",
+              "Late payments incur a $25 charge after 5 days"
+            ]
+          },
+          {
+            "subtitle": "Refund Policy",
+            "content": "No refunds are granted for absences, vacations or holidays. 30 days written notice is required to cancel enrollment."
+          },
+          {
+            "subtitle": "Additional Charges",
+            "content": "Additional services such as field trips, school photos or special events may have extra charges that will be communicated in advance."
+          }
+        ]
+      },
+      "policies": {
+        "title": "General Policies",
+        "items": [
+          {
+            "subtitle": "Illness Policy",
+            "content": [
+              "Children with fever above 100°F cannot attend",
+              "Must stay home for 24 hours after fever subsides without medication",
+              "Notify the center about contagious illnesses",
+              "Staff may request that you pick up a sick child at any time"
+            ]
+          },
+          {
+            "subtitle": "Medications",
+            "content": "Medications will only be administered with written parental authorization and in their original labeled container. Staff must be informed about allergies or special medical conditions."
+          },
+          {
+            "subtitle": "Discipline",
+            "content": "We use positive discipline techniques. No physical or verbal punishment is allowed. We work with parents to address behavior issues."
+          },
+          {
+            "subtitle": "Safety",
+            "content": [
+              "Regular fire and emergency drills",
+              "All visitors must register at the front desk",
+              "Security camera system in all areas",
+              "Staff trained in first aid and CPR"
+            ]
+          }
+        ]
+      }
+    },
+    "download": {
+      "title": "Complete Parents Handbook",
+      "description": "For more detailed information about our policies, procedures and services, download our complete handbook.",
+      "button": "Download Complete Handbook (PDF)",
+      "fileInfo": "ABC KIDZ Facility Parents Handbook - PDF"
+    },
+    "contactNote": "Have questions about our terms and policies? Don't hesitate to contact us at (813) 512-2511 or visit us in person."
   }
 }

@@ -26,27 +26,12 @@
     "scroll": "Descubre más"
   },
   "trustSection": {
-    "title": "Confían en nosotros",
-    "subtitle": "Miles de familias nos eligen cada día",
-    "stats": {
-      "experience": {
-        "number": "15",
-        "suffix": "+",
-        "label": "Años de Experiencia",
-        "description": "Cuidando a los pequeños con amor y dedicación"
-      },
-      "families": {
-        "number": "500",
-        "suffix": "+",
-        "label": "Familias Felices",
-        "description": "Padres satisfechos que confían en nosotros"
-      },
-      "googleRating": {
-        "number": "4.4",
-        "suffix": "⭐",
-        "label": "Calificación Google",
-        "description": "Basado en 28 reseñas verificadas de Google"
-      }
+    "title": "La confianza de las familias",
+    "subtitle": "Lo que dicen los padres que confían en nosotros día a día",
+    "googleRating": {
+      "label": "Calificación de Google",
+      "verified": "Reseñas verificadas",
+      "reviews": "reseñas"
     },
     "testimonials": {
       "title": "Lo que dicen nuestros padres en Google",
@@ -202,5 +187,365 @@
     "privacy": "Política de Privacidad",
     "terms": "Términos y Condiciones",
     "accessibility": "Accesibilidad"
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contacto - ABC Kids | Centro de Cuidado Infantil en Tampa",
+      "description": "Contáctanos para más información sobre nuestros programas de cuidado infantil en Tampa. Estamos aquí para responder todas tus preguntas. Llámanos al (813) 512-2511.",
+      "keywords": "contacto abc kids, guardería tampa contacto, cuidado infantil tampa, agendar tour guardería, información guardería tampa"
+    },
+    "hero": {
+      "badge": "Estamos aquí para ayudarte",
+      "title": "Contáctanos",
+      "subtitle": "¿Tienes preguntas sobre nuestros programas? Estamos aquí para ayudarte. Contáctanos y te responderemos en menos de 24 horas.",
+      "phone": "Teléfono",
+      "email": "Email",
+      "hours": "Horario",
+      "hoursValue": "Lun - Vie 7AM - 6PM"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Completa el formulario y nos pondremos en contacto contigo lo antes posible.",
+      "name": "Nombre completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+1 (813) 123-4567",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Selecciona un asunto",
+      "subjects": {
+        "general": "Consulta general",
+        "tour": "Agendar un tour",
+        "enrollment": "Información de inscripción",
+        "programs": "Preguntas sobre programas",
+        "other": "Otro"
+      },
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos cómo podemos ayudarte...",
+      "submit": "Enviar mensaje",
+      "sent": "¡Mensaje enviado!",
+      "disclaimer": "Responderemos tu mensaje en menos de 24 horas."
+    },
+    "info": {
+      "address": {
+        "title": "Dirección",
+        "directions": "Ver indicaciones"
+      },
+      "phone": {
+        "title": "Teléfono",
+        "call": "Llamar ahora"
+      },
+      "email": {
+        "title": "Email",
+        "send": "Enviar email"
+      },
+      "schedule": {
+        "title": "Horario de Atención",
+        "monday": "Lunes",
+        "tuesday": "Martes",
+        "wednesday": "Miércoles",
+        "thursday": "Jueves",
+        "friday": "Viernes",
+        "saturday": "Sábado",
+        "sunday": "Domingo",
+        "closed": "Cerrado"
+      },
+      "social": {
+        "title": "Síguenos en Redes Sociales",
+        "subtitle": "Mantente al día con nuestras últimas noticias y eventos."
+      },
+      "responseTime": {
+        "title": "Respuesta Rápida Garantizada",
+        "subtitle": "Nos comprometemos a responder todas las consultas en menos de 24 horas."
+      }
+    },
+    "map": {
+      "title": "Nuestra Ubicación",
+      "subtitle": "1745 W Fletcher Ave, Tampa, FL 33612",
+      "directions": "Obtener direcciones",
+      "whatsapp": "Escribir por WhatsApp"
+    }
+  },
+  "programsPage": {
+    "meta": {
+      "title": "Programas Educativos - ABC Kids | Cuidado Infantil en Tampa",
+      "description": "Descubre nuestros programas para infants, toddlers y preschool. Educación bilingüe de calidad con currículo adaptado a cada etapa del desarrollo en Tampa, FL.",
+      "keywords": "programas infantiles Tampa, educación bilingüe, infant care, toddler program, preschool Tampa, guardería Tampa, cuidado infantil"
+    },
+    "hero": {
+      "badge": "Programas de Excelencia",
+      "title": "Programas Diseñados para el Éxito de tu Hijo",
+      "subtitle": "Desde los primeros meses hasta la preparación para kindergarten, ofrecemos programas especializados que nutren el desarrollo integral de cada niño.",
+      "features": {
+        "academic": "Excelencia Académica",
+        "academicDesc": "Currículo estructurado y adaptado",
+        "care": "Cuidado con Amor",
+        "careDesc": "Atención personalizada y cariñosa",
+        "bilingual": "Educación Bilingüe",
+        "bilingualDesc": "Inglés y español desde el primer día"
+      }
+    },
+    "benefits": {
+      "title": "¿Por qué elegir nuestros programas?",
+      "subtitle": "Compromiso con la excelencia en cada detalle del cuidado y educación de tu hijo",
+      "items": {
+        "ratio": {
+          "title": "Ratio Óptimo Maestro-Niño",
+          "description": "Mantenemos grupos pequeños para garantizar atención personalizada y un ambiente seguro de aprendizaje."
+        },
+        "care": {
+          "title": "Cuidado con Amor",
+          "description": "Nuestro equipo crea vínculos afectivos fuertes, brindando el cariño y la atención que tu hijo necesita."
+        },
+        "curriculum": {
+          "title": "Currículo Integral",
+          "description": "Programas diseñados para desarrollar habilidades cognitivas, sociales, emocionales y físicas."
+        },
+        "safety": {
+          "title": "Seguridad Garantizada",
+          "description": "Instalaciones certificadas con personal capacitado en primeros auxilios y protocolos de seguridad."
+        },
+        "flexible": {
+          "title": "Horarios Flexibles",
+          "description": "Adaptamos nuestros horarios a las necesidades de tu familia con opciones de tiempo completo y parcial."
+        },
+        "communication": {
+          "title": "Comunicación Constante",
+          "description": "Actualizaciones diarias sobre las actividades, comidas y desarrollo de tu hijo a través de nuestra app."
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para comenzar esta aventura?",
+      "subtitle": "Agenda un tour gratuito y conoce nuestras instalaciones, programas y equipo educativo.",
+      "scheduleTour": "Agendar Tour Gratuito",
+      "callNow": "Llamar Ahora",
+      "phone": {
+        "label": "Teléfono"
+      },
+      "location": {
+        "label": "Ubicación"
+      },
+      "hours": {
+        "label": "Horario"
+      }
+    }
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "Sobre Nosotros - ABC Kids | Nuestra Historia y Valores",
+      "description": "Conoce la historia, misión y valores de ABC Kids. Más de 15 años brindando educación y cuidado infantil de calidad en Tampa, FL.",
+      "keywords": "sobre ABC Kids, guardería Tampa, historia, valores, misión, equipo educativo, cuidado infantil Tampa"
+    },
+    "hero": {
+      "badge": "Nuestra Historia",
+      "title": "Creando Futuros Brillantes desde 2009",
+      "subtitle": "Somos más que una guardería. Somos una familia comprometida con el desarrollo integral de cada niño, brindando educación de calidad con amor y dedicación.",
+      "features": {
+        "care": {
+          "title": "Cuidado con Amor",
+          "description": "Cada niño es tratado como parte de nuestra familia, con cariño genuino y atención personalizada."
+        },
+        "excellence": {
+          "title": "Educación de Excelencia",
+          "description": "Programas educativos de calidad que preparan a los niños para un futuro brillante."
+        },
+        "community": {
+          "title": "Comunidad Unida",
+          "description": "Construimos relaciones fuertes con las familias, trabajando juntos por el bienestar de cada niño."
+        }
+      }
+    },
+    "story": {
+      "label": "Nuestra Historia",
+      "title": "Comenzó con un Sueño y Mucho Corazón",
+      "imageCaption": "Nuestras instalaciones",
+      "paragraph1": "ABC Kids nació en 2009 del sueño de crear un espacio donde cada niño pudiera desarrollar su máximo potencial en un ambiente seguro, amoroso y estimulante. Desde entonces, hemos sido el hogar lejos de casa para cientos de familias en Tampa.",
+      "paragraph2": "Nuestra fundadora, con más de 15 años de experiencia en educación infantil, quiso crear un centro diferente: uno donde los niños no solo estuvieran cuidados, sino verdaderamente amados y educados con un currículo de excelencia.",
+      "paragraph3": "Hoy, somos orgullosamente reconocidos por nuestra comunidad como un referente en educación bilingüe y cuidado infantil de calidad, manteniendo siempre ese toque familiar que nos caracteriza.",
+      "mission": {
+        "title": "Nuestra Misión",
+        "text": "Proporcionar educación y cuidado infantil de la más alta calidad, creando un ambiente donde cada niño pueda crecer, aprender y desarrollarse en todas sus dimensiones: física, cognitiva, social y emocional."
+      }
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "subtitle": "Los principios que guían cada decisión y acción en ABC Kids",
+      "items": {
+        "love": {
+          "title": "Amor y Cariño",
+          "description": "Cada niño es tratado con el amor y cuidado que merece, creando vínculos afectivos fuertes y duraderos."
+        },
+        "safety": {
+          "title": "Seguridad Primero",
+          "description": "Instalaciones certificadas y personal capacitado para garantizar el bienestar de cada niño en todo momento."
+        },
+        "education": {
+          "title": "Educación de Calidad",
+          "description": "Currículo estructurado y adaptado a cada etapa del desarrollo, preparando a los niños para el éxito."
+        },
+        "excellence": {
+          "title": "Excelencia",
+          "description": "Compromiso constante con la mejora continua y los más altos estándares en educación infantil."
+        },
+        "community": {
+          "title": "Comunidad",
+          "description": "Construimos relaciones fuertes con las familias, trabajando juntos por el bienestar de cada niño."
+        },
+        "innovation": {
+          "title": "Innovación",
+          "description": "Incorporamos métodos pedagógicos modernos y tecnología para enriquecer la experiencia de aprendizaje."
+        }
+      }
+    },
+    "team": {
+      "label": "Nuestro Equipo",
+      "title": "El Corazón de ABC Kids",
+      "subtitle": "Profesionales apasionados dedicados al cuidado y desarrollo de tu hijo",
+      "introTitle": "Un equipo que marca la diferencia",
+      "introParagraph1": "En ABC Kids, nuestro equipo es el verdadero corazón de todo lo que hacemos. Cada miembro ha sido cuidadosamente seleccionado no solo por su experiencia y habilidades, sino por su amor genuino hacia los niños y su compromiso con la educación infantil de calidad.",
+      "introParagraph2": "Somos un grupo diverso de educadores apasionados, cada uno aportando su experiencia única, pero todos unidos por una misión común: crear un ambiente donde cada niño pueda florecer, aprender y sentirse verdaderamente amado.",
+      "qualitiesTitle": "Lo que nos hace especiales",
+      "qualities": [
+        "Pasión genuina por el desarrollo y bienestar infantil",
+        "Años de experiencia trabajando con niños de todas las edades",
+        "Equipo bilingüe (inglés-español) para mejor comunicación con todas las familias",
+        "Grupos pequeños que permiten atención personalizada a cada niño",
+        "Formación continua en primeros auxilios, seguridad y mejores prácticas educativas",
+        "Compromiso con crear un ambiente donde cada niño se sienta valorado y escuchado"
+      ],
+      "closingStatement": "Porque para nosotros, cada niño no es solo un estudiante, es parte de nuestra familia ABC Kids."
+    },
+    "cta": {
+      "title": "¿Quieres conocernos en persona?",
+      "subtitle": "Agenda un tour gratuito y descubre por qué las familias de Tampa confían en nosotros.",
+      "scheduleTour": "Agendar Tour Gratuito",
+      "callNow": "Llamar Ahora"
+    }
+  },
+  "termsPage": {
+    "meta": {
+      "title": "Términos y Condiciones - ABC Kids | Políticas y Servicios",
+      "description": "Lee nuestros términos y condiciones, políticas de inscripción, horarios y pagos. Descarga el manual completo para padres.",
+      "keywords": "términos ABC Kids, políticas guardería Tampa, manual padres, condiciones servicio, inscripción"
+    },
+    "hero": {
+      "title": "Términos y Condiciones",
+      "subtitle": "Información importante sobre nuestros servicios, políticas y procedimientos",
+      "lastUpdated": "Última actualización",
+      "date": "Noviembre 2024"
+    },
+    "sections": {
+      "enrollment": {
+        "title": "Inscripción y Admisión",
+        "items": [
+          {
+            "subtitle": "Proceso de Inscripción",
+            "content": "Para inscribir a su hijo en ABC Kids, debe completar todos los formularios requeridos, incluyendo información de contacto de emergencia, autorizaciones médicas y datos del pediatra. La inscripción se completa una vez pagada la matrícula inicial."
+          },
+          {
+            "subtitle": "Documentación Requerida",
+            "content": [
+              "Certificado de nacimiento del niño",
+              "Registro de vacunación actualizado",
+              "Examen físico reciente (no mayor a 6 meses)",
+              "Formulario de contactos de emergencia",
+              "Autorizaciones firmadas para actividades y medicamentos"
+            ]
+          },
+          {
+            "subtitle": "Edad y Requisitos",
+            "content": "Aceptamos niños desde 6 semanas hasta 5 años. Todos los niños deben estar al día con sus vacunas según los requisitos del estado de Florida."
+          }
+        ]
+      },
+      "hours": {
+        "title": "Horarios y Operación",
+        "items": [
+          {
+            "subtitle": "Horario de Operación",
+            "content": "Estamos abiertos de lunes a viernes de 7:00 AM a 6:00 PM. Permanecemos cerrados los días festivos federales y durante las vacaciones de fin de año según calendario anual."
+          },
+          {
+            "subtitle": "Llegadas y Salidas",
+            "content": [
+              "Los niños deben ser entregados y recogidos personalmente por los padres o tutores autorizados",
+              "Se requiere firma en el registro de entrada y salida",
+              "Llegadas después de las 9:30 AM pueden interrumpir las actividades programadas",
+              "Recogidas tardías (después de las 6:00 PM) incurren en cargos adicionales de $1 por minuto"
+            ]
+          },
+          {
+            "subtitle": "Días Festivos",
+            "content": "El centro permanece cerrado en días festivos federales. Se proporciona un calendario anual al inicio del año escolar con todas las fechas de cierre."
+          }
+        ]
+      },
+      "payment": {
+        "title": "Pagos y Tarifas",
+        "items": [
+          {
+            "subtitle": "Matrícula y Mensualidad",
+            "content": "Se requiere el pago de una matrícula inicial no reembolsable al momento de la inscripción. Las mensualidades se pagan por adelantado el primer día de cada mes."
+          },
+          {
+            "subtitle": "Métodos de Pago",
+            "content": [
+              "Transferencia bancaria o ACH (preferido)",
+              "Tarjeta de crédito o débito",
+              "Cheque o money order",
+              "Los pagos atrasados incurren en un cargo de $25 después de 5 días"
+            ]
+          },
+          {
+            "subtitle": "Política de Reembolsos",
+            "content": "No se otorgan reembolsos por ausencias, vacaciones o días festivos. Se requiere aviso de 30 días por escrito para cancelar la inscripción."
+          },
+          {
+            "subtitle": "Cargos Adicionales",
+            "content": "Los servicios adicionales como excursiones, fotos escolares o eventos especiales pueden tener cargos extra que se comunicarán con anticipación."
+          }
+        ]
+      },
+      "policies": {
+        "title": "Políticas Generales",
+        "items": [
+          {
+            "subtitle": "Política de Enfermedad",
+            "content": [
+              "Los niños con fiebre superior a 100°F no pueden asistir",
+              "Deben permanecer en casa por 24 horas después de que la fiebre desaparezca sin medicamentos",
+              "Notificar al centro sobre enfermedades contagiosas",
+              "El personal puede solicitar que recoja a un niño enfermo en cualquier momento"
+            ]
+          },
+          {
+            "subtitle": "Medicamentos",
+            "content": "Solo se administrarán medicamentos con autorización escrita de los padres y en su envase original con etiqueta. El personal debe ser informado sobre alergias o condiciones médicas especiales."
+          },
+          {
+            "subtitle": "Disciplina",
+            "content": "Utilizamos técnicas de disciplina positiva. No se permite ningún tipo de castigo físico o verbal. Trabajamos con los padres para abordar problemas de comportamiento."
+          },
+          {
+            "subtitle": "Seguridad",
+            "content": [
+              "Simulacros regulares de incendio y emergencia",
+              "Todas las visitas deben registrarse en la recepción",
+              "Sistema de cámaras de seguridad en todas las áreas",
+              "Personal capacitado en primeros auxilios y CPR"
+            ]
+          }
+        ]
+      }
+    },
+    "download": {
+      "title": "Manual Completo para Padres",
+      "description": "Para información más detallada sobre nuestras políticas, procedimientos y servicios, descarga nuestro manual completo.",
+      "button": "Descargar Manual Completo (PDF)",
+      "fileInfo": "ABC KIDZ Facility Parents Handbook - PDF"
+    },
+    "contactNote": "¿Tienes preguntas sobre nuestros términos y políticas? No dudes en contactarnos al (813) 512-2511 o visítanos en persona."
   }
 }
