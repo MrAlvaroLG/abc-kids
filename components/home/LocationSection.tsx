@@ -5,7 +5,6 @@ import {
     MapPinIcon,
     PhoneIcon,
     EnvelopeIcon,
-    ClockIcon
 } from '@heroicons/react/24/outline';
 
 export default function LocationSection() {
@@ -33,18 +32,8 @@ export default function LocationSection() {
         }
     ];
 
-    const schedule = [
-        { day: t('schedule.monday'), hours: '7:00 AM - 6:00 PM', open: true },
-        { day: t('schedule.tuesday'), hours: '7:00 AM - 6:00 PM', open: true },
-        { day: t('schedule.wednesday'), hours: '7:00 AM - 6:00 PM', open: true },
-        { day: t('schedule.thursday'), hours: '7:00 AM - 6:00 PM', open: true },
-        { day: t('schedule.friday'), hours: '7:00 AM - 6:00 PM', open: true },
-        { day: t('schedule.saturday'), hours: t('schedule.closed'), open: false },
-        { day: t('schedule.sunday'), hours: t('schedule.closed'), open: false }
-    ];
-
     return (
-        <section className="relative py-16 md:py-24 bg-linear-to-b from-bg to-surface overflow-hidden">
+        <section className="relative py-8 md:py-12 bg-linear-to-b from-bg to-surface overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 -left-32 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" />
@@ -107,32 +96,7 @@ export default function LocationSection() {
                         ))}
                     </div>
 
-                    {/* Schedule Card */}
-                    <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-lg border border-navy-900/5">
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
-                                <ClockIcon className="w-6 h-6 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-navy-900">
-                                {t('scheduleTitle')}
-                            </h3>
-                        </div>
-                        <div className="grid sm:grid-cols-2 gap-x-8 gap-y-2">
-                            {schedule.map((item, index) => (
-                                <div 
-                                    key={index}
-                                    className="flex justify-between items-center py-2 border-b border-navy-900/5 last:border-0"
-                                >
-                                    <span className="text-sm font-semibold text-navy-900">
-                                        {item.day}
-                                    </span>
-                                    <span className={`text-sm font-medium ${item.open ? 'text-navy-900/70' : 'text-red-500'}`}>
-                                        {item.hours}
-                                    </span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                
                 </div>
             </div>
         </section>

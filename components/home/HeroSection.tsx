@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { 
     ArrowRightIcon, 
     PuzzlePieceIcon, 
@@ -9,7 +10,6 @@ import {
     MusicalNoteIcon,
     HeartIcon as HeartIconSolid
 } from '@heroicons/react/24/solid';
-import { HeartIcon } from '@heroicons/react/24/outline';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
@@ -77,32 +77,17 @@ export default function HeroSection() {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="group relative px-8 py-4 bg-accent text-navy-900 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
+                            <Link href="/contact" className="group relative px-8 py-4 bg-accent text-navy-900 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
                                 <span className="relative z-10 flex items-center justify-center gap-2">
                                     {t('cta.primary')}
                                     <ArrowRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </span>
                                 <div className="absolute inset-0 bg-accent-hover transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
-                            </button>
+                            </Link>
                             
-                            <button className="px-8 py-4 bg-surface text-navy-900 rounded-full font-semibold text-lg border-2 border-navy-900/10 hover:border-accent hover:bg-accent/5 transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                            <Link href="/programs" className="px-8 py-4 bg-surface text-navy-900 rounded-full font-semibold text-lg border-2 border-navy-900/10 hover:border-accent hover:bg-accent/5 transition-all duration-300 hover:scale-105 backdrop-blur-sm flex items-center justify-center">
                                 {t('cta.secondary')}
-                            </button>
-                        </div>
-
-                        {/* Trust Indicators */}
-                        <div className="flex items-center gap-4 pt-4">
-                            <div className="flex -space-x-2">
-                                {[1, 2, 3, 4].map((i) => (
-                                    <div key={i} className="w-10 h-10 rounded-full bg-linear-to-br from-accent to-accent-hover border-2 border-surface flex items-center justify-center">
-                                        <HeartIcon className="w-5 h-5 text-navy-900" />
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="text-sm text-navy-900/60">
-                                <p className="font-semibold">{t('trust.primary')}</p>
-                                <p>{t('trust.secondary')}</p>
-                            </div>
+                            </Link>
                         </div>
                     </div>
 

@@ -62,57 +62,40 @@
   },
   "programsSection": {
     "title": "Our Programs",
-    "subtitle": "Education adapted to each stage of development",
-    "cta": "View All Programs",
-    "viewDetails": "View details",
-    "back": "Back",
+    "subtitle": "Educational programs designed for each stage of your child's development",
+    "cta": "View all programs",
     "programs": {
       "infants": {
         "name": "Infants",
-        "ageRange": "0-12 months",
-        "tagline": "First steps towards discovery",
-        "description": "Specialized care for the littlest ones with focus on sensory development and emotional bonding.",
-        "features": [
-          "Personalized 1:4 attention",
-          "Daily early stimulation",
-          "Flexible feeding schedules",
-          "Constant parent communication"
-        ],
-        "highlight": "Pediatric first aid certification"
+        "tagline": "Loving care. Infants blossom with us.",
+        "description": "Welcoming infants aged 0 to 12 months, our program provides a secure haven for your youngest loved ones. Rooted in individualized care, our experienced caregivers prioritize every child's unique needs, ensuring they feel cherished and supported from the start. Through sensory exploration, infants engage with their surroundings, laying the foundation for cognitive and emotional growth."
       },
       "toddlers": {
         "name": "Toddlers",
-        "ageRange": "1-2 years",
-        "tagline": "Explorers in action",
-        "description": "Development of motor and social skills through play and safe exploration.",
-        "features": [
-          "1:6 ratio for better attention",
-          "Daily sensory activities",
-          "Language development",
-          "Introduction to social routines"
-        ],
-        "highlight": "Bilingual program from day one"
+        "tagline": "Discover, play, grow. Toddlers' learning adventure.",
+        "description": "Guided by the belief that learning is an exciting journey, we foster exploration through hands-on activities that captivate their imagination. As they delve into a world of colors, shapes, and play, these experiences become the building blocks for cognitive development. Interacting with fellow toddlers, they learn to share, communicate, and build essential social skills in a friendly setting."
       },
-      "preschool": {
-        "name": "Preschool",
-        "ageRange": "3-5 years",
-        "tagline": "Preparing for the future",
-        "description": "Academic and social preparation with structured curriculum for school success.",
-        "features": [
-          "Complete pre-K curriculum",
-          "Reading, writing and math",
-          "Art, music and movement",
-          "Kindergarten preparation"
-        ],
-        "highlight": "95% of our graduates exceed assessments"
+      "prek": {
+        "name": "Pre-K",
+        "tagline": "Confident Kindergarten Start: Enroll in Pre-K.",
+        "description": "Our Pre-K program, tailored for children aged 3 to 4 years, lays a strong foundation for a successful transition to kindergarten. Through structured learning, we introduce essential concepts including letters, numbers, literacy, and foundational math skills. Our curriculum fosters social growth by encouraging cooperative play and collaborative projects."
+      },
+      "vpk": {
+        "name": "VPK",
+        "tagline": "VPK Excellence: Building bright futures together.",
+        "description": "VPK (for Voluntary Pre-Kindergarten) sets the stage for a successful transition to kindergarten, backed by state support. We're dedicated to nurturing language and cognitive growth through interactive experiences that captivate young minds. As they explore math concepts, their understanding deepens, and problem-solving skills develop."
       }
     }
-  }
-
-  ,
+  },
   "ctaSection": {
+    "badge": "Free Tour",
     "title": "Ready for your child to be part of our family?",
     "subtitle": "Fill out the form and schedule a free tour to visit our facilities and meet our team.",
+    "features": {
+      "education": "Quality Education",
+      "care": "Personalized Care",
+      "community": "Family Community"
+    },
     "form": {
       "name": "Full name",
       "email": "Email address",
@@ -120,7 +103,12 @@
       "submit": "Schedule free tour",
       "sending": "Sending..."
     },
-    "disclaimer": "We'll contact you by email to confirm your visit."
+    "disclaimer": "We'll contact you by email to confirm your visit.",
+    "trustIndicators": {
+      "noCommitment": "No commitment",
+      "response24h": "24-hour response",
+      "free": "100% free"
+    }
   },
   "locationSection": {
     "title": "Visit Us",
@@ -177,8 +165,8 @@
     "programs": {
       "infants": "Infants (0-12 months)",
       "toddlers": "Toddlers (1-2 years)",
-      "preschool": "Preschool (3-5 years)",
-      "afterSchool": "After School"
+      "prek": "Pre-K (3-4 years)",
+      "vpk": "VPK (4-5 years)"
     },
     "schedule": {
       "weekdays": "Mon - Fri: 7:00 AM - 6:00 PM",

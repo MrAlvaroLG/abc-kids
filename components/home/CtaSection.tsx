@@ -1,165 +1,132 @@
 'use client';
 
-import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { SparklesIcon, CalendarIcon, EnvelopeIcon, UserIcon } from '@heroicons/react/24/outline';
-import { CheckCircleIcon } from '@heroicons/react/24/solid';
+import { Link } from '@/i18n/routing';
+import { SparklesIcon, CalendarIcon, StarIcon, HeartIcon, AcademicCapIcon, UserGroupIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 
 export default function CtaSection() {
     const t = useTranslations('ctaSection');
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [date, setDate] = useState('');
-    const [sent, setSent] = useState(false);
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        setSent(true);
-        console.log('Schedule request', { name, email, date });
-        setTimeout(() => {
-            setSent(false);
-            setName('');
-            setEmail('');
-            setDate('');
-        }, 3000);
-    };
 
     return (
-        <section className="relative py-20 md:py-28 lg:py-32 overflow-hidden">
-            {/* Animated background elements */}
-            <div className="absolute inset-0 bg-linear-to-br from-accent/10 via-accent/5 to-transparent pointer-events-none" />
-            <div className="absolute top-1/4 -right-32 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-1/4 -left-32 w-96 h-96 bg-blue-800/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
-            
-            {/* Decorative sparkles */}
-            <SparklesIcon className="absolute top-10 left-10 w-8 h-8 text-accent/30 animate-pulse" />
-            <SparklesIcon className="absolute bottom-20 right-20 w-6 h-6 text-accent/30 animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <section className="relative py-20 md:py-32 overflow-hidden bg-linear-to-br from-navy-900 via-blue-800 to-navy-900">
+            {/* Animated background patterns */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                {/* Floating circles */}
+                <div className="absolute top-20 left-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-float" />
+                <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+                <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-accent/10 rounded-full blur-2xl animate-pulse" />
+                
+                {/* Decorative grid pattern */}
+                <div className="absolute inset-0 opacity-[0.03]" style={{
+                    backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)',
+                    backgroundSize: '50px 50px'
+                }} />
+            </div>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="max-w-5xl mx-auto">
-                    {/* Header */}
-                    <div className="text-center mb-12">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 rounded-full mb-6 border border-accent/30">
-                            <SparklesIcon className="w-5 h-5 text-accent" />
-                            <span className="text-sm font-semibold text-navy-900">Tour Gratuito</span>
-                        </div>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-navy-900">
-                            {t('title')}
-                        </h2>
-                        <p className="text-base sm:text-lg text-navy-900/70 max-w-2xl mx-auto">
-                            {t('subtitle')}
-                        </p>
-                    </div>
-
-                    {/* Form card with modern glassmorphism */}
+                <div className="max-w-6xl mx-auto">
+                    {/* Main content card */}
                     <div className="relative">
-                        {/* Glow effect behind card */}
-                        <div className="absolute inset-0 bg-linear-to-r from-accent via-accent-hover to-accent blur-2xl opacity-20 rounded-3xl" />
+                        {/* Glow effect */}
+                        <div className="absolute -inset-4 bg-linear-to-r from-accent/30 via-accent-hover/30 to-accent/30 rounded-3xl blur-2xl opacity-50" />
                         
-                        <div className="relative bg-white rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 border border-accent/20">
-                            <form onSubmit={handleSubmit} className="space-y-6">
-                                {/* Form fields grid */}
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                    {/* Name input */}
-                                    <div className="relative group">
-                                        <label className="block text-sm font-semibold text-navy-900/80 mb-2">
-                                            {t('form.name')}
-                                        </label>
-                                        <div className="relative">
-                                            <UserIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-navy-900/40 group-focus-within:text-accent transition-colors" />
-                                            <input
-                                                required
-                                                value={name}
-                                                onChange={(e) => setName(e.target.value)}
-                                                placeholder="Juan Pérez"
-                                                className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-navy-900/10 bg-bg/50 focus:border-accent focus:bg-white focus:outline-none transition-all duration-200 font-medium"
-                                            />
-                                        </div>
+                        {/* Content */}
+                        <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl overflow-hidden">
+                            {/* Top accent bar */}
+                            <div className="h-2 bg-linear-to-r from-accent via-accent-hover to-accent" />
+                            
+                            <div className="p-8 sm:p-12 md:p-16 lg:p-20">
+                                {/* Header with badge */}
+                                <div className="text-center mb-12">
+                                    <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-linear-to-r from-accent/20 to-accent-hover/20 rounded-full mb-8 border-2 border-accent/30 shadow-lg">
+                                        <SparklesIcon className="w-5 h-5 text-accent animate-pulse" />
+                                        <span className="text-sm font-bold text-navy-900 uppercase tracking-wider">{t('badge')}</span>
                                     </div>
+                                    
+                                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-navy-900 leading-tight">
+                                        {t('title')}
+                                    </h2>
+                                    
+                                    <p className="text-lg sm:text-xl text-navy-900/70 max-w-3xl mx-auto leading-relaxed">
+                                        {t('subtitle')}
+                                    </p>
+                                </div>
 
-                                    {/* Email input */}
-                                    <div className="relative group">
-                                        <label className="block text-sm font-semibold text-navy-900/80 mb-2">
-                                            {t('form.email')}
-                                        </label>
-                                        <div className="relative">
-                                            <EnvelopeIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-navy-900/40 group-focus-within:text-accent transition-colors" />
-                                            <input
-                                                required
-                                                value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
-                                                placeholder="correo@ejemplo.com"
-                                                type="email"
-                                                className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-navy-900/10 bg-bg/50 focus:border-accent focus:bg-white focus:outline-none transition-all duration-200 font-medium"
-                                            />
+                                {/* Feature highlights in circular badges */}
+                                <div className="flex flex-wrap items-center justify-center gap-4 mb-14">
+                                    <div className="flex items-center gap-3 px-6 py-4 bg-linear-to-br from-accent/10 to-transparent rounded-full border border-accent/20">
+                                        <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                                            <AcademicCapIcon className="w-6 h-6 text-navy-900" />
                                         </div>
+                                        <span className="text-sm font-semibold text-navy-900">{t('features.education')}</span>
                                     </div>
-
-                                    {/* Date input */}
-                                    <div className="relative group">
-                                        <label className="block text-sm font-semibold text-navy-900/80 mb-2">
-                                            {t('form.date')}
-                                        </label>
-                                        <div className="relative">
-                                            <CalendarIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-navy-900/40 group-focus-within:text-accent transition-colors" />
-                                            <input
-                                                value={date}
-                                                onChange={(e) => setDate(e.target.value)}
-                                                type="date"
-                                                className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-navy-900/10 bg-bg/50 focus:border-accent focus:bg-white focus:outline-none transition-all duration-200 font-medium"
-                                            />
+                                    
+                                    <div className="flex items-center gap-3 px-6 py-4 bg-linear-to-br from-accent/10 to-transparent rounded-full border border-accent/20">
+                                        <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                                            <HeartIcon className="w-6 h-6 text-navy-900" />
                                         </div>
+                                        <span className="text-sm font-semibold text-navy-900">{t('features.care')}</span>
+                                    </div>
+                                    
+                                    <div className="flex items-center gap-3 px-6 py-4 bg-linear-to-br from-accent/10 to-transparent rounded-full border border-accent/20">
+                                        <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                                            <UserGroupIcon className="w-6 h-6 text-navy-900" />
+                                        </div>
+                                        <span className="text-sm font-semibold text-navy-900">{t('features.community')}</span>
                                     </div>
                                 </div>
 
-                                {/* Submit button */}
-                                <button
-                                    type="submit"
-                                    disabled={sent}
-                                    className="group relative w-full overflow-hidden px-8 py-5 bg-linear-to-r from-accent to-accent-hover text-navy-900 rounded-xl font-bold text-lg shadow-lg hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-                                >
-                                    <div className="absolute inset-0 bg-linear-to-r from-white/0 via-white/30 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-                                    <span className="relative flex items-center justify-center gap-2">
-                                        {sent ? (
-                                            <>
-                                                <CheckCircleIcon className="w-6 h-6 animate-bounce" />
-                                                {t('form.sending')}
-                                            </>
-                                        ) : (
-                                            <>
-                                                <CalendarIcon className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-                                                {t('form.submit')}
-                                            </>
-                                        )}
-                                    </span>
-                                </button>
+                                {/* CTA Button */}
+                                <div className="flex flex-col items-center gap-6">
+                                    <Link
+                                        href="/contact"
+                                        className="group relative inline-flex items-center gap-4 px-12 py-6 bg-linear-to-r from-accent via-accent-hover to-accent text-navy-900 rounded-2xl font-bold text-xl shadow-2xl hover:shadow-accent/50 transition-all duration-500 hover:scale-105 overflow-hidden"
+                                    >
+                                        {/* Shimmer effect */}
+                                        <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-linear-to-r from-transparent via-white/40 to-transparent" />
+                                        
+                                        <CalendarIcon className="w-8 h-8 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+                                        <span className="relative z-10">{t('form.submit')}</span>
+                                        <ArrowRightIcon className="w-7 h-7 relative z-10 group-hover:translate-x-2 transition-transform duration-300" />
+                                    </Link>
 
-                                {/* Disclaimer */}
-                                <p className="text-center text-xs text-navy-900/50 flex items-center justify-center gap-1">
-                                    <CheckCircleIcon className="w-4 h-4 text-accent" />
-                                    {t('disclaimer')}
-                                </p>
-                            </form>
-                        </div>
-                    </div>
+                                    {/* Trust indicators */}
+                                    <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-navy-900/60">
+                                        <div className="flex items-center gap-2">
+                                            <CheckCircleIcon className="w-5 h-5 text-accent" />
+                                            <span className="font-medium">{t('trustIndicators.noCommitment')}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <CheckCircleIcon className="w-5 h-5 text-accent" />
+                                            <span className="font-medium">{t('trustIndicators.response24h')}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <CheckCircleIcon className="w-5 h-5 text-accent" />
+                                            <span className="font-medium">{t('trustIndicators.free')}</span>
+                                        </div>
+                                    </div>
 
-                    {/* Trust indicators */}
-                    <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-navy-900/60">
-                        <div className="flex items-center gap-2">
-                            <CheckCircleIcon className="w-5 h-5 text-accent" />
-                            <span>Sin compromiso</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <CheckCircleIcon className="w-5 h-5 text-accent" />
-                            <span>Respuesta en 24 horas</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <CheckCircleIcon className="w-5 h-5 text-accent" />
-                            <span>100% gratuito</span>
+                                    {/* Disclaimer */}
+                                    <p className="text-sm text-navy-900/50 flex items-center gap-2">
+                                        <CheckCircleIcon className="w-4 h-4 text-accent" />
+                                        {t('disclaimer')}
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Decorative bottom accent */}
+                            <div className="h-1 bg-linear-to-r from-transparent via-accent to-transparent" />
                         </div>
                     </div>
                 </div>
             </div>
+
+            {/* Floating decorative elements */}
+            <SparklesIcon className="absolute top-16 left-16 w-6 h-6 text-accent/40 animate-pulse" />
+            <SparklesIcon className="absolute top-32 right-24 w-5 h-5 text-accent/30 animate-pulse" style={{ animationDelay: '0.5s' }} />
+            <StarIcon className="absolute bottom-24 left-24 w-7 h-7 text-accent/35 animate-bounce" style={{ animationDelay: '0.3s' }} />
+            <StarIcon className="absolute bottom-16 right-16 w-5 h-5 text-accent/30 animate-bounce" style={{ animationDelay: '0.8s' }} />
         </section>
     );
 }

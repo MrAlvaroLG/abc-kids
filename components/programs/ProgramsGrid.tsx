@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from 'react';
 import { CheckCircleIcon, SparklesIcon } from '@heroicons/react/24/solid';
 import { Link } from '@/i18n/routing';
 
-type ProgramKey = 'infants' | 'toddlers' | 'preschool';
+type ProgramKey = 'infants' | 'toddlers' | 'prek' | 'vpk';
 
 const programColors = {
     infants: {
@@ -22,12 +22,19 @@ const programColors = {
         border: 'border-blue-200',
         button: 'from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600'
     },
-    preschool: {
+    prek: {
         gradient: 'from-orange-500 to-yellow-500',
         bg: 'from-orange-50 to-yellow-50',
         accent: 'text-orange-600',
         border: 'border-orange-200',
         button: 'from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600'
+    },
+    vpk: {
+        gradient: 'from-green-500 to-teal-500',
+        bg: 'from-green-50 to-teal-50',
+        accent: 'text-green-600',
+        border: 'border-green-200',
+        button: 'from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600'
     }
 };
 
@@ -55,7 +62,7 @@ export default function ProgramsGrid() {
         return () => observer.disconnect();
     }, []);
 
-    const programs: ProgramKey[] = ['infants', 'toddlers', 'preschool'];
+    const programs: ProgramKey[] = ['infants', 'toddlers', 'prek', 'vpk'];
 
     return (
         <section ref={sectionRef} className="py-16 md:py-24 lg:py-32 bg-bg">
@@ -70,12 +77,19 @@ export default function ProgramsGrid() {
                     </p>
                 </div>
 
-                {/* Programs Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                {/* Programs Grid - 2x2 */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                     {programs.map((programKey, index) => {
-                        const features = t.raw(`programs.${programKey}.features`) as string[];
                         const colors = programColors[programKey];
                         const isVisible = visibleCards.includes(index);
+                        
+                        // Age ranges estáticos
+                        const ageRanges = {
+                            infants: '0-12 months',
+                            toddlers: '1-2 years',
+                            prek: '3-4 years',
+                            vpk: '4-5 years'
+                        };
 
                         return (
                             <div
@@ -104,7 +118,7 @@ export default function ProgramsGrid() {
                                         {/* Age badge */}
                                         <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30 mb-4">
                                             <span className="text-white text-sm font-semibold">
-                                                {t(`programs.${programKey}.ageRange`)}
+                                                {ageRanges[programKey]}
                                             </span>
                                         </div>
 
@@ -122,36 +136,14 @@ export default function ProgramsGrid() {
                                     {/* Content */}
                                     <div className="p-8 flex-1 flex flex-col">
                                         {/* Description */}
-                                        <p className="text-navy-900/70 mb-6 leading-relaxed">
+                                        <p className="text-navy-900/70 leading-relaxed line-clamp-6">
                                             {t(`programs.${programKey}.description`)}
                                         </p>
 
-                                        {/* Features list */}
-                                        <div className="space-y-3 mb-6 flex-1">
-                                            {features.map((feature, idx) => (
-                                                <div key={idx} className="flex items-start gap-3">
-                                                    <CheckCircleIcon className={`w-6 h-6 ${colors.accent} shrink-0 mt-0.5`} />
-                                                    <span className="text-navy-900/80 text-sm leading-relaxed">
-                                                        {feature}
-                                                    </span>
-                                                </div>
-                                            ))}
-                                        </div>
-
-                                        {/* Highlight badge */}
-                                        <div className={`bg-linear-to-r ${colors.bg} ${colors.border} border rounded-2xl p-4 mb-6`}>
-                                            <div className="flex items-start gap-3">
-                                                <div className={`w-2 h-2 ${colors.accent} rounded-full mt-2 shrink-0`} />
-                                                <p className={`text-sm font-medium ${colors.accent}`}>
-                                                    {t(`programs.${programKey}.highlight`)}
-                                                </p>
-                                            </div>
-                                        </div>
-
                                         {/* CTA Button */}
-                                        <Link href="/contact" className="mt-auto">
+                                        <Link href="/contact" className="mt-8">
                                             <button className={`w-full bg-linear-to-r ${colors.button} text-white font-semibold py-4 px-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1`}>
-                                                {t('viewDetails')}
+                                                Enroll Now
                                             </button>
                                         </Link>
                                     </div>

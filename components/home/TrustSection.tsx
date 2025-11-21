@@ -49,7 +49,7 @@ export default function TrustSection() {
     return (
         <section 
             ref={sectionRef}
-            className="relative py-16 md:py-24 lg:py-32 bg-linear-to-b from-bg to-surface overflow-hidden"
+            className="relative py-6 md:py-12 lg:py-20 bg-linear-to-b from-bg to-surface overflow-hidden"
         >
             {/* Decorative background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -149,7 +149,7 @@ function TestimonialCard({
 }) {
     return (
         <div 
-            className={`bg-white rounded-2xl p-6 shadow-lg border border-navy-900/5 hover:shadow-xl transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            className={`bg-white rounded-2xl p-6 shadow-lg border border-navy-900/5 hover:shadow-xl transition-all duration-500 flex flex-col ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             style={{ transitionDelay: `${delay}ms` }}
         >
             {/* Stars */}
@@ -168,7 +168,7 @@ function TestimonialCard({
             </p>
 
             {/* Author */}
-            <div className="flex items-center gap-3 pt-4 border-t border-navy-900/10">
+            <div className="flex items-center gap-3 pt-4 border-t border-navy-900/10 mt-auto">
                 <div className="w-10 h-10 bg-linear-to-br from-accent to-accent-hover rounded-full flex items-center justify-center text-navy-900 font-bold">
                     {testimonial.name.charAt(0)}
                 </div>

@@ -12,8 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faFacebook,
     faInstagram,
-    faTwitter,
-    faYoutube
+    faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
@@ -28,17 +27,16 @@ export default function Footer() {
     ];
 
     const programs = [
-        { label: t('programs.infants'), href: '/programs/infants' },
-        { label: t('programs.toddlers'), href: '/programs/toddlers' },
-        { label: t('programs.preschool'), href: '/programs/preschool' },
-        { label: t('programs.afterSchool'), href: '/programs/after-school' }
+        { label: t('programs.infants'), href: '/programs' },
+        { label: t('programs.toddlers'), href: '/programs' },
+        { label: t('programs.prek'), href: '/programs' },
+        { label: t('programs.vpk'), href: '/programs' }
     ];
 
     const socialLinks = [
-        { icon: faFacebook, href: 'https://facebook.com', label: 'Facebook' },
-        { icon: faInstagram, href: 'https://instagram.com', label: 'Instagram' },
-        { icon: faTwitter, href: 'https://twitter.com', label: 'Twitter' },
-        { icon: faYoutube, href: 'https://youtube.com', label: 'YouTube' }
+        { icon: faFacebook, href: 'https://www.facebook.com/abckidzpreschool', label: 'Facebook' },
+        { icon: faInstagram, href: 'https://www.instagram.com/abc_kidz_preschool/', label: 'Instagram' },
+        { icon: faWhatsapp, href: 'https://wa.me/18135122511', label: 'WhatsApp' }
     ];
 
     return (
@@ -172,22 +170,10 @@ export default function Footer() {
                             </p>
                             <div className="flex flex-wrap justify-center gap-6">
                                 <Link 
-                                    href="/privacy"
-                                    className="text-sm text-white/50 hover:text-accent transition-colors duration-200"
-                                >
-                                    {t('privacy')}
-                                </Link>
-                                <Link 
                                     href="/terms"
                                     className="text-sm text-white/50 hover:text-accent transition-colors duration-200"
                                 >
                                     {t('terms')}
-                                </Link>
-                                <Link 
-                                    href="/accessibility"
-                                    className="text-sm text-white/50 hover:text-accent transition-colors duration-200"
-                                >
-                                    {t('accessibility')}
                                 </Link>
                             </div>
                         </div>

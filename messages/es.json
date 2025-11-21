@@ -62,56 +62,40 @@
   },
   "programsSection": {
     "title": "Nuestros Programas",
-    "subtitle": "Educación adaptada a cada etapa del desarrollo",
-    "cta": "Ver Todos los Programas",
-    "viewDetails": "Ver detalles",
-    "back": "Volver",
+    "subtitle": "Programas educativos diseñados para cada etapa del desarrollo de tu hijo",
+    "cta": "Ver todos los programas",
     "programs": {
       "infants": {
-        "name": "Infants",
-        "ageRange": "0-12 meses",
-        "tagline": "Primeros pasos hacia el descubrimiento",
-        "description": "Cuidado especializado para los más pequeños con enfoque en desarrollo sensorial y vínculos afectivos.",
-        "features": [
-          "Atención personalizada 1:4",
-          "Estimulación temprana diaria",
-          "Horarios flexibles de alimentación",
-          "Comunicación constante con padres"
-        ],
-        "highlight": "Certificación en primeros auxilios pediátricos"
+        "name": "Bebés",
+        "tagline": "Cuidado amoroso. Los bebés florecen con nosotros.",
+        "description": "Bienvenidos bebés de 0 a 12 meses, nuestro programa proporciona un refugio seguro para sus seres queridos más pequeños. Basado en cuidado individualizado, nuestros cuidadores experimentados priorizan las necesidades únicas de cada niño, asegurando que se sientan queridos y apoyados desde el principio. A través de la exploración sensorial, los bebés interactúan con su entorno, sentando las bases para el crecimiento cognitivo y emocional."
       },
       "toddlers": {
-        "name": "Toddlers",
-        "ageRange": "1-2 años",
-        "tagline": "Exploradores en acción",
-        "description": "Desarrollo de habilidades motoras y sociales a través del juego y la exploración segura.",
-        "features": [
-          "Ratio 1:6 para mejor atención",
-          "Actividades sensoriales diarias",
-          "Desarrollo del lenguaje",
-          "Introducción a rutinas sociales"
-        ],
-        "highlight": "Programa bilingüe desde el primer día"
+        "name": "Niños Pequeños",
+        "tagline": "Descubrir, jugar, crecer. Aventura de aprendizaje.",
+        "description": "Guiados por la creencia de que el aprendizaje es un viaje emocionante, fomentamos la exploración a través de actividades prácticas que cautivan su imaginación. A medida que se sumergen en un mundo de colores, formas y juego, estas experiencias se convierten en los bloques de construcción para el desarrollo cognitivo. Al interactuar con otros niños pequeños, aprenden a compartir, comunicarse y desarrollar habilidades sociales esenciales en un entorno amigable."
       },
-      "preschool": {
-        "name": "Preschool",
-        "ageRange": "3-5 años",
-        "tagline": "Preparación para el futuro",
-        "description": "Preparación académica y social con currículo estructurado para el éxito escolar.",
-        "features": [
-          "Currículo pre-K completo",
-          "Lectoescritura y matemáticas",
-          "Arte, música y movimiento",
-          "Preparación para kindergarten"
-        ],
-        "highlight": "95% de nuestros graduados superan evaluaciones"
+      "prek": {
+        "name": "Pre-K",
+        "tagline": "Inicio seguro al Kindergarten: Inscríbete en Pre-K.",
+        "description": "Nuestro programa Pre-K, diseñado para niños de 3 a 4 años, sienta una base sólida para una transición exitosa al kindergarten. A través del aprendizaje estructurado, introducimos conceptos esenciales incluyendo letras, números, alfabetización y habilidades matemáticas fundamentales. Nuestro currículo fomenta el crecimiento social al alentar el juego cooperativo y proyectos colaborativos."
+      },
+      "vpk": {
+        "name": "VPK",
+        "tagline": "Excelencia VPK: Construyendo futuros brillantes juntos.",
+        "description": "VPK (Prekindergarten Voluntario) prepara el escenario para una transición exitosa al kindergarten, respaldado por apoyo estatal. Estamos dedicados a nutrir el crecimiento del lenguaje y cognitivo a través de experiencias interactivas que cautivan las mentes jóvenes. A medida que exploran conceptos matemáticos, su comprensión se profundiza y se desarrollan habilidades de resolución de problemas."
       }
     }
-  }
-  ,
+  },
   "ctaSection": {
+    "badge": "Tour Gratuito",
     "title": "¿Listo para que tu hijo sea parte de nuestra familia?",
     "subtitle": "Completa el formulario y agenda un tour gratuito para conocer nuestras instalaciones y equipo.",
+    "features": {
+      "education": "Educación de Calidad",
+      "care": "Cuidado Personalizado",
+      "community": "Comunidad Familiar"
+    },
     "form": {
       "name": "Nombre completo",
       "email": "Correo electrónico",
@@ -119,7 +103,12 @@
       "submit": "Agendar tour gratuito",
       "sending": "Enviando..."
     },
-    "disclaimer": "Nos pondremos en contacto por correo para confirmar tu visita."
+    "disclaimer": "Nos pondremos en contacto por correo para confirmar tu visita.",
+    "trustIndicators": {
+      "noCommitment": "Sin compromiso",
+      "response24h": "Respuesta en 24 horas",
+      "free": "100% gratuito"
+    }
   },
   "locationSection": {
     "title": "Visítanos",
@@ -176,8 +165,8 @@
     "programs": {
       "infants": "Infantes (0-12 meses)",
       "toddlers": "Niños Pequeños (1-2 años)",
-      "preschool": "Preescolar (3-5 años)",
-      "afterSchool": "Después de la Escuela"
+      "prek": "Pre-Kínder (3-4 años)",
+      "vpk": "VPK (4-5 años)"
     },
     "schedule": {
       "weekdays": "Lun - Vie: 7:00 AM - 6:00 PM",
