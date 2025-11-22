@@ -108,6 +108,17 @@
           "Special emphasis on pre-reading and pre-writing skills",
           "Cultivate love for exploration and confidence for educational path"
         ]
+      },
+      "after_school": {
+        "name": "After School",
+        "tagline": "School's out? We're In.",
+        "description": "The School's Age program is for children aged 5 to 12 who, for whatever reason, are not attending school on any given day during the year. We offer dependable and enriching care that extends beyond academic periods, ensuring children have a safe and stimulating environment year-round.",
+        "highlights": [
+          "Dependable and enriching care beyond academic periods",
+          "Thoughtfully curated and engaging activities",
+          "Interactive projects and group activities",
+          "Fostering social engagement, learning, creativity, and fun"
+        ]
       }
     }
   },
@@ -330,19 +341,9 @@
       }
     },
     "cta": {
-      "title": "Ready to start this adventure?",
-      "subtitle": "Schedule a free tour and meet our facilities, programs and educational team.",
-      "scheduleTour": "Schedule Free Tour",
-      "callNow": "Call Now",
-      "phone": {
-        "label": "Phone"
-      },
-      "location": {
-        "label": "Location"
-      },
-      "hours": {
-        "label": "Hours"
-      }
+      "title": "Want to meet us in person?",
+      "subtitle": "Schedule a free tour and discover why Tampa families trust us.",
+      "scheduleVisit": "Schedule a Visit"
     }
   },
   "aboutPage": {
@@ -353,7 +354,7 @@
     },
     "hero": {
       "badge": "Our Story",
-      "title": "Creating Bright Futures Since 2009",
+      "title": "Know more about our team",
       "subtitle": "We are more than a daycare. We are a family committed to the comprehensive development of each child, providing quality education with love and dedication.",
       "features": {
         "care": {

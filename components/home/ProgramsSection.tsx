@@ -9,7 +9,8 @@ import {
     faBabyCarriage, 
     faChild,
     faBook,
-    faGraduationCap
+    faGraduationCap,
+    faSchool
 } from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
@@ -77,6 +78,16 @@ export default function ProgramsSection() {
             gradient: 'from-green-500 to-teal-600',
             bgColor: 'bg-green-500',
             lightBg: 'bg-teal-50'
+        },
+        {
+            key: 'after_school',
+            icon: faSchool,
+            ageRange: '5-12',
+            ageLabel: 'years',
+            gradient: 'from-indigo-500 to-violet-600',
+            bgColor: 'bg-indigo-500',
+            lightBg: 'bg-indigo-50',
+            className: 'md:col-span-2'
         }
     ];
 
@@ -116,6 +127,7 @@ export default function ProgramsSection() {
                             lightBg={program.lightBg}
                             isVisible={isVisible}
                             delay={index * 100}
+                            className={program.className}
                         />
                     ))}
                 </div>
@@ -145,7 +157,8 @@ function ProgramCard({
     bgColor,
     lightBg,
     isVisible,
-    delay
+    delay,
+    className = ''
 }: { 
     programKey: string;
     icon: IconDefinition;
@@ -156,13 +169,14 @@ function ProgramCard({
     lightBg: string;
     isVisible: boolean;
     delay: number;
+    className?: string;
 }) {
     const t = useTranslations(`programsSection.programs.${programKey}`);
     const [isHovered, setIsHovered] = useState(false);
 
     return (
         <div 
-            className={`relative group transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            className={`relative group transition-all duration-1000 ${className} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             style={{ transitionDelay: `${delay}ms` }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

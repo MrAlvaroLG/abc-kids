@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect, useRef } from 'react';
-import { Link } from '@/i18n/routing';
+import { Link } from '../../i18n/routing';
 import { 
     ArrowRightIcon,
     CheckCircleIcon
@@ -20,7 +20,6 @@ import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 export default function ProgramsSection() {
     const t = useTranslations('programsSection');
     const [isVisible, setIsVisible] = useState(false);
-    const [activeProgram, setActiveProgram] = useState(0);
     const sectionRef = useRef<HTMLElement>(null);
 
     useEffect(() => {

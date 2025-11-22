@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from 'react';
 import { CheckCircleIcon, SparklesIcon } from '@heroicons/react/24/solid';
 import { Link } from '@/i18n/routing';
 
-type ProgramKey = 'infants' | 'toddlers' | 'prek' | 'vpk';
+type ProgramKey = 'infants' | 'toddlers' | 'prek' | 'vpk' | 'after_school';
 
 const programColors = {
     infants: {
@@ -35,6 +35,13 @@ const programColors = {
         accent: 'text-green-600',
         border: 'border-green-200',
         button: 'from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600'
+    },
+    after_school: {
+        gradient: 'from-indigo-500 to-violet-500',
+        bg: 'from-indigo-50 to-violet-50',
+        accent: 'text-indigo-600',
+        border: 'border-indigo-200',
+        button: 'from-indigo-500 to-violet-500 hover:from-indigo-600 hover:to-violet-600'
     }
 };
 
@@ -62,7 +69,7 @@ export default function ProgramsGrid() {
         return () => observer.disconnect();
     }, []);
 
-    const programs: ProgramKey[] = ['infants', 'toddlers', 'prek', 'vpk'];
+    const programs: ProgramKey[] = ['infants', 'toddlers', 'prek', 'vpk', 'after_school'];
 
     return (
         <section ref={sectionRef} className="py-16 md:py-24 lg:py-32 bg-bg">
@@ -88,7 +95,8 @@ export default function ProgramsGrid() {
                             infants: '0-12 months',
                             toddlers: '1-2 years',
                             prek: '3-4 years',
-                            vpk: '4-5 years'
+                            vpk: '4-5 years',
+                            after_school: '5-12 years'
                         };
 
                         return (
@@ -97,7 +105,7 @@ export default function ProgramsGrid() {
                                 data-index={index}
                                 className={`program-card group relative transition-all duration-700 ${
                                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                                }`}
+                                } ${programKey === 'after_school' ? 'md:col-span-2' : ''}`}
                                 style={{ transitionDelay: `${index * 150}ms` }}
                             >
                                 {/* Card */}

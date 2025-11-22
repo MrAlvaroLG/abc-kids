@@ -108,6 +108,17 @@
           "Énfasis en pre-lectura y pre-escritura para encender alfabetización",
           "Cultivan amor por la exploración y confianza para su camino educativo"
         ]
+      },
+      "after_school": {
+        "name": "After School",
+        "tagline": "¿No hay escuela? Nosotros estamos aquí.",
+        "description": "El programa para edad escolar es para niños de 5 a 12 años que, por cualquier motivo, no asisten a la escuela en un día determinado durante el año. Ofrecemos cuidado confiable y enriquecedor que se extiende más allá de los períodos académicos, asegurando que los niños tengan un entorno seguro y estimulante durante todo el año.",
+        "highlights": [
+          "Cuidado confiable y enriquecedor más allá de los períodos académicos",
+          "Actividades cuidadosamente seleccionadas y atractivas",
+          "Proyectos interactivos y actividades grupales",
+          "Fomento del compromiso social, el aprendizaje, la creatividad y la diversión"
+        ]
       }
     }
   },
@@ -330,19 +341,9 @@
       }
     },
     "cta": {
-      "title": "¿Listo para comenzar esta aventura?",
-      "subtitle": "Agenda un tour gratuito y conoce nuestras instalaciones, programas y equipo educativo.",
-      "scheduleTour": "Agendar Tour Gratuito",
-      "callNow": "Llamar Ahora",
-      "phone": {
-        "label": "Teléfono"
-      },
-      "location": {
-        "label": "Ubicación"
-      },
-      "hours": {
-        "label": "Horario"
-      }
+      "title": "¿Quieres conocernos en persona?",
+      "subtitle": "Agenda un tour gratuito y descubre por qué las familias de Tampa confían en nosotros.",
+      "scheduleVisit": "Agendar una Visita"
     }
   },
   "aboutPage": {
@@ -353,7 +354,7 @@
     },
     "hero": {
       "badge": "Nuestra Historia",
-      "title": "Creando Futuros Brillantes desde 2009",
+      "title": "Conoce más sobre nuestro equipo",
       "subtitle": "Somos más que una guardería. Somos una familia comprometida con el desarrollo integral de cada niño, brindando educación de calidad con amor y dedicación.",
       "features": {
         "care": {
