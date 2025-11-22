@@ -6,9 +6,9 @@ import {
     UserGroupIcon, 
     HeartIcon, 
     AcademicCapIcon, 
-    ShieldCheckIcon,
-    ClockIcon,
-    ChatBubbleBottomCenterTextIcon
+    SparklesIcon,
+    LightBulbIcon,
+    PuzzlePieceIcon
 } from '@heroicons/react/24/outline';
 
 export default function ProgramsBenefits() {
@@ -34,12 +34,12 @@ export default function ProgramsBenefits() {
     }, []);
 
     const benefits = [
-        { icon: UserGroupIcon, key: 'ratio', gradient: 'from-blue-500 to-cyan-500' },
-        { icon: HeartIcon, key: 'care', gradient: 'from-pink-500 to-rose-500' },
-        { icon: AcademicCapIcon, key: 'curriculum', gradient: 'from-purple-500 to-indigo-500' },
-        { icon: ShieldCheckIcon, key: 'safety', gradient: 'from-green-500 to-emerald-500' },
-        { icon: ClockIcon, key: 'flexible', gradient: 'from-orange-500 to-amber-500' },
-        { icon: ChatBubbleBottomCenterTextIcon, key: 'communication', gradient: 'from-teal-500 to-cyan-500' }
+        { icon: HeartIcon, key: 'individualizedCare', gradient: 'from-pink-500 to-rose-500' },
+        { icon: SparklesIcon, key: 'sensoryExploration', gradient: 'from-purple-500 to-indigo-500' },
+        { icon: LightBulbIcon, key: 'cognitiveGrowth', gradient: 'from-blue-500 to-cyan-500' },
+        { icon: UserGroupIcon, key: 'socialSkills', gradient: 'from-green-500 to-emerald-500' },
+        { icon: AcademicCapIcon, key: 'foundationalLearning', gradient: 'from-orange-500 to-amber-500' },
+        { icon: PuzzlePieceIcon, key: 'collaborativePlay', gradient: 'from-teal-500 to-cyan-500' }
     ];
 
     return (

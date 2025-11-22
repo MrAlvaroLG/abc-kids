@@ -67,23 +67,47 @@
     "programs": {
       "infants": {
         "name": "Infants",
-        "tagline": "Loving care. Infants blossom with us.",
-        "description": "Welcoming infants aged 0 to 12 months, our program provides a secure haven for your youngest loved ones. Rooted in individualized care, our experienced caregivers prioritize every child's unique needs, ensuring they feel cherished and supported from the start. Through sensory exploration, infants engage with their surroundings, laying the foundation for cognitive and emotional growth."
+        "tagline": "Loving care. Babies bloom with us.",
+        "description": "Welcoming babies aged 0 to 12 months, our program provides a safe haven for your littlest loved ones. Grounded in individualized care, our experienced caregivers prioritize each child's unique needs, ensuring they feel cherished and supported from the start. Through sensory exploration, infants engage with their surroundings, laying the groundwork for cognitive and emotional growth.",
+        "highlights": [
+          "Individualized care tailored to each child's unique needs",
+          "Sensory exploration for cognitive and emotional growth",
+          "Gentle interactions encouraging social connections and trust",
+          "Nurturing environment designed for crucial formative months"
+        ]
       },
       "toddlers": {
         "name": "Toddlers",
-        "tagline": "Discover, play, grow. Toddlers' learning adventure.",
-        "description": "Guided by the belief that learning is an exciting journey, we foster exploration through hands-on activities that captivate their imagination. As they delve into a world of colors, shapes, and play, these experiences become the building blocks for cognitive development. Interacting with fellow toddlers, they learn to share, communicate, and build essential social skills in a friendly setting."
+        "tagline": "Discover, play, grow. Learning adventure.",
+        "description": "Guided by the belief that learning is an exciting journey, we foster exploration through hands-on activities that captivate their imagination. As they immerse themselves in a world of colors, shapes, and play, these experiences become the building blocks for cognitive development. By interacting with fellow toddlers, they learn to share, communicate, and develop essential social skills in a friendly environment.",
+        "highlights": [
+          "Hands-on activities that captivate their imagination",
+          "Exploring colors, shapes, and play for cognitive development",
+          "Learn to share and communicate in a friendly setting",
+          "Every discovery is celebrated, sparking lifelong love for exploration"
+        ]
       },
       "prek": {
         "name": "Pre-K",
         "tagline": "Confident Kindergarten Start: Enroll in Pre-K.",
-        "description": "Our Pre-K program, tailored for children aged 3 to 4 years, lays a strong foundation for a successful transition to kindergarten. Through structured learning, we introduce essential concepts including letters, numbers, literacy, and foundational math skills. Our curriculum fosters social growth by encouraging cooperative play and collaborative projects."
+        "description": "Our Pre-K program, tailored for children aged 3 to 4 years, lays a strong foundation for a successful transition to kindergarten. Through structured learning, we introduce essential concepts including letters, numbers, literacy, and foundational math skills. Our curriculum fosters social growth by encouraging cooperative play and collaborative projects, honing their ability to communicate and work together effectively.",
+        "highlights": [
+          "Strong foundation in letters, numbers, literacy, and math skills",
+          "Cooperative play and collaborative projects for social growth",
+          "Fine motor coordination for writing readiness and creative expression",
+          "Academic, social, and emotional development with confidence"
+        ]
       },
       "vpk": {
         "name": "VPK",
-        "tagline": "VPK Excellence: Building bright futures together.",
-        "description": "VPK (for Voluntary Pre-Kindergarten) sets the stage for a successful transition to kindergarten, backed by state support. We're dedicated to nurturing language and cognitive growth through interactive experiences that captivate young minds. As they explore math concepts, their understanding deepens, and problem-solving skills develop."
+        "tagline": "VPK Excellence: Building Bright Futures Together.",
+        "description": "VPK (Voluntary Prekindergarten) sets the stage for a successful transition to kindergarten, backed by state support. We are dedicated to nurturing language and cognitive growth through interactive experiences that captivate young minds. As they explore mathematical concepts, their understanding deepens, and problem-solving skills develop.",
+        "highlights": [
+          "State-backed program for successful kindergarten transition",
+          "Language and cognitive growth through interactive experiences",
+          "Special emphasis on pre-reading and pre-writing skills",
+          "Cultivate love for exploration and confidence for educational path"
+        ]
       }
     }
   },
@@ -277,31 +301,31 @@
     },
     "benefits": {
       "title": "Why choose our programs?",
-      "subtitle": "Commitment to excellence in every detail of your child's care and education",
+      "subtitle": "Key benefits that make the difference in your child's development",
       "items": {
-        "ratio": {
-          "title": "Optimal Teacher-Child Ratio",
-          "description": "We maintain small groups to ensure personalized attention and a safe learning environment."
+        "individualizedCare": {
+          "title": "Individualized Care",
+          "description": "Personalized attention that prioritizes each child's unique needs, ensuring they feel cherished and supported."
         },
-        "care": {
-          "title": "Care with Love",
-          "description": "Our team creates strong emotional bonds, providing the affection and attention your child needs."
+        "sensoryExploration": {
+          "title": "Sensory Exploration",
+          "description": "Sensory activities that allow children to engage with their surroundings, laying the foundation for cognitive and emotional growth."
         },
-        "curriculum": {
-          "title": "Comprehensive Curriculum",
-          "description": "Programs designed to develop cognitive, social, emotional and physical skills."
+        "cognitiveGrowth": {
+          "title": "Cognitive Development",
+          "description": "Hands-on experiences that become building blocks for intellectual development and problem-solving skills."
         },
-        "safety": {
-          "title": "Guaranteed Safety",
-          "description": "Certified facilities with staff trained in first aid and safety protocols."
+        "socialSkills": {
+          "title": "Social Skills",
+          "description": "Learning to share, communicate, and work together in a friendly environment that celebrates every discovery."
         },
-        "flexible": {
-          "title": "Flexible Schedules",
-          "description": "We adapt our schedules to your family's needs with full-time and part-time options."
+        "foundationalLearning": {
+          "title": "Foundational Learning",
+          "description": "Structured introduction to letters, numbers, literacy, and essential math skills for school success."
         },
-        "communication": {
-          "title": "Constant Communication",
-          "description": "Daily updates on your child's activities, meals and development through our app."
+        "collaborativePlay": {
+          "title": "Collaborative Play",
+          "description": "Collaborative projects and cooperative play that develop fine motor coordination and creative expression."
         }
       }
     },

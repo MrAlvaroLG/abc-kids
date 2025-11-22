@@ -4,14 +4,16 @@ import { useTranslations } from 'next-intl';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from '@/i18n/routing';
 import { 
-    ArrowRightIcon
+    ArrowRightIcon,
+    CheckCircleIcon
 } from '@heroicons/react/24/solid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faBabyCarriage, 
     faChild,
     faBook,
-    faGraduationCap
+    faGraduationCap,
+    faStar
 } from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
@@ -51,33 +53,7 @@ export default function ProgramsSection() {
             ageRange: '0 - 12 months',
             tagline: 'Loving care. Infants blossom with us.',
             gradient: 'from-pink-500 to-purple-600',
-            bgGradient: 'from-pink-50 to-purple-50'
-        },
-        {
-            key: 'toddlers',
-            icon: faChild,
-            ageRange: '1 - 2 years',
-            tagline: 'Discover, play, grow. Toddlers\' learning adventure.',
-            gradient: 'from-blue-500 to-cyan-600',
-            bgGradient: 'from-blue-50 to-cyan-50'
-        },
-        {
-            key: 'prek',
-            icon: faBook,
-            ageRange: '3 - 4 years',
-            tagline: 'Confident Kindergarten Start: Enroll in Pre-K.',
-            gradient: 'from-orange-500 to-yellow-600',
-            bgGradient: 'from-orange-50 to-yellow-50'
-        },
-        {
-            key: 'vpk',
-            icon: faGraduationCap,
-            ageRange: '4 - 5 years',
-            tagline: 'VPK Excellence: Building bright futures together.',
-            gradient: 'from-green-500 to-teal-600',
-            bgGradient: 'from-green-50 to-teal-50'
-        }
-    ];
+            bgGradient: 'from-pink-50 to-purple-50',
             color: 'from-pink-400 to-pink-600',
             colorSolid: 'pink-500',
             bgColor: 'from-pink-50/80 to-pink-100/80',
@@ -86,7 +62,11 @@ export default function ProgramsSection() {
         },
         {
             key: 'toddlers',
-            icon: faShapes,
+            icon: faChild,
+            ageRange: '1 - 2 years',
+            tagline: 'Discover, play, grow. Toddlers\' learning adventure.',
+            gradient: 'from-blue-500 to-cyan-600',
+            bgGradient: 'from-blue-50 to-cyan-50',
             color: 'from-blue-400 to-blue-600',
             colorSolid: 'blue-500',
             bgColor: 'from-blue-50/80 to-blue-100/80',
@@ -94,13 +74,30 @@ export default function ProgramsSection() {
             delay: 200
         },
         {
-            key: 'preschool',
-            icon: faGraduationCap,
-            color: 'from-purple-400 to-purple-600',
-            colorSolid: 'purple-500',
-            bgColor: 'from-purple-50/80 to-purple-100/80',
-            accentColor: 'bg-purple-500',
+            key: 'prek',
+            icon: faBook,
+            ageRange: '3 - 4 years',
+            tagline: 'Confident Kindergarten Start: Enroll in Pre-K.',
+            gradient: 'from-orange-500 to-yellow-600',
+            bgGradient: 'from-orange-50 to-yellow-50',
+            color: 'from-orange-400 to-orange-600',
+            colorSolid: 'orange-500',
+            bgColor: 'from-orange-50/80 to-orange-100/80',
+            accentColor: 'bg-orange-500',
             delay: 400
+        },
+        {
+            key: 'vpk',
+            icon: faGraduationCap,
+            ageRange: '4 - 5 years',
+            tagline: 'VPK Excellence: Building bright futures together.',
+            gradient: 'from-green-500 to-teal-600',
+            bgGradient: 'from-green-50 to-teal-50',
+            color: 'from-green-400 to-green-600',
+            colorSolid: 'green-500',
+            bgColor: 'from-green-50/80 to-green-100/80',
+            accentColor: 'bg-green-500',
+            delay: 600
         }
     ];
 

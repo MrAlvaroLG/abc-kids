@@ -135,15 +135,30 @@ export default function ProgramsGrid() {
 
                                     {/* Content */}
                                     <div className="p-8 flex-1 flex flex-col">
-                                        {/* Description */}
-                                        <p className="text-navy-900/70 leading-relaxed line-clamp-6">
-                                            {t(`programs.${programKey}.description`)}
-                                        </p>
+                                        {/* Key highlights as elegant bullet points */}
+                                        <div className="space-y-4 flex-1">
+                                            {t.raw(`programs.${programKey}.highlights`).map((highlight: string, idx: number) => (
+                                                <div 
+                                                    key={idx}
+                                                    className="flex items-start gap-3 group/item"
+                                                >
+                                                    <div className={`mt-0.5 w-6 h-6 rounded-full bg-linear-to-br ${colors.gradient} flex items-center justify-center shrink-0 shadow-md group-hover/item:scale-110 transition-transform duration-300`}>
+                                                        <CheckCircleIcon className="w-4 h-4 text-white" />
+                                                    </div>
+                                                    <p className="text-navy-900/80 font-medium leading-relaxed">
+                                                        {highlight}
+                                                    </p>
+                                                </div>
+                                            ))}
+                                        </div>
 
                                         {/* CTA Button */}
                                         <Link href="/contact" className="mt-8">
-                                            <button className={`w-full bg-linear-to-r ${colors.button} text-white font-semibold py-4 px-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1`}>
-                                                Enroll Now
+                                            <button className={`w-full bg-linear-to-r ${colors.button} text-white font-semibold py-4 px-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group-hover:scale-[1.02]`}>
+                                                <span className="flex items-center justify-center gap-2">
+                                                    Enroll Now
+                                                    <SparklesIcon className="w-5 h-5" />
+                                                </span>
                                             </button>
                                         </Link>
                                     </div>

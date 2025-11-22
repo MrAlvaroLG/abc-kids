@@ -68,22 +68,46 @@
       "infants": {
         "name": "Bebés",
         "tagline": "Cuidado amoroso. Los bebés florecen con nosotros.",
-        "description": "Bienvenidos bebés de 0 a 12 meses, nuestro programa proporciona un refugio seguro para sus seres queridos más pequeños. Basado en cuidado individualizado, nuestros cuidadores experimentados priorizan las necesidades únicas de cada niño, asegurando que se sientan queridos y apoyados desde el principio. A través de la exploración sensorial, los bebés interactúan con su entorno, sentando las bases para el crecimiento cognitivo y emocional."
+        "description": "Bienvenidos bebés de 0 a 12 meses, nuestro programa proporciona un refugio seguro para sus seres queridos más pequeños. Basado en cuidado individualizado, nuestros cuidadores experimentados priorizan las necesidades únicas de cada niño, asegurando que se sientan queridos y apoyados desde el principio. A través de la exploración sensorial, los bebés interactúan con su entorno, sentando las bases para el crecimiento cognitivo y emocional.",
+        "highlights": [
+          "Cuidado individualizado adaptado a las necesidades únicas de cada niño",
+          "Exploración sensorial para crecimiento cognitivo y emocional",
+          "Interacciones gentiles que fomentan conexiones sociales y confianza",
+          "Ambiente de cuidado diseñado para los primeros meses cruciales"
+        ]
       },
       "toddlers": {
         "name": "Niños Pequeños",
         "tagline": "Descubrir, jugar, crecer. Aventura de aprendizaje.",
-        "description": "Guiados por la creencia de que el aprendizaje es un viaje emocionante, fomentamos la exploración a través de actividades prácticas que cautivan su imaginación. A medida que se sumergen en un mundo de colores, formas y juego, estas experiencias se convierten en los bloques de construcción para el desarrollo cognitivo. Al interactuar con otros niños pequeños, aprenden a compartir, comunicarse y desarrollar habilidades sociales esenciales en un entorno amigable."
+        "description": "Guiados por la creencia de que el aprendizaje es un viaje emocionante, fomentamos la exploración a través de actividades prácticas que cautivan su imaginación. A medida que se sumergen en un mundo de colores, formas y juego, estas experiencias se convierten en los bloques de construcción para el desarrollo cognitivo. Al interactuar con otros niños pequeños, aprenden a compartir, comunicarse y desarrollar habilidades sociales esenciales en un entorno amigable.",
+        "highlights": [
+          "Actividades prácticas que cautivan la imaginación",
+          "Exploración de colores, formas y juego para desarrollo cognitivo",
+          "Aprenden a compartir y comunicarse en entorno amigable",
+          "Cada descubrimiento es celebrado, fomentando amor por la exploración"
+        ]
       },
       "prek": {
         "name": "Pre-K",
         "tagline": "Inicio seguro al Kindergarten: Inscríbete en Pre-K.",
-        "description": "Nuestro programa Pre-K, diseñado para niños de 3 a 4 años, sienta una base sólida para una transición exitosa al kindergarten. A través del aprendizaje estructurado, introducimos conceptos esenciales incluyendo letras, números, alfabetización y habilidades matemáticas fundamentales. Nuestro currículo fomenta el crecimiento social al alentar el juego cooperativo y proyectos colaborativos."
+        "description": "Nuestro programa Pre-K, diseñado para niños de 3 a 4 años, sienta una base sólida para una transición exitosa al kindergarten. A través del aprendizaje estructurado, introducimos conceptos esenciales incluyendo letras, números, alfabetización y habilidades matemáticas fundamentales. Nuestro currículo fomenta el crecimiento social al alentar el juego cooperativo y proyectos colaborativos.",
+        "highlights": [
+          "Base sólida en letras, números, lectoescritura y matemáticas",
+          "Juego cooperativo y proyectos colaborativos para crecimiento social",
+          "Coordinación motora fina para escritura y expresión creativa",
+          "Desarrollo académico, social y emocional con confianza"
+        ]
       },
       "vpk": {
         "name": "VPK",
         "tagline": "Excelencia VPK: Construyendo futuros brillantes juntos.",
-        "description": "VPK (Prekindergarten Voluntario) prepara el escenario para una transición exitosa al kindergarten, respaldado por apoyo estatal. Estamos dedicados a nutrir el crecimiento del lenguaje y cognitivo a través de experiencias interactivas que cautivan las mentes jóvenes. A medida que exploran conceptos matemáticos, su comprensión se profundiza y se desarrollan habilidades de resolución de problemas."
+        "description": "VPK (Prekindergarten Voluntario) prepara el escenario para una transición exitosa al kindergarten, respaldado por apoyo estatal. Estamos dedicados a nutrir el crecimiento del lenguaje y cognitivo a través de experiencias interactivas que cautivan las mentes jóvenes. A medida que exploran conceptos matemáticos, su comprensión se profundiza y se desarrollan habilidades de resolución de problemas.",
+        "highlights": [
+          "Programa respaldado por el estado con apoyo oficial",
+          "Crecimiento de lenguaje y habilidades cognitivas interactivas",
+          "Énfasis en pre-lectura y pre-escritura para encender alfabetización",
+          "Cultivan amor por la exploración y confianza para su camino educativo"
+        ]
       }
     }
   },
@@ -277,31 +301,31 @@
     },
     "benefits": {
       "title": "¿Por qué elegir nuestros programas?",
-      "subtitle": "Compromiso con la excelencia en cada detalle del cuidado y educación de tu hijo",
+      "subtitle": "Beneficios clave que hacen la diferencia en el desarrollo de tu hijo",
       "items": {
-        "ratio": {
-          "title": "Ratio Óptimo Maestro-Niño",
-          "description": "Mantenemos grupos pequeños para garantizar atención personalizada y un ambiente seguro de aprendizaje."
+        "individualizedCare": {
+          "title": "Cuidado Individualizado",
+          "description": "Atención personalizada que prioriza las necesidades únicas de cada niño, asegurando que se sientan queridos y apoyados."
         },
-        "care": {
-          "title": "Cuidado con Amor",
-          "description": "Nuestro equipo crea vínculos afectivos fuertes, brindando el cariño y la atención que tu hijo necesita."
+        "sensoryExploration": {
+          "title": "Exploración Sensorial",
+          "description": "Actividades sensoriales que permiten a los niños interactuar con su entorno, sentando bases para el crecimiento cognitivo y emocional."
         },
-        "curriculum": {
-          "title": "Currículo Integral",
-          "description": "Programas diseñados para desarrollar habilidades cognitivas, sociales, emocionales y físicas."
+        "cognitiveGrowth": {
+          "title": "Desarrollo Cognitivo",
+          "description": "Experiencias prácticas que se convierten en bloques de construcción para el desarrollo intelectual y la resolución de problemas."
         },
-        "safety": {
-          "title": "Seguridad Garantizada",
-          "description": "Instalaciones certificadas con personal capacitado en primeros auxilios y protocolos de seguridad."
+        "socialSkills": {
+          "title": "Habilidades Sociales",
+          "description": "Aprendizaje de compartir, comunicarse y trabajar en equipo en un entorno amigable que celebra cada descubrimiento."
         },
-        "flexible": {
-          "title": "Horarios Flexibles",
-          "description": "Adaptamos nuestros horarios a las necesidades de tu familia con opciones de tiempo completo y parcial."
+        "foundationalLearning": {
+          "title": "Aprendizaje Fundamental",
+          "description": "Introducción estructurada a letras, números, lectoescritura y habilidades matemáticas esenciales para el éxito escolar."
         },
-        "communication": {
-          "title": "Comunicación Constante",
-          "description": "Actualizaciones diarias sobre las actividades, comidas y desarrollo de tu hijo a través de nuestra app."
+        "collaborativePlay": {
+          "title": "Juego Colaborativo",
+          "description": "Proyectos colaborativos y juego cooperativo que desarrollan la coordinación motora fina y la expresión creativa."
         }
       }
     },

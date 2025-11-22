@@ -6,7 +6,8 @@ import ProgramsGrid from '@/components/programs/ProgramsGrid';
 import ProgramsBenefits from '@/components/programs/ProgramsBenefits';
 import ProgramsCTA from '@/components/programs/ProgramsCTA';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'programsPage.meta' });
     
     return {
