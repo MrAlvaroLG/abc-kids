@@ -135,7 +135,7 @@
       "name": "Nombre completo",
       "email": "Correo electrónico",
       "date": "Fecha preferida",
-      "submit": "Agendar tour gratuito",
+      "submit": "Agendar una Visita",
       "sending": "Enviando..."
     },
     "disclaimer": "Nos pondremos en contacto por correo para confirmar tu visita.",
@@ -201,7 +201,8 @@
       "infants": "Infantes (0-12 meses)",
       "toddlers": "Niños Pequeños (1-2 años)",
       "prek": "Pre-Kínder (3-4 años)",
-      "vpk": "VPK (4-5 años)"
+      "vpk": "VPK (4-5 años)",
+      "after_school": "After School (5-12 años)"
     },
     "schedule": {
       "weekdays": "Lun - Vie: 7:00 AM - 6:00 PM",
@@ -302,12 +303,12 @@
       "title": "Programas Diseñados para el Éxito de tu Hijo",
       "subtitle": "Desde los primeros meses hasta la preparación para kindergarten, ofrecemos programas especializados que nutren el desarrollo integral de cada niño.",
       "features": {
-        "academic": "Excelencia Académica",
-        "academicDesc": "Currículo estructurado y adaptado",
-        "care": "Cuidado con Amor",
-        "careDesc": "Atención personalizada y cariñosa",
-        "bilingual": "Educación Bilingüe",
-        "bilingualDesc": "Inglés y español desde el primer día"
+        "love": "Cuidado con Amor",
+        "loveDesc": "Atención personalizada y cariñosa",
+        "safety": "Ambiente Seguro",
+        "safetyDesc": "Espacios seguros y estimulantes",
+        "play": "Aprendizaje Lúdico",
+        "playDesc": "Crecimiento a través del juego"
       }
     },
     "benefits": {
@@ -455,22 +456,14 @@
         "title": "Inscripción y Admisión",
         "items": [
           {
-            "subtitle": "Proceso de Inscripción",
-            "content": "Para inscribir a su hijo en ABC Kids, debe completar todos los formularios requeridos, incluyendo información de contacto de emergencia, autorizaciones médicas y datos del pediatra. La inscripción se completa una vez pagada la matrícula inicial."
-          },
-          {
-            "subtitle": "Documentación Requerida",
+            "subtitle": "Los siguientes requisitos son necesarios para la admisión en nuestro preescolar:",
             "content": [
-              "Certificado de nacimiento del niño",
-              "Registro de vacunación actualizado",
-              "Examen físico reciente (no mayor a 6 meses)",
-              "Formulario de contactos de emergencia",
-              "Autorizaciones firmadas para actividades y medicamentos"
+              "Formulario de solicitud de inscripción completado en su totalidad",
+              "Cuota de inscripción y matrícula de la primera semana pagada en su totalidad",
+              "Recibo del manual para padres firmado y archivado",
+              "Certificado de Inmunización (requerido por el estado)",
+              "Examen físico (requerido por el estado)"
             ]
-          },
-          {
-            "subtitle": "Edad y Requisitos",
-            "content": "Aceptamos niños desde 6 semanas hasta 5 años. Todos los niños deben estar al día con sus vacunas según los requisitos del estado de Florida."
           }
         ]
       },
@@ -561,5 +554,21 @@
       "fileInfo": "ABC KIDZ Facility Parents Handbook - PDF"
     },
     "contactNote": "¿Tienes preguntas sobre nuestros términos y políticas? No dudes en contactarnos al (813) 512-2511 o visítanos en persona."
+  },
+  "blogPage": {
+    "meta": {
+      "title": "Blog - ABC Kids | Consejos y Recursos para Padres",
+      "description": "Lee nuestros últimos artículos sobre desarrollo infantil, consejos para padres, actividades educativas y más del equipo de ABC Kids.",
+      "keywords": "blog para padres, consejos desarrollo infantil, actividades guardería, educación preescolar, blog cuidado infantil Tampa"
+    },
+    "hero": {
+      "badge": "Nuestro Blog",
+      "title": "Consejos y Recursos para Padres",
+      "subtitle": "Descubre artículos útiles sobre desarrollo infantil, actividades divertidas y consejos prácticos para padres."
+    },
+    "noPosts": "Aún no hay publicaciones en el blog. ¡Vuelve pronto!",
+    "readMore": "Leer más",
+    "backToBlog": "Volver al Blog",
+    "writtenBy": "Escrito por"
   }
 }

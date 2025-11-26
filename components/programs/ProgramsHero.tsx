@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { SparklesIcon, AcademicCapIcon, HeartIcon } from '@heroicons/react/24/outline';
+import { HeartIcon, ShieldCheckIcon, PuzzlePieceIcon } from '@heroicons/react/24/outline';
 
 export default function ProgramsHero() {
     const t = useTranslations('programsPage');
@@ -22,7 +22,7 @@ export default function ProgramsHero() {
                 <div className="max-w-4xl mx-auto text-center">
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-6 animate-fade-in">
-                        <SparklesIcon className="w-5 h-5 text-accent" />
+                        <PuzzlePieceIcon className="w-5 h-5 text-accent" />
                         <span className="text-white/90 text-sm font-medium">{t('hero.badge')}</span>
                     </div>
 
@@ -37,23 +37,23 @@ export default function ProgramsHero() {
                     </p>
 
                     {/* Feature highlights */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                            <AcademicCapIcon className="w-10 h-10 text-accent mx-auto mb-3" />
-                            <h3 className="text-white font-semibold mb-2">{t('hero.features.academic')}</h3>
-                            <p className="text-white/70 text-sm">{t('hero.features.academicDesc')}</p>
-                        </div>
-
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
                             <HeartIcon className="w-10 h-10 text-accent mx-auto mb-3" />
-                            <h3 className="text-white font-semibold mb-2">{t('hero.features.care')}</h3>
-                            <p className="text-white/70 text-sm">{t('hero.features.careDesc')}</p>
+                            <h3 className="text-white font-semibold mb-2">{t('hero.features.love')}</h3>
+                            <p className="text-white/70 text-sm">{t('hero.features.loveDesc')}</p>
                         </div>
 
                         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                            <SparklesIcon className="w-10 h-10 text-accent mx-auto mb-3" />
-                            <h3 className="text-white font-semibold mb-2">{t('hero.features.bilingual')}</h3>
-                            <p className="text-white/70 text-sm">{t('hero.features.bilingualDesc')}</p>
+                            <ShieldCheckIcon className="w-10 h-10 text-accent mx-auto mb-3" />
+                            <h3 className="text-white font-semibold mb-2">{t('hero.features.safety')}</h3>
+                            <p className="text-white/70 text-sm">{t('hero.features.safetyDesc')}</p>
+                        </div>
+
+                        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                            <PuzzlePieceIcon className="w-10 h-10 text-accent mx-auto mb-3" />
+                            <h3 className="text-white font-semibold mb-2">{t('hero.features.play')}</h3>
+                            <p className="text-white/70 text-sm">{t('hero.features.playDesc')}</p>
                         </div>
                     </div>
                 </div>

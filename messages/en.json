@@ -135,7 +135,7 @@
       "name": "Full name",
       "email": "Email address",
       "date": "Preferred date",
-      "submit": "Schedule free tour",
+      "submit": "Schedule a Visit",
       "sending": "Sending..."
     },
     "disclaimer": "We'll contact you by email to confirm your visit.",
@@ -201,7 +201,8 @@
       "infants": "Infants (0-12 months)",
       "toddlers": "Toddlers (1-2 years)",
       "prek": "Pre-K (3-4 years)",
-      "vpk": "VPK (4-5 years)"
+      "vpk": "VPK (4-5 years)",
+      "after_school": "After School (5-12 years)"
     },
     "schedule": {
       "weekdays": "Mon - Fri: 7:00 AM - 6:00 PM",
@@ -302,12 +303,12 @@
       "title": "Programs Designed for Your Child's Success",
       "subtitle": "From the first months to kindergarten preparation, we offer specialized programs that nurture the comprehensive development of each child.",
       "features": {
-        "academic": "Academic Excellence",
-        "academicDesc": "Structured and adapted curriculum",
-        "care": "Care with Love",
-        "careDesc": "Personalized and caring attention",
-        "bilingual": "Bilingual Education",
-        "bilingualDesc": "English and Spanish from day one"
+        "love": "Loving Care",
+        "loveDesc": "Personalized & nurturing attention",
+        "safety": "Safe Environment",
+        "safetyDesc": "Secure & stimulating spaces",
+        "play": "Play-Based Learning",
+        "playDesc": "Growth through fun & creativity"
       }
     },
     "benefits": {
@@ -455,22 +456,14 @@
         "title": "Enrollment and Admission",
         "items": [
           {
-            "subtitle": "Enrollment Process",
-            "content": "To enroll your child at ABC Kids, you must complete all required forms, including emergency contact information, medical authorizations and pediatrician data. Enrollment is completed once the initial registration fee is paid."
-          },
-          {
-            "subtitle": "Required Documentation",
+            "subtitle": "The following requirements are necessary for admission into our preschool:",
             "content": [
-              "Child's birth certificate",
-              "Updated immunization record",
-              "Recent physical exam (not older than 6 months)",
-              "Emergency contact form",
-              "Signed authorizations for activities and medications"
+              "Enrollment application form completed in full",
+              "Registration fee and First week’s tuition paid in full",
+              "Parent handbook receipt signed and on file",
+              "Certificate of Immunization (state required)",
+              "Physical (state required within)"
             ]
-          },
-          {
-            "subtitle": "Age and Requirements",
-            "content": "We accept children from 6 weeks to 5 years old. All children must be up to date with their vaccinations according to Florida state requirements."
           }
         ]
       },
@@ -561,5 +554,21 @@
       "fileInfo": "ABC KIDZ Facility Parents Handbook - PDF"
     },
     "contactNote": "Have questions about our terms and policies? Don't hesitate to contact us at (813) 512-2511 or visit us in person."
+  },
+  "blogPage": {
+    "meta": {
+      "title": "Blog - ABC Kids | Tips & Resources for Parents",
+      "description": "Read our latest articles on child development, parenting tips, educational activities and more from the ABC Kids team.",
+      "keywords": "parenting blog, child development tips, daycare activities, preschool education, Tampa childcare blog"
+    },
+    "hero": {
+      "badge": "Our Blog",
+      "title": "Tips & Resources for Parents",
+      "subtitle": "Discover useful articles about child development, fun activities and practical advice for parents."
+    },
+    "noPosts": "No blog posts yet. Check back soon!",
+    "readMore": "Read more",
+    "backToBlog": "Back to Blog",
+    "writtenBy": "Written by"
   }
 }

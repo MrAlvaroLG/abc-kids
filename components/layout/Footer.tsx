@@ -12,7 +12,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faFacebook,
     faInstagram,
-    faWhatsapp
+    faWhatsapp,
+    faTiktok
 } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
@@ -30,12 +31,14 @@ export default function Footer() {
         { label: t('programs.infants'), href: '/programs' },
         { label: t('programs.toddlers'), href: '/programs' },
         { label: t('programs.prek'), href: '/programs' },
-        { label: t('programs.vpk'), href: '/programs' }
+        { label: t('programs.vpk'), href: '/programs' },
+        { label: t('programs.after_school'), href: '/programs' }
     ];
 
     const socialLinks = [
         { icon: faFacebook, href: 'https://www.facebook.com/abckidzpreschool', label: 'Facebook' },
         { icon: faInstagram, href: 'https://www.instagram.com/abc_kidz_preschool/', label: 'Instagram' },
+        { icon: faTiktok, href: 'https://www.tiktok.com/@abc.kidz.preschool?_t=ZT-90O84znEJap&_r=1', label: 'TikTok' },
         { icon: faWhatsapp, href: 'https://wa.me/18135122511', label: 'WhatsApp' }
     ];
 
@@ -143,10 +146,10 @@ export default function Footer() {
                                 <li className="flex items-start gap-3">
                                     <EnvelopeIcon className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                                     <a 
-                                        href="mailto:info@abckids.com"
+                                        href="mailto:abckidzdirector@gmail.com"
                                         className="text-sm text-white/70 hover:text-accent transition-colors duration-200"
                                     >
-                                        info@abckids.com
+                                        abckidzdirector@gmail.com
                                     </a>
                                 </li>
                                 <li className="flex items-start gap-3">

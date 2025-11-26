@@ -27,8 +27,8 @@ export default function LocationSection() {
         {
             icon: EnvelopeIcon,
             label: t('email.label'),
-            value: 'info@abckids.com',
-            link: 'mailto:info@abckids.com'
+            value: 'abckidzdirector@gmail.com',
+            link: 'mailto:abckidzdirector@gmail.com'
         }
     ];
 
