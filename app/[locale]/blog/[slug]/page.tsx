@@ -5,9 +5,17 @@ import BlogPost from "@/components/blog/BlogPost";
 import { client } from '@/sanity/lib/client';
 import { postBySlugQuery, postSlugsQuery } from '@/sanity/lib/queries';
 
+interface PostSlug {
+    slug: string;
+    language: string;
+}
+
 export async function generateStaticParams() {
-    const slugs = await client.fetch(postSlugsQuery);
-    return slugs.map((slug: string) => ({ slug }));
+    const posts: PostSlug[] = await client.fetch(postSlugsQuery);
+    // Retornamos solo el slug, el locale viene del segmento padre
+    return posts.map((post) => ({ 
+        slug: post.slug
+    }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {

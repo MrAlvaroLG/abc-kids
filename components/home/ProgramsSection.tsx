@@ -172,6 +172,7 @@ function ProgramCard({
     className?: string;
 }) {
     const t = useTranslations(`programsSection.programs.${programKey}`);
+    const tSection = useTranslations('programsSection');
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -197,7 +198,7 @@ function ProgramCard({
                     {/* Age Range Badge */}
                     <div className="inline-flex items-baseline gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border-2 border-navy-900/10">
                         <span className="text-xl font-bold text-navy-900">{ageRange}</span>
-                        <span className="text-xs font-semibold text-navy-900/60 uppercase tracking-wider">{ageLabel}</span>
+                        <span className="text-xs font-semibold text-navy-900/60 uppercase tracking-wider">{tSection(`ageLabels.${ageLabel}`)}</span>
                     </div>
 
                     {/* Tagline */}
@@ -213,7 +214,7 @@ function ProgramCard({
                         href="/programs"
                         className={`group/btn inline-flex items-center justify-center gap-2 px-6 py-3 bg-linear-to-r ${gradient} text-white rounded-xl font-bold text-sm shadow-lg hover:shadow-2xl transition-all duration-300 transform ${isHovered ? 'scale-105' : ''}`}
                     >
-                        <span>Learn More</span>
+                        <span>{tSection('learnMore')}</span>
                         <ArrowRightIcon className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                     </Link>
                 </div>

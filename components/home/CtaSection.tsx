@@ -4,6 +4,8 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { SparklesIcon, CalendarIcon, StarIcon, HeartIcon, AcademicCapIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 import { CheckCircleIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export default function CtaSection() {
     const t = useTranslations('ctaSection');
@@ -24,7 +26,7 @@ export default function CtaSection() {
                 }} />
             </div>
 
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="container mx-auto sm:px-6 lg:px-8 relative z-10">
                 <div className="max-w-6xl mx-auto">
                     {/* Main content card */}
                     <div className="relative">
@@ -36,7 +38,7 @@ export default function CtaSection() {
                             {/* Top accent bar */}
                             <div className="h-2 bg-linear-to-r from-accent via-accent-hover to-accent" />
                             
-                            <div className="p-8 sm:p-12 md:p-16 lg:p-20">
+                            <div className="p-4 sm:p-8 md:p-12 lg:p-16">
                                 {/* Header with badge */}
                                 <div className="text-center mb-12">
                                     <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-linear-to-r from-accent/20 to-accent-hover/20 rounded-full mb-8 border-2 border-accent/30 shadow-lg">
@@ -77,22 +79,54 @@ export default function CtaSection() {
                                     </div>
                                 </div>
 
-                                {/* CTA Button */}
+                                {/* CTA Buttons */}
                                 <div className="flex flex-col items-center gap-6">
-                                    <Link
-                                        href="/contact"
-                                        className="group relative inline-flex items-center gap-4 px-12 py-6 bg-linear-to-r from-accent via-accent-hover to-accent text-navy-900 rounded-2xl font-bold text-xl shadow-2xl hover:shadow-accent/50 transition-all duration-500 hover:scale-105 overflow-hidden"
-                                    >
-                                        {/* Shimmer effect */}
-                                        <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-linear-to-r from-transparent via-white/40 to-transparent" />
-                                        
-                                        <CalendarIcon className="w-8 h-8 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
-                                        <span className="relative z-10">{t('form.submit')}</span>
-                                        <ArrowRightIcon className="w-7 h-7 relative z-10 group-hover:translate-x-2 transition-transform duration-300" />
-                                    </Link>
+                                    {/* Main action text */}
+                                    <p className="text-lg text-navy-900/70 font-medium text-center max-w-xl">
+                                        {t('actionText')}
+                                    </p>
+
+                                    {/* Buttons container */}
+                                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-3xl">
+                                        {/* WhatsApp Button */}
+                                        <a
+                                            href="https://wa.me/18137704917?text=Hello!%20I%27m%20interested%20in%20learning%20more%20about%20ABC%20Kids%20programs."
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="group relative inline-flex items-center justify-center gap-4 px-10 py-6 bg-linear-to-r from-[#25D366] via-[#128C7E] to-[#25D366] text-white rounded-2xl font-bold text-lg shadow-2xl hover:shadow-[#25D366]/50 transition-all duration-500 hover:scale-105 overflow-hidden w-full sm:w-auto whitespace-nowrap"
+                                        >
+                                            {/* Shimmer effect */}
+                                            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-linear-to-r from-transparent via-white/30 to-transparent" />
+                                            
+                                            <FontAwesomeIcon icon={faWhatsapp} className="fa-xl relative z-10 group-hover:scale-110 transition-transform duration-300" />
+                                            <span className="relative z-10">{t('whatsapp.button')}</span>
+                                        </a>
+
+                                        {/* Divider */}
+                                        <span className="text-navy-900/40 font-medium hidden sm:block">{t('or')}</span>
+
+                                        {/* Schedule Visit Button */}
+                                        <Link
+                                            href="/contact"
+                                            className="group relative inline-flex items-center justify-center gap-4 px-10 py-6 bg-linear-to-r from-accent via-accent-hover to-accent text-navy-900 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-accent/50 transition-all duration-500 hover:scale-105 overflow-hidden w-full sm:w-auto whitespace-nowrap"
+                                        >
+                                            {/* Shimmer effect */}
+                                            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-linear-to-r from-transparent via-white/40 to-transparent" />
+                                            
+                                            <CalendarIcon className="w-7 h-7 shrink-0 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+                                            <span className="relative z-10">{t('form.submit')}</span>
+                                            <ArrowRightIcon className="w-6 h-6 shrink-0 relative z-10 group-hover:translate-x-2 transition-transform duration-300" />
+                                        </Link>
+                                    </div>
+
+                                    {/* WhatsApp subtitle */}
+                                    <p className="text-sm text-navy-900/60 flex items-center gap-2">
+                                        <FontAwesomeIcon icon={faWhatsapp} className="w-4 h-4 text-[#25D366]" />
+                                        {t('whatsapp.subtitle')}
+                                    </p>
 
                                     {/* Trust indicators */}
-                                    <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-navy-900/60">
+                                    <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-navy-900/60 mt-4">
                                         <div className="flex items-center gap-2">
                                             <CheckCircleIcon className="w-5 h-5 text-accent" />
                                             <span className="font-medium">{t('trustIndicators.noCommitment')}</span>

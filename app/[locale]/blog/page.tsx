@@ -17,12 +17,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     };
 }
 
-async function getPosts() {
-    return await client.fetch(postsQuery);
+async function getPosts(language: string) {
+    return await client.fetch(postsQuery, { language });
 }
 
-export default async function BlogPage() {
-    const posts = await getPosts();
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    const posts = await getPosts(locale);
 
     return (
         <main className="min-h-screen">

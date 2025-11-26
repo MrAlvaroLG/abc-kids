@@ -7,10 +7,17 @@ import { PortableText, PortableTextComponents, PortableTextBlock } from '@portab
 import { CalendarIcon, UserIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
 import { urlFor } from '@/sanity/lib/image';
 
+interface Translation {
+    _id: string;
+    language: string;
+    slug: string;
+}
+
 interface Post {
     _id: string;
     title: string;
     slug: { current: string };
+    language?: string;
     publishedAt: string;
     mainImage?: {
         asset: { _ref: string };
@@ -23,6 +30,7 @@ interface Post {
         bio?: PortableTextBlock[];
     };
     categories?: Array<{ _id: string; title: string }>;
+    translations?: Translation[];
 }
 
 interface BlogPostProps {

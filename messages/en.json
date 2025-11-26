@@ -64,6 +64,11 @@
     "title": "Our Programs",
     "subtitle": "Educational programs designed for each stage of your child's development",
     "cta": "View all programs",
+    "learnMore": "Learn More",
+    "ageLabels": {
+      "months": "months",
+      "years": "years"
+    },
     "programs": {
       "infants": {
         "name": "Infants",
@@ -126,6 +131,8 @@
     "badge": "Free Tour",
     "title": "Ready for your child to be part of our family?",
     "subtitle": "Fill out the form and schedule a free tour to visit our facilities and meet our team.",
+    "actionText": "Choose how you'd like to connect with us",
+    "or": "or",
     "features": {
       "education": "Quality Education",
       "care": "Personalized Care",
@@ -137,6 +144,10 @@
       "date": "Preferred date",
       "submit": "Schedule a Visit",
       "sending": "Sending..."
+    },
+    "whatsapp": {
+      "button": "Chat on WhatsApp",
+      "subtitle": "Quick response • Available now"
     },
     "disclaimer": "We'll contact you by email to confirm your visit.",
     "trustIndicators": {
@@ -344,7 +355,9 @@
     "cta": {
       "title": "Want to meet us in person?",
       "subtitle": "Schedule a free tour and discover why Tampa families trust us.",
-      "scheduleVisit": "Schedule a Visit"
+      "scheduleVisit": "Schedule a Visit",
+      "whatsapp": "Chat on WhatsApp",
+      "whatsappSubtitle": "Quick response • Available now"
     }
   },
   "aboutPage": {
