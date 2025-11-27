@@ -109,15 +109,17 @@ export default function HeroSection() {
                                     <div className="absolute inset-0 flex items-center justify-center p-16 sm:p-20 md:p-24 lg:p-26 animate-float">
                                         <div className="relative w-full h-full rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
                                             <Image 
-                                                src="/hero-image.jpg" 
+                                                src="/hero.jpeg" 
                                                 alt="ABC Kids Daycare"
                                                 fill
                                                 className="object-cover"
                                                 priority
-                                                sizes="(max-width: 768px) 80vw, (max-width: 1024px) 50vw, 40vw"
+                                                quality={75}
+                                                unoptimized
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
                                             />
                                             {/* Glassmorphism overlay */}
-                                            <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent backdrop-blur-[1px] pointer-events-none" />
+                                            <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none" />
                                         </div>
                                     </div>
                                 </div>

@@ -32,6 +32,13 @@ export default function BlogGrid({ posts }: BlogGridProps) {
     const t = useTranslations('blogPage');
     const locale = useLocale();
 
+    // Ordenar posts por fecha de publicación (más reciente primero)
+    const sortedPosts = [...posts].sort((a, b) => {
+        const dateA = new Date(a.publishedAt).getTime();
+        const dateB = new Date(b.publishedAt).getTime();
+        return dateB - dateA;
+    });
+
     const formatDate = (dateString: string) => {
         const date = new Date(dateString);
         return date.toLocaleDateString(locale === 'es' ? 'es-ES' : 'en-US', {
@@ -57,7 +64,7 @@ export default function BlogGrid({ posts }: BlogGridProps) {
         <section className="py-16 md:py-24 bg-bg">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {posts.map((post) => (
+                    {sortedPosts.map((post) => (
                         <article
                             key={post._id}
                             className="bg-white rounded-2xl shadow-lg overflow-hidden border border-navy-900/5 hover:shadow-xl transition-all duration-300 group"
