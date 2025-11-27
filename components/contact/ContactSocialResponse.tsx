@@ -93,7 +93,7 @@ export default function ContactSocialResponse() {
                         </p>
                     </div>
 
-                    <div className="flex flex-wrap justify-center gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
                         {socialLinks.map((social, index) => (
                             <a
                                 key={index}
@@ -101,7 +101,7 @@ export default function ContactSocialResponse() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={social.label}
-                                className={`group flex items-center gap-3 px-6 py-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 transition-all duration-300 hover:scale-105 ${social.color}`}
+                                className={`group flex items-center justify-center gap-3 px-6 py-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 transition-all duration-300 hover:scale-105 ${social.color}`}
                             >
                                 <FontAwesomeIcon icon={social.icon} className="w-6 h-6 text-white" />
                                 <span className="text-white font-semibold">{social.label}</span>

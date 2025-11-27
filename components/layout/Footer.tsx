@@ -28,11 +28,11 @@ export default function Footer() {
     ];
 
     const programs = [
-        { label: t('programs.infants'), href: '/programs' },
-        { label: t('programs.toddlers'), href: '/programs' },
-        { label: t('programs.prek'), href: '/programs' },
-        { label: t('programs.vpk'), href: '/programs' },
-        { label: t('programs.after_school'), href: '/programs' }
+        { label: t('programs.infants'), href: '/programs/infants' },
+        { label: t('programs.toddlers'), href: '/programs/toddlers' },
+        { label: t('programs.prek'), href: '/programs/prek' },
+        { label: t('programs.vpk'), href: '/programs/vpk' },
+        { label: t('programs.after_school'), href: '/programs/after-school' }
     ];
 
     const socialLinks = [

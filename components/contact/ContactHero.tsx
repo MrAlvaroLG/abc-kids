@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl';
 import { 
     PhoneIcon,
     EnvelopeIcon,
-    ClockIcon,
     MapPinIcon
 } from '@heroicons/react/24/outline';
 
@@ -44,7 +43,7 @@ export default function ContactHero() {
                 </div>
 
                 {/* Quick Contact Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-5xl mx-auto">
                     {/* Phone Card */}
                     <a 
                         href="tel:+18137704917"
@@ -82,24 +81,6 @@ export default function ContactHero() {
                             </p>
                         </div>
                     </a>
-
-                    {/* Hours Card */}
-                    <div 
-                        className="group bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 animate-fade-in-up"
-                        style={{ animationDelay: '0.4s' }}
-                    >
-                        <div className="flex flex-col items-center text-center">
-                            <div className="w-14 h-14 bg-linear-to-br from-green-400 to-emerald-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-green-500/25">
-                                <ClockIcon className="w-7 h-7 text-white" />
-                            </div>
-                            <p className="text-xs font-bold text-white/50 uppercase tracking-widest mb-2">
-                                {t('hero.hours')}
-                            </p>
-                            <p className="text-base font-bold text-white">
-                                {t('hero.hoursValue')}
-                            </p>
-                        </div>
-                    </div>
 
                     {/* Address Card */}
                     <a 
