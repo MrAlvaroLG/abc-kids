@@ -227,26 +227,28 @@
   "contactPage": {
     "meta": {
       "title": "Contacto - ABC Kids | Centro de Cuidado Infantil en Tampa",
-      "description": "Contáctanos para más información sobre nuestros programas de cuidado infantil en Tampa. Estamos aquí para responder todas tus preguntas. Llámanos al (813) 512-2511.",
+      "description": "Contáctanos para más información sobre nuestros programas de cuidado infantil en Tampa. Estamos aquí para responder todas tus preguntas. Llámanos al (813) 770-4917.",
       "keywords": "contacto abc kids, guardería tampa contacto, cuidado infantil tampa, agendar tour guardería, información guardería tampa"
     },
     "hero": {
       "badge": "Estamos aquí para ayudarte",
-      "title": "Contáctanos",
-      "subtitle": "¿Tienes preguntas sobre nuestros programas? Estamos aquí para ayudarte. Contáctanos y te responderemos en menos de 24 horas.",
+      "title": "Conectemos",
+      "subtitle": "¿Tienes preguntas sobre nuestros programas? Estamos aquí para ayudarte a encontrar la opción perfecta para tu hijo.",
       "phone": "Teléfono",
       "email": "Email",
       "hours": "Horario",
-      "hoursValue": "Lun - Vie 7AM - 6PM"
+      "hoursValue": "Lun - Vie 7AM - 6PM",
+      "address": "Visítanos"
     },
     "form": {
-      "title": "Envíanos un mensaje",
+      "badge": "Ponte en Contacto",
+      "title": "Envíanos un Mensaje",
       "subtitle": "Completa el formulario y nos pondremos en contacto contigo lo antes posible.",
       "name": "Nombre completo",
       "namePlaceholder": "Juan Pérez",
       "email": "Correo electrónico",
       "emailPlaceholder": "tu@email.com",
-      "phone": "Teléfono",
+      "phone": "Número de teléfono",
       "phonePlaceholder": "+1 (813) 123-4567",
       "subject": "Asunto",
       "subjectPlaceholder": "Selecciona un asunto",
@@ -257,27 +259,32 @@
         "programs": "Preguntas sobre programas",
         "other": "Otro"
       },
-      "message": "Mensaje",
+      "message": "Tu mensaje",
       "messagePlaceholder": "Cuéntanos cómo podemos ayudarte...",
-      "submit": "Enviar mensaje",
-      "sent": "¡Mensaje enviado!",
-      "disclaimer": "Responderemos tu mensaje en menos de 24 horas."
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "sent": "¡Mensaje Enviado!",
+      "disclaimer": "Tu mensaje se abrirá en tu app de correo. Responderemos en menos de 24 horas."
     },
     "info": {
+      "contactDetails": {
+        "title": "Ponte en Contacto"
+      },
       "address": {
-        "title": "Dirección",
-        "directions": "Ver indicaciones"
+        "title": "Nuestra Dirección",
+        "directions": "Ver Indicaciones"
       },
       "phone": {
-        "title": "Teléfono",
-        "call": "Llamar ahora"
+        "title": "Llámanos",
+        "call": "Llamar Ahora"
       },
       "email": {
-        "title": "Email",
-        "send": "Enviar email"
+        "title": "Escríbenos",
+        "send": "Enviar Email"
       },
       "schedule": {
         "title": "Horario de Atención",
+        "subtitle": "Abiertos de lunes a viernes",
         "monday": "Lunes",
         "tuesday": "Martes",
         "wednesday": "Miércoles",
@@ -289,7 +296,13 @@
       },
       "social": {
         "title": "Síguenos en Redes Sociales",
-        "subtitle": "Mantente al día con nuestras últimas noticias y eventos."
+        "subtitle": "¡Mantente conectado y mira lo que pasa en ABC Kids!"
+      },
+      "whatsapp": {
+        "badge": "Respuesta más Rápida",
+        "title": "Chatea con Nosotros por WhatsApp",
+        "subtitle": "Obtén respuestas instantáneas a tus preguntas. ¡Normalmente respondemos en minutos!",
+        "button": "Iniciar Chat"
       },
       "responseTime": {
         "title": "Respuesta Rápida Garantizada",
@@ -297,10 +310,9 @@
       }
     },
     "map": {
-      "title": "Nuestra Ubicación",
+      "title": "Visita Nuestro Centro",
       "subtitle": "1745 W Fletcher Ave, Tampa, FL 33612",
-      "directions": "Obtener direcciones",
-      "whatsapp": "Escribir por WhatsApp"
+      "directions": "Obtener Indicaciones en Google Maps"
     }
   },
   "programsPage": {

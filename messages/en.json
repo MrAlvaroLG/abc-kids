@@ -227,26 +227,28 @@
   "contactPage": {
     "meta": {
       "title": "Contact - ABC Kids | Child Care Center in Tampa",
-      "description": "Contact us for more information about our child care programs in Tampa. We're here to answer all your questions. Call us at (813) 512-2511.",
+      "description": "Contact us for more information about our child care programs in Tampa. We're here to answer all your questions. Call us at (813) 770-4917.",
       "keywords": "contact abc kids, tampa daycare contact, child care tampa, schedule daycare tour, tampa daycare information"
     },
     "hero": {
       "badge": "We're here to help",
-      "title": "Contact Us",
-      "subtitle": "Have questions about our programs? We're here to help. Contact us and we'll respond within 24 hours.",
+      "title": "Let's Connect",
+      "subtitle": "Have questions about our programs? We're here to help you find the perfect fit for your child.",
       "phone": "Phone",
       "email": "Email",
       "hours": "Hours",
-      "hoursValue": "Mon - Fri 7AM - 6PM"
+      "hoursValue": "Mon - Fri 7AM - 6PM",
+      "address": "Visit Us"
     },
     "form": {
-      "title": "Send us a message",
+      "badge": "Get in Touch",
+      "title": "Send us a Message",
       "subtitle": "Fill out the form and we'll get back to you as soon as possible.",
       "name": "Full name",
       "namePlaceholder": "John Doe",
       "email": "Email address",
       "emailPlaceholder": "your@email.com",
-      "phone": "Phone",
+      "phone": "Phone number",
       "phonePlaceholder": "+1 (813) 123-4567",
       "subject": "Subject",
       "subjectPlaceholder": "Select a subject",
@@ -257,27 +259,32 @@
         "programs": "Program questions",
         "other": "Other"
       },
-      "message": "Message",
+      "message": "Your message",
       "messagePlaceholder": "Tell us how we can help you...",
-      "submit": "Send message",
-      "sent": "Message sent!",
-      "disclaimer": "We'll respond to your message within 24 hours."
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "sent": "Message Sent!",
+      "disclaimer": "Your message will open in your email app. We'll respond within 24 hours."
     },
     "info": {
+      "contactDetails": {
+        "title": "Get in Touch"
+      },
       "address": {
-        "title": "Address",
-        "directions": "Get directions"
+        "title": "Our Address",
+        "directions": "Get Directions"
       },
       "phone": {
-        "title": "Phone",
-        "call": "Call now"
+        "title": "Call Us",
+        "call": "Call Now"
       },
       "email": {
-        "title": "Email",
-        "send": "Send email"
+        "title": "Email Us",
+        "send": "Send Email"
       },
       "schedule": {
         "title": "Business Hours",
+        "subtitle": "We're open Monday through Friday",
         "monday": "Monday",
         "tuesday": "Tuesday",
         "wednesday": "Wednesday",
@@ -289,7 +296,13 @@
       },
       "social": {
         "title": "Follow Us on Social Media",
-        "subtitle": "Stay up to date with our latest news and events."
+        "subtitle": "Stay connected and see what's happening at ABC Kids!"
+      },
+      "whatsapp": {
+        "badge": "Fastest Response",
+        "title": "Chat with Us on WhatsApp",
+        "subtitle": "Get instant answers to your questions. We typically respond within minutes!",
+        "button": "Start Chat"
       },
       "responseTime": {
         "title": "Quick Response Guaranteed",
@@ -297,10 +310,9 @@
       }
     },
     "map": {
-      "title": "Our Location",
+      "title": "Visit Our Center",
       "subtitle": "1745 W Fletcher Ave, Tampa, FL 33612",
-      "directions": "Get directions",
-      "whatsapp": "Message on WhatsApp"
+      "directions": "Get Directions on Google Maps"
     }
   },
   "programsPage": {

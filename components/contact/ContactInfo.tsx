@@ -8,37 +8,97 @@ import {
     ClockIcon
 } from '@heroicons/react/24/outline';
 
-export default function ContactInfo() {
+// Componente para la información de contacto (Dirección, Teléfono, Email)
+export function ContactDetails() {
     const t = useTranslations('contactPage.info');
 
-    const contactDetails = [
-        {
-            icon: MapPinIcon,
-            title: t('address.title'),
-            content: (
-                <>
-                    <p>1745 W Fletcher Ave</p>
-                    <p>Tampa, FL 33612</p>
-                </>
-            ),
-            link: 'https://maps.google.com/?q=1745+W+Fletcher+Ave,+Tampa,+FL+33612',
-            linkText: t('address.directions')
-        },
-        {
-            icon: PhoneIcon,
-            title: t('phone.title'),
-            content: <p>+1 (813) 512-2511</p>,
-            link: 'tel:+18135122511',
-            linkText: t('phone.call')
-        },
-        {
-            icon: EnvelopeIcon,
-            title: t('email.title'),
-            content: <p>info@abckids.com</p>,
-            link: 'mailto:info@abckids.com',
-            linkText: t('email.send')
-        }
-    ];
+    return (
+        <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-navy-900/5 h-full">
+            <h3 className="text-2xl font-black text-navy-900 mb-6">{t('contactDetails.title')}</h3>
+            
+            <div className="space-y-4">
+                {/* Address Card */}
+                <a
+                    href="https://maps.google.com/?q=1745+W+Fletcher+Ave,+Tampa,+FL+33612"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300"
+                >
+                    <div className="w-12 h-12 bg-linear-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-all duration-300 shadow-lg shadow-purple-500/25">
+                        <MapPinIcon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                        <h4 className="text-base font-bold text-navy-900 mb-1">
+                            {t('address.title')}
+                        </h4>
+                        <p className="text-navy-900/70 text-sm mb-1">
+                            1745 W Fletcher Ave<br />
+                            Tampa, FL 33612
+                        </p>
+                        <span className="inline-flex items-center gap-1 text-xs font-semibold text-accent group-hover:text-accent-hover transition-colors duration-200">
+                            {t('address.directions')}
+                            <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+
+                {/* Phone Card */}
+                <a
+                    href="tel:+18137704917"
+                    className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300"
+                >
+                    <div className="w-12 h-12 bg-linear-to-br from-accent to-yellow-400 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-all duration-300 shadow-lg shadow-accent/25">
+                        <PhoneIcon className="w-6 h-6 text-navy-900" />
+                    </div>
+                    <div className="flex-1">
+                        <h4 className="text-base font-bold text-navy-900 mb-1">
+                            {t('phone.title')}
+                        </h4>
+                        <p className="text-navy-900/70 text-lg font-medium mb-1">
+                            +1 (813) 770-4917
+                        </p>
+                        <span className="inline-flex items-center gap-1 text-xs font-semibold text-accent group-hover:text-accent-hover transition-colors duration-200">
+                            {t('phone.call')}
+                            <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+
+                {/* Email Card */}
+                <a
+                    href="mailto:abckidzdirector@gmail.com"
+                    className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300"
+                >
+                    <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-all duration-300 shadow-lg shadow-blue-500/25">
+                        <EnvelopeIcon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                        <h4 className="text-base font-bold text-navy-900 mb-1">
+                            {t('email.title')}
+                        </h4>
+                        <p className="text-navy-900/70 text-sm mb-1">
+                            abckidzdirector@gmail.com
+                        </p>
+                        <span className="inline-flex items-center gap-1 text-xs font-semibold text-accent group-hover:text-accent-hover transition-colors duration-200">
+                            {t('email.send')}
+                            <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    );
+}
+
+// Componente para el horario de atención
+export function BusinessHours() {
+    const t = useTranslations('contactPage.info');
 
     const schedule = [
         { day: t('schedule.monday'), hours: '7:00 AM - 6:00 PM', open: true },
@@ -50,67 +110,69 @@ export default function ContactInfo() {
         { day: t('schedule.sunday'), hours: t('schedule.closed'), open: false }
     ];
 
-    return (
-        <div className="space-y-6">
-            {/* Contact Details Cards */}
-            {contactDetails.map((detail, index) => (
-                <div
-                    key={index}
-                    className="bg-white rounded-2xl p-6 shadow-lg border border-navy-900/5 hover:shadow-xl transition-all duration-300"
-                >
-                    <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-linear-to-br from-accent to-accent-hover rounded-xl flex items-center justify-center shrink-0">
-                            <detail.icon className="w-6 h-6 text-navy-900" />
-                        </div>
-                        <div className="flex-1">
-                            <h3 className="text-lg font-bold text-navy-900 mb-2">
-                                {detail.title}
-                            </h3>
-                            <div className="text-navy-900/70 text-sm mb-3">
-                                {detail.content}
-                            </div>
-                            <a
-                                href={detail.link}
-                                target={detail.icon === MapPinIcon ? '_blank' : undefined}
-                                rel={detail.icon === MapPinIcon ? 'noopener noreferrer' : undefined}
-                                className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-hover transition-colors duration-200"
-                            >
-                                {detail.linkText}
-                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            ))}
+    // Obtener el día actual (0 = domingo, 1 = lunes, etc.)
+    const today = new Date().getDay();
+    const dayMap = [6, 0, 1, 2, 3, 4, 5]; // Mapear a nuestro array (que empieza en lunes)
+    const currentDayIndex = dayMap[today];
 
-            {/* Schedule Card */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-navy-900/5">
-                <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
-                        <ClockIcon className="w-6 h-6 text-white" />
-                    </div>
-                    <h3 className="text-lg font-bold text-navy-900">
+    return (
+        <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-navy-900/5 h-full">
+            <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg shadow-green-500/25">
+                    <ClockIcon className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                    <h3 className="text-2xl font-black text-navy-900">
                         {t('schedule.title')}
                     </h3>
-                </div>
-                <div className="space-y-2">
-                    {schedule.map((item, index) => (
-                        <div 
-                            key={index}
-                            className="flex justify-between items-center py-2 border-b border-navy-900/5 last:border-0"
-                        >
-                            <span className="text-sm font-semibold text-navy-900">
-                                {item.day}
-                            </span>
-                            <span className={`text-sm font-medium ${item.open ? 'text-navy-900/70' : 'text-red-500'}`}>
-                                {item.hours}
-                            </span>
-                        </div>
-                    ))}
+                    <p className="text-sm text-navy-900/60">{t('schedule.subtitle')}</p>
                 </div>
             </div>
+            <div className="space-y-1">
+                {schedule.map((item, index) => (
+                    <div 
+                        key={index}
+                        className={`flex justify-between items-center py-3 px-4 rounded-xl transition-colors duration-200 ${
+                            index === currentDayIndex 
+                                ? 'bg-accent/10 border border-accent/20' 
+                                : 'hover:bg-gray-50'
+                        }`}
+                    >
+                        <div className="flex items-center gap-3">
+                            {index === currentDayIndex && (
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                                </span>
+                            )}
+                            <span className={`text-sm font-semibold ${
+                                index === currentDayIndex ? 'text-navy-900' : 'text-navy-900/80'
+                            }`}>
+                                {item.day}
+                            </span>
+                        </div>
+                        <span className={`text-sm font-medium px-3 py-1 rounded-full ${
+                            item.open 
+                                ? index === currentDayIndex 
+                                    ? 'bg-green-100 text-green-700' 
+                                    : 'text-navy-900/70' 
+                                : 'bg-red-50 text-red-500'
+                        }`}>
+                            {item.hours}
+                        </span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+// Componente por defecto que combina ambos (para compatibilidad)
+export default function ContactInfo() {
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ContactDetails />
+            <BusinessHours />
         </div>
     );
 }

@@ -4,7 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ContactHero from '@/components/contact/ContactHero';
 import ContactForm from '@/components/contact/ContactForm';
-import ContactInfo from '@/components/contact/ContactInfo';
+import { ContactDetails, BusinessHours } from '@/components/contact/ContactInfo';
 import ContactSocialResponse from '@/components/contact/ContactSocialResponse';
 import ContactMap from '@/components/contact/ContactMap';
 
@@ -31,33 +31,39 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 
 export default function ContactPage() {
     return (
-        <main className="min-h-screen bg-bg">
+        <main className="min-h-screen bg-white">
             <Navbar />
             <ContactHero />
             
-            <div className="relative py-16 md:py-24">
+            {/* Main Content Section */}
+            <section className="relative py-16 md:py-24 bg-gray-50">
                 {/* Background decorative elements */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="absolute top-20 -left-32 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" />
-                    <div className="absolute bottom-20 -right-32 w-96 h-96 bg-blue-800/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+                    <div className="absolute top-40 -left-40 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl" />
+                    <div className="absolute bottom-40 -right-40 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl" />
                 </div>
 
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-12">
-                        {/* Contact Form */}
+                    {/* Contact Form - Full Width */}
+                    <div className="mb-12">
                         <ContactForm />
-                        
-                        {/* Contact Info */}
-                        <ContactInfo />
                     </div>
 
-                    {/* Social Media & Response Time - Full Width */}
-                    <ContactSocialResponse />
+                    {/* Two Column Layout: Contact Details + Business Hours */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                        <ContactDetails />
+                        <BusinessHours />
+                    </div>
+
+                    {/* Social Media & WhatsApp CTA */}
+                    <div className="mb-16">
+                        <ContactSocialResponse />
+                    </div>
 
                     {/* Map Section */}
                     <ContactMap />
                 </div>
-            </div>
+            </section>
 
             <Footer />
         </main>
