@@ -8,8 +8,9 @@ import { ContactDetails, BusinessHours } from '@/components/contact/ContactInfo'
 import ContactSocialResponse from '@/components/contact/ContactSocialResponse';
 import ContactMap from '@/components/contact/ContactMap';
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-    const t = await getTranslations({ locale: params.locale, namespace: 'contactPage.meta' });
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'contactPage.meta' });
     
     return {
         title: t('title'),
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
             title: t('title'),
             description: t('description'),
             type: 'website',
-            locale: params.locale,
+            locale,
         },
         twitter: {
             card: 'summary_large_image',

@@ -11,7 +11,7 @@ export default function ContactHero() {
     const t = useTranslations('contactPage');
 
     return (
-        <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-linear-to-br from-navy-900 via-blue-900 to-navy-900 overflow-hidden">
+        <section className="relative pt-10 pb-20 md:pt-20 md:pb-28 bg-linear-to-br from-navy-900 via-blue-900 to-navy-900 overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent/15 rounded-full blur-3xl animate-float" />

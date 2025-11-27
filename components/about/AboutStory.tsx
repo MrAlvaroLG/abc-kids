@@ -104,16 +104,6 @@ export default function AboutStory() {
                                 </div>
                             </div>
 
-                            {/* Fourth Image - Full Width */}
-                            <div className="relative rounded-2xl overflow-hidden aspect-21/9 shadow-xl group mt-4">
-                                <Image
-                                    src="/about/kids/photo6.jpeg"
-                                    alt="Happy Children"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                                <div className="absolute inset-0 bg-linear-to-r from-navy-900/60 via-transparent to-navy-900/60" />
-                            </div>
                         </div>
                     </div>
 
