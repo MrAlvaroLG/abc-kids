@@ -374,88 +374,116 @@
   },
   "aboutPage": {
     "meta": {
-      "title": "Sobre Nosotros - ABC Kids | Nuestra Historia y Valores",
-      "description": "Conoce la historia, misión y valores de ABC Kids. Más de 15 años brindando educación y cuidado infantil de calidad en Tampa, FL.",
-      "keywords": "sobre ABC Kids, guardería Tampa, historia, valores, misión, equipo educativo, cuidado infantil Tampa"
+      "title": "Sobre Nosotros - ABC Kids | Cuidado Infantil de Calidad en Tampa",
+      "description": "Descubre la historia de ABC Kids - Centro de cuidado infantil bilingüe de confianza en Tampa. Conoce nuestra misión, valores y equipo dedicado comprometido con el crecimiento de tu hijo.",
+      "keywords": "sobre ABC Kids, historia guardería Tampa, cuidado infantil bilingüe, educación temprana Tampa, guardería de confianza, valores cuidado infantil, equipo educativo Tampa"
     },
     "hero": {
-      "badge": "Nuestra Historia",
-      "title": "Conoce más sobre nuestro equipo",
-      "subtitle": "Somos más que una guardería. Somos una familia comprometida con el desarrollo integral de cada niño, brindando educación de calidad con amor y dedicación.",
+      "badge": "Ambiente Seguro",
+      "title": "Donde Cada Niño",
+      "titleHighlight": "Se Vuelve Familia",
+      "subtitle": "Estamos construyendo un espacio nutritivo donde tu hijo puede descubrir su potencial único mientras se siente completamente amado y seguro. Más que una guardería - somos el hogar lejos del hogar para tu hijo.",
       "features": {
-        "care": {
-          "title": "Cuidado con Amor",
-          "description": "Cada niño es tratado como parte de nuestra familia, con cariño genuino y atención personalizada."
-        },
-        "excellence": {
-          "title": "Educación de Excelencia",
-          "description": "Programas educativos de calidad que preparan a los niños para un futuro brillante."
-        },
-        "community": {
-          "title": "Comunidad Unida",
-          "description": "Construimos relaciones fuertes con las familias, trabajando juntos por el bienestar de cada niño."
-        }
-      }
+        "feature1": "Atención personalizada para cada niño",
+        "feature2": "Ambiente de aprendizaje seguro y estimulante",
+        "feature3": "Educadores apasionados y dedicados"
+      },
+      "scroll": "Descubre Nuestra Historia"
     },
     "story": {
-      "label": "Nuestra Historia",
-      "title": "Comenzó con un Sueño y Mucho Corazón",
-      "imageCaption": "Nuestras instalaciones",
-      "paragraph1": "ABC Kids nació en 2009 del sueño de crear un espacio donde cada niño pudiera desarrollar su máximo potencial en un ambiente seguro, amoroso y estimulante. Desde entonces, hemos sido el hogar lejos de casa para cientos de familias en Tampa.",
-      "paragraph2": "Nuestra fundadora, con más de 15 años de experiencia en educación infantil, quiso crear un centro diferente: uno donde los niños no solo estuvieran cuidados, sino verdaderamente amados y educados con un currículo de excelencia.",
-      "paragraph3": "Hoy, somos orgullosamente reconocidos por nuestra comunidad como un referente en educación bilingüe y cuidado infantil de calidad, manteniendo siempre ese toque familiar que nos caracteriza.",
-      "mission": {
-        "title": "Nuestra Misión",
-        "text": "Proporcionar educación y cuidado infantil de la más alta calidad, creando un ambiente donde cada niño pueda crecer, aprender y desarrollarse en todas sus dimensiones: física, cognitiva, social y emocional."
-      }
-    },
-    "values": {
-      "title": "Nuestros Valores",
-      "subtitle": "Los principios que guían cada decisión y acción en ABC Kids",
-      "items": {
+      "label": "Nuestro Camino",
+      "title": "Una Historia Escrita con Amor",
+      "subtitle": "Construida con pasión y dedicación - descubre el corazón detrás de ABC Kids.",
+      "imageCaption": "Donde se crean los recuerdos",
+      "imageCaptionSub": "Nuestro cariñoso equipo con niños felices",
+      "freshStart": "Nuevo Comienzo",
+      "freshStartSub": "Pasión fresca, cuidado infinito",
+      "paragraph1": "ABC Kids nació de un sueño simple pero poderoso: crear un espacio nutritivo donde cada niño pudiera descubrir su potencial único mientras se siente completamente amado y seguro.",
+      "paragraph2": "Nuestra fundadora, con amplia experiencia en educación infantil, imaginó más que solo una guardería. Soñó con un lugar donde los niños fueran educados con excelencia mientras reciben el calor y la atención de una segunda familia.",
+      "paragraph3": "Estamos comprometidos a convertirnos en el principal centro de cuidado infantil bilingüe de Tampa, dedicados a las familias que comparten nuestra creencia de que cada niño merece el mejor comienzo en la vida.",
+      "pillarsTitle": "Nuestra Base",
+      "pillars": {
         "love": {
-          "title": "Amor y Cariño",
-          "description": "Cada niño es tratado con el amor y cuidado que merece, creando vínculos afectivos fuertes y duraderos."
+          "title": "Amor Incondicional",
+          "description": "Cada niño es bienvenido con los brazos abiertos y afecto genuino, creando un ambiente cálido donde se sienten valorados y queridos."
         },
         "safety": {
-          "title": "Seguridad Primero",
-          "description": "Instalaciones certificadas y personal capacitado para garantizar el bienestar de cada niño en todo momento."
+          "title": "Seguridad Completa",
+          "description": "Instalaciones de última generación y personal capacitado aseguran que tu hijo esté siempre protegido en un entorno seguro y acogedor."
         },
         "education": {
           "title": "Educación de Calidad",
-          "description": "Currículo estructurado y adaptado a cada etapa del desarrollo, preparando a los niños para el éxito."
+          "description": "Nuestro currículo orientado a la excelencia se adapta a la etapa de desarrollo de cada niño, fomentando la curiosidad y el amor por aprender."
+        },
+        "community": {
+          "title": "Comunidad Familiar",
+          "description": "Construimos alianzas fuertes con las familias, trabajando juntos para apoyar el crecimiento y éxito de cada niño."
+        }
+      },
+      "mission": {
+        "title": "Nuestra Misión",
+        "text": "Proporcionar educación excepcional y cuidado nutritivo que empodere a cada niño para crecer, aprender y florecer - física, cognitiva, social y emocionalmente."
+      }
+    },
+    "values": {
+      "badge": "Nuestra Base",
+      "title": "Valores Que Nos Guían",
+      "subtitle": "Cada decisión que tomamos está arraigada en estos principios fundamentales que definen quiénes somos",
+      "featuredLabel": "Nuestra Promesa",
+      "featuredTitle": "Donde Cada Niño Importa",
+      "featuredDescription": "En ABC Kids, creemos que cada niño merece atención personalizada, amor genuino y un ambiente donde puedan verdaderamente prosperar. Esto no es solo lo que hacemos - es quienes somos.",
+      "items": {
+        "love": {
+          "title": "Amor y Cariño",
+          "description": "Cada niño es abrazado con afecto genuino, creando vínculos emocionales duraderos."
+        },
+        "safety": {
+          "title": "Seguridad Primero",
+          "description": "Instalaciones certificadas y personal capacitado asegurando completa tranquilidad."
+        },
+        "education": {
+          "title": "Educación de Calidad",
+          "description": "Currículo orientado a la excelencia adaptado a cada etapa de desarrollo."
         },
         "excellence": {
           "title": "Excelencia",
-          "description": "Compromiso constante con la mejora continua y los más altos estándares en educación infantil."
+          "description": "Compromiso inquebrantable con los más altos estándares en cuidado infantil temprano."
         },
         "community": {
           "title": "Comunidad",
-          "description": "Construimos relaciones fuertes con las familias, trabajando juntos por el bienestar de cada niño."
+          "description": "Construyendo alianzas fuertes con las familias para el éxito de cada niño."
         },
         "innovation": {
           "title": "Innovación",
-          "description": "Incorporamos métodos pedagógicos modernos y tecnología para enriquecer la experiencia de aprendizaje."
+          "description": "Métodos de enseñanza modernos que hacen el aprendizaje atractivo y divertido."
         }
       }
     },
     "team": {
-      "label": "Nuestro Equipo",
+      "label": "Conoce Nuestro Equipo",
       "title": "El Corazón de ABC Kids",
-      "subtitle": "Profesionales apasionados dedicados al cuidado y desarrollo de tu hijo",
-      "introTitle": "Un equipo que marca la diferencia",
-      "introParagraph1": "En ABC Kids, nuestro equipo es el verdadero corazón de todo lo que hacemos. Cada miembro ha sido cuidadosamente seleccionado no solo por su experiencia y habilidades, sino por su amor genuino hacia los niños y su compromiso con la educación infantil de calidad.",
-      "introParagraph2": "Somos un grupo diverso de educadores apasionados, cada uno aportando su experiencia única, pero todos unidos por una misión común: crear un ambiente donde cada niño pueda florecer, aprender y sentirse verdaderamente amado.",
-      "qualitiesTitle": "Lo que nos hace especiales",
+      "subtitle": "Educadores apasionados dedicados a nutrir el potencial de tu hijo cada día",
+      "introTitle": "Haciendo la Diferencia, Un Niño a la Vez",
+      "introParagraph1": "Nuestro equipo no es solo personal - son familia. Cada educador en ABC Kids ha sido cuidadosamente elegido por su genuina pasión por los niños y compromiso con la excelencia en educación temprana.",
+      "introParagraph2": "Unidos por nuestro amor por la enseñanza y el cuidado, creamos un ambiente donde los niños se sienten seguros para explorar, aprender y crecer como individuos seguros de sí mismos.",
+      "qualitiesTitle": "Lo Que Nos Hace Especiales",
       "qualities": [
         "Pasión genuina por el desarrollo y bienestar infantil",
-        "Años de experiencia trabajando con niños de todas las edades",
-        "Equipo bilingüe (inglés-español) para mejor comunicación con todas las familias",
-        "Grupos pequeños que permiten atención personalizada a cada niño",
-        "Formación continua en primeros auxilios, seguridad y mejores prácticas educativas",
-        "Compromiso con crear un ambiente donde cada niño se sienta valorado y escuchado"
+        "Grupos pequeños asegurando atención personalizada para cada niño",
+        "Dedicados a hacer que cada niño se sienta valorado y escuchado",
+        "Ambiente seguro y acogedor donde los niños prosperan"
       ],
-      "closingStatement": "Porque para nosotros, cada niño no es solo un estudiante, es parte de nuestra familia ABC Kids."
+      "closingStatement": "Para nosotros, tu hijo no es solo un estudiante - se convierte en parte de nuestra familia ABC Kids."
+    },
+    "gallery": {
+      "badge": "La Vida en ABC Kids",
+      "title": "Momentos que Importan",
+      "subtitle": "Destellos de alegría, aprendizaje y crecimiento de nuestras aventuras diarias",
+      "filters": {
+        "all": "Todas las Fotos",
+        "kids": "Nuestros Niños",
+        "team": "Nuestro Equipo"
+      }
     },
     "cta": {
       "title": "¿Quieres conocernos en persona?",

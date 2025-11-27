@@ -5,9 +5,10 @@ import AboutHero from '@/components/about/AboutHero';
 import AboutStory from '@/components/about/AboutStory';
 import AboutValues from '@/components/about/AboutValues';
 import AboutTeam from '@/components/about/AboutTeam';
-import AboutCTA from '@/components/about/AboutCTA';
+import ProgramsCTA from '@/components/programs/ProgramsCTA';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'aboutPage.meta' });
     
     return {
@@ -30,7 +31,7 @@ export default function AboutPage() {
             <AboutStory />
             <AboutValues />
             <AboutTeam />
-            <AboutCTA />
+            <ProgramsCTA />
             <Footer />
         </main>
     );
