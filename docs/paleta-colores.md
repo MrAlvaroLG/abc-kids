@@ -102,11 +102,11 @@ background: linear-gradient(135deg, #FFC300 0%, #FFD60A 100%);
 ## Accesibilidad
 
 ### Contrastes Verificados
-- ✅ Navy 900 + Text Light: **AAA** (excelente)
-- ✅ Blue 800 + Text Light: **AAA** (excelente)
-- ✅ Accent + Navy 900: **AA** (bueno)
-- ✅ Text Dark + Background: **AAA** (excelente)
-- ✅ Danger + Text Light: **AA** (bueno)
+- Navy 900 + Text Light: **AAA** (excelente)
+- Blue 800 + Text Light: **AAA** (excelente)
+- Accent + Navy 900: **AA** (bueno)
+- Text Dark + Background: **AAA** (excelente)
+- Danger + Text Light: **AA** (bueno)
 
 ## Uso en Componentes
 
@@ -120,11 +120,11 @@ background: linear-gradient(135deg, #FFC300 0%, #FFD60A 100%);
 
 ## Notas de Diseño
 
-- 🎯 El **Accent (#FFC300)** es el color estrella, úsalo con moderación para máximo impacto
-- 🌊 Los tonos **Navy y Blue** transmiten confianza y profesionalismo
-- ⚠️ El **Danger (#DC562E)** solo para alertas y errores
-- 💡 El fondo **#EBEBEB** es suave y no cansa la vista
-- ⭐ Usa la estrella emoji (⭐) en combinación con el color accent para reforzar la identidad
+- El **Accent (#FFC300)** es el color estrella, úsalo con moderación para máximo impacto
+- Los tonos **Navy y Blue** transmiten confianza y profesionalismo
+- El **Danger (#DC562E)** solo para alertas y errores
+- El fondo **#EBEBEB** es suave y no cansa la vista
+- Usa la estrella emoji (⭐) en combinación con el color accent para reforzar la identidad
 
 ---
 

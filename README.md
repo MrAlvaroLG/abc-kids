@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ABC Kids — Daycare & Early Education
 
-## Getting Started
+A modern website built with Next.js, designed to communicate warmth, trust, and clarity to families and caregivers.
 
-First, run the development server:
+---
+
+**Status:** Work in progress
+
+**Main stack:** `Next.js (App Router)`, `TypeScript`, `Tailwind CSS`, `Sanity` (CMS)
+
+---
+
+**Local Demo**
+
+Start the development server and test the app locally:
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
 # or
-bun dev
+yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Build for Production**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+If you use `pnpm` or `yarn`, replace the commands accordingly.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Repository Structure**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `app/` — Routes and pages (App Router). Localization in `app/[locale]`.
+- `components/` — UI components organized by section (home, blog, contact, layout, etc.).
+- `public/` — Images and public assets.
+- `sanity/` — Sanity (CMS) configuration and schemas.
+- `lib/` and `src/` — Utilities and shared code.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Useful Scripts (check `package.json` to confirm)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `dev` — Runs the app in development mode.
+- `build` — Compiles the app for production.
+- `start` — Starts the compiled version.
+- `lint` — Runs linters (if configured).
+
+---
+
+**Key Features**
+
+- Responsive design with reusable components.
+- Internationalization (`en`, `es`) using `next-intl` and routes in `app/[locale]`.
+- Integration with `Sanity` for content management (posts, authors, categories).
+- Interactions and CSS micro-animations for a more human experience.
+
+---
+
+**Accessibility & Performance**
+
+- Prioritizes readable text, proper contrast, and keyboard navigation.
+- Fonts optimized with `next/font` to improve LCP and CLS.
+- Recommendation: run a Lighthouse audit and review performance and accessibility suggestions.
+
+---
+
+**Quick Design & Content Guide**
+
+- Colors and tokens: see `docs/paleta-colores.md`.
+- Messages and translations: `messages/en.json` and `messages/es.json`.
+
+---
+
+**How to Contribute**
+
+1. Create a fork and a branch with a descriptive name: `feature/my-change`.
+2. Keep commits small and with clear messages.
+3. Open a pull request describing the changes and motivation.
+4. Add notes about manual testing and screenshots if applicable.
+
+If you're going to touch global styles or design tokens, confirm first in an issue to avoid visual conflicts.
+
+---
+
+**Deployment**
+
+Recommended: deploy on Vercel for native Next.js compatibility. Connect the repository and configure the necessary environment variables (e.g., `Sanity` keys).
+
+Common variables to define (examples):
+
+- `NEXT_PUBLIC_SANITY_PROJECT_ID`
+- `NEXT_PUBLIC_SANITY_DATASET`
+- `SANITY_API_TOKEN` (if you need server-side writes)
+
+---
+
+**Localization Notes**
+
+The project includes support for `en` and `es` in `app/[locale]`. Keep translation keys synchronized in `messages/*.json` and avoid duplicates.
+
+---
+
+**Contact & Author**
+
+If you need help or want to collaborate, reach out to: `alvarolg.developer@gmail.com`.
