@@ -583,5 +583,247 @@
     "readMore": "Read more",
     "backToBlog": "Back to Blog",
     "writtenBy": "Written by"
+  },
+  "infantsPage": {
+    "meta": {
+      "title": "Infants Program (0-12 months) - ABC Kids Daycare Tampa",
+      "description": "Loving care for infants aged 0-12 months. Our experienced caregivers provide individualized attention in a secure, nurturing environment.",
+      "keywords": "infant daycare Tampa, baby care program, 0-12 months childcare, infant development, nurturing baby care"
+    },
+    "hero": {
+      "ageBadge": "0-12 Months",
+      "title": "Infants",
+      "tagline": "Loving care. Infants blossom with us.",
+      "description": "Welcoming infants aged 0 to 12 months, our program provides a secure haven for your youngest loved ones."
+    },
+    "content": {
+      "mainTitle": "Where Every Baby Feels Cherished",
+      "paragraph1": "Rooted in individualized care, our experienced caregivers prioritize every child's unique needs, ensuring they feel cherished and supported from the start.",
+      "paragraph2": "Through sensory exploration, infants engage with their surroundings, laying the foundation for cognitive and emotional growth.",
+      "secondaryTitle": "Nurturing Development from Day One",
+      "paragraph3": "Our team's gentle interactions and nurturing environment encourage the development of social connections and a sense of trust.",
+      "paragraph4": "We understand that these formative months are crucial, and our program is designed to provide the utmost care, attention, and stimulation to help infants flourish during their earliest stages of life."
+    },
+    "highlights": {
+      "item1": "Individualized care for each baby",
+      "item2": "Safe and nurturing environment",
+      "item3": "Experienced and caring staff"
+    },
+    "features": {
+      "individualizedCare": {
+        "title": "Individualized Care",
+        "description": "Every baby receives personalized attention tailored to their unique needs and developmental stage."
+      },
+      "sensoryExploration": {
+        "title": "Sensory Exploration",
+        "description": "Engaging activities that stimulate cognitive and emotional growth through discovery."
+      },
+      "gentleInteractions": {
+        "title": "Gentle Interactions",
+        "description": "Nurturing touches and soft voices that build trust and social connections."
+      },
+      "secureEnvironment": {
+        "title": "Secure Environment",
+        "description": "A safe haven designed to help your little one thrive and flourish."
+      }
+    },
+    "trust": {
+      "title": "Licensed & Certified",
+      "subtitle": "State-approved infant care program"
+    }
+  },
+  "toddlersPage": {
+    "meta": {
+      "title": "Toddlers Program (1-2 years) - ABC Kids Daycare Tampa",
+      "description": "Discover, play, grow! Our toddler program for ages 1-2 fosters exploration through hands-on activities that spark imagination and cognitive development.",
+      "keywords": "toddler daycare Tampa, 1-2 years childcare, toddler learning program, early childhood education, toddler development Tampa"
+    },
+    "hero": {
+      "ageBadge": "1-2 Years",
+      "title": "Toddlers",
+      "tagline": "Discover, play, grow.",
+      "description": "Guided by the belief that learning is an exciting journey, we foster exploration through hands-on activities that captivate their imagination."
+    },
+    "content": {
+      "mainTitle": "A World of Discovery Awaits",
+      "paragraph1": "As they delve into a world of colors, shapes, and play, these experiences become the building blocks for cognitive development.",
+      "paragraph2": "Interacting with fellow toddlers, they learn to share, communicate, and build essential social skills in a friendly setting.",
+      "secondaryTitle": "Celebrating Every Discovery",
+      "paragraph3": "Our dedicated educators create an atmosphere where every discovery is celebrated, encouraging their enthusiasm for learning.",
+      "paragraph4": "We spark a lifelong love for exploration by nurturing curiosity and providing engaging, age-appropriate activities that help toddlers thrive."
+    },
+    "highlights": {
+      "item1": "Hands-on learning activities",
+      "item2": "Social skill development",
+      "item3": "Safe and stimulating environment"
+    },
+    "features": {
+      "handsOnLearning": {
+        "title": "Hands-On Learning",
+        "description": "Engaging activities that captivate imagination and encourage active exploration."
+      },
+      "cognitiveDevelopment": {
+        "title": "Cognitive Development",
+        "description": "Colors, shapes, and play become building blocks for growing minds."
+      },
+      "socialSkills": {
+        "title": "Social Skills",
+        "description": "Learning to share, communicate, and build friendships with peers."
+      },
+      "dedicatedEducators": {
+        "title": "Dedicated Educators",
+        "description": "Passionate teachers who celebrate every discovery and milestone."
+      }
+    },
+    "trust": {
+      "title": "Play-Based Curriculum",
+      "subtitle": "Developmentally appropriate learning"
+    }
+  },
+  "prekPage": {
+    "meta": {
+      "title": "Pre-K Program (3-4 years) - ABC Kids Daycare Tampa",
+      "description": "Confident Kindergarten Start! Our Pre-K program for ages 3-4 lays a strong foundation with letters, numbers, literacy, and social skills.",
+      "keywords": "Pre-K Tampa, preschool program, 3-4 years education, kindergarten preparation, early learning Tampa, preschool daycare"
+    },
+    "hero": {
+      "ageBadge": "3-4 Years",
+      "title": "Pre-K",
+      "tagline": "Confident Kindergarten Start.",
+      "description": "Our Pre-K program, tailored for children aged 3 to 4 years, lays a strong foundation for a successful transition to kindergarten."
+    },
+    "content": {
+      "mainTitle": "Building Strong Foundations",
+      "paragraph1": "Through structured learning, we introduce essential concepts including letters, numbers, literacy, and foundational math skills.",
+      "paragraph2": "Our curriculum fosters social growth by encouraging cooperative play and collaborative projects, honing their ability to communicate and work together effectively.",
+      "secondaryTitle": "Ready for Kindergarten Success",
+      "paragraph3": "Fine motor coordination is nurtured through activities that promote writing readiness, hand-eye coordination, and creative expression.",
+      "paragraph4": "At this crucial age, we create an engaging environment where children develop not only academically, but also socially and emotionally, ensuring they embark on their educational journey with confidence."
+    },
+    "highlights": {
+      "item1": "Letters, numbers & literacy skills",
+      "item2": "Cooperative play & social growth",
+      "item3": "Kindergarten-ready preparation"
+    },
+    "features": {
+      "literacy": {
+        "title": "Literacy & Reading",
+        "description": "Introduction to letters, phonics, and early reading skills that spark a love for books."
+      },
+      "math": {
+        "title": "Math Foundations",
+        "description": "Numbers, counting, shapes, and basic math concepts through fun, hands-on activities."
+      },
+      "socialGrowth": {
+        "title": "Social Growth",
+        "description": "Cooperative play and collaborative projects that teach communication and teamwork."
+      },
+      "motorSkills": {
+        "title": "Fine Motor Skills",
+        "description": "Writing readiness, hand-eye coordination, and creative expression activities."
+      }
+    },
+    "trust": {
+      "title": "Kindergarten Ready",
+      "subtitle": "Comprehensive school preparation program"
+    }
+  },
+  "vpkPage": {
+    "meta": {
+      "title": "VPK Program (4-5 years) - ABC Kids Daycare Tampa",
+      "description": "VPK Excellence: Building bright futures together. State-funded Voluntary Pre-Kindergarten program for ages 4-5 with focus on literacy, math, and school readiness.",
+      "keywords": "VPK Tampa, Voluntary Pre-Kindergarten, 4-5 years education, state-funded preschool, kindergarten readiness Tampa, free VPK program"
+    },
+    "hero": {
+      "ageBadge": "4-5 Years",
+      "title": "VPK",
+      "tagline": "Building Bright Futures Together.",
+      "description": "VPK (Voluntary Pre-Kindergarten) sets the stage for a successful transition to kindergarten, backed by state support.",
+      "stateFunded": "State-Funded Program"
+    },
+    "content": {
+      "mainTitle": "Excellence in Early Education",
+      "paragraph1": "We're dedicated to nurturing language and cognitive growth through interactive experiences that captivate young minds.",
+      "paragraph2": "As they explore math concepts, their understanding deepens, and problem-solving skills develop.",
+      "secondaryTitle": "Ready for Kindergarten Success",
+      "paragraph3": "Our engaging curriculum places special emphasis on pre-reading and pre-writing skills, igniting their literacy journey.",
+      "paragraph4": "Through hands-on learning adventures, children not only grasp essential academic foundations but also cultivate a love for exploration and discovery. With this program, children gain the confidence and readiness they need to embark on their educational path with enthusiasm."
+    },
+    "highlights": {
+      "item1": "State-funded VPK program",
+      "item2": "Pre-reading & pre-writing focus",
+      "item3": "Kindergarten-ready curriculum"
+    },
+    "features": {
+      "language": {
+        "title": "Language Growth",
+        "description": "Interactive experiences that nurture communication and vocabulary development."
+      },
+      "math": {
+        "title": "Math Exploration",
+        "description": "Deepening understanding of math concepts and developing problem-solving skills."
+      },
+      "literacy": {
+        "title": "Pre-Reading Skills",
+        "description": "Special emphasis on pre-reading and pre-writing to ignite their literacy journey."
+      },
+      "confidence": {
+        "title": "School Confidence",
+        "description": "Building the readiness and enthusiasm needed to start kindergarten with confidence."
+      }
+    },
+    "trust": {
+      "title": "State-Approved VPK Provider",
+      "subtitle": "Free program for Florida families"
+    }
+  },
+  "afterSchoolPage": {
+    "meta": {
+      "title": "After School Program (5-12 years) - ABC Kids Tampa",
+      "description": "School's out? We're In! Dependable and enriching care for children aged 5-12 with engaging activities, learning, creativity, and fun year-round.",
+      "keywords": "after school care Tampa, school age program, 5-12 years childcare, summer camp Tampa, school break care, enrichment activities"
+    },
+    "hero": {
+      "ageBadge": "5-12 Years",
+      "title": "After School",
+      "tagline": "School's out? We're In.",
+      "description": "The School Age program is for children aged 5 to 12 who, for whatever reason, are not attending school on any given day during the year.",
+      "flexibleCare": "Year-Round Flexible Care"
+    },
+    "content": {
+      "mainTitle": "Enriching Care Beyond School Hours",
+      "paragraph1": "We offer dependable and enriching care that extends beyond academic periods, ensuring children have a safe and stimulating environment year-round.",
+      "paragraph2": "With an array of thoughtfully curated and engaging activities, we foster social engagement and provide opportunities for learning, creativity, and fun.",
+      "secondaryTitle": "Keeping Kids Active & Connected",
+      "paragraph3": "From interactive projects to group activities, our program keeps children actively involved and socially connected.",
+      "paragraph4": "You can trust that your child's time with us will be both enjoyable and meaningful, fostering growth and positive experiences."
+    },
+    "highlights": {
+      "item1": "Year-round dependable care",
+      "item2": "Engaging activities & projects",
+      "item3": "Social connection & fun"
+    },
+    "features": {
+      "yearRound": {
+        "title": "Year-Round Care",
+        "description": "Dependable care that extends beyond school hours, including holidays and summer breaks."
+      },
+      "activities": {
+        "title": "Engaging Activities",
+        "description": "Thoughtfully curated projects that foster creativity, learning, and fun."
+      },
+      "social": {
+        "title": "Social Connection",
+        "description": "Group activities that keep children actively involved and socially connected."
+      },
+      "meaningful": {
+        "title": "Meaningful Time",
+        "description": "Enjoyable experiences that foster growth and positive development."
+      }
+    },
+    "trust": {
+      "title": "Flexible Scheduling",
+      "subtitle": "Available for school breaks & holidays"
+    }
   }
 }

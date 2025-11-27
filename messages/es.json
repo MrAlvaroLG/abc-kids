@@ -583,5 +583,247 @@
     "readMore": "Leer más",
     "backToBlog": "Volver al Blog",
     "writtenBy": "Escrito por"
+  },
+  "infantsPage": {
+    "meta": {
+      "title": "Programa de Bebés (0-12 meses) - ABC Kids Guardería Tampa",
+      "description": "Cuidado amoroso para bebés de 0 a 12 meses. Nuestros cuidadores experimentados brindan atención individualizada en un ambiente seguro y acogedor.",
+      "keywords": "guardería bebés Tampa, programa cuidado bebés, cuidado infantil 0-12 meses, desarrollo infantil, cuidado bebés Tampa"
+    },
+    "hero": {
+      "ageBadge": "0-12 Meses",
+      "title": "Bebés",
+      "tagline": "Cuidado amoroso. Los bebés florecen con nosotros.",
+      "description": "Damos la bienvenida a bebés de 0 a 12 meses, nuestro programa proporciona un refugio seguro para sus seres queridos más pequeños."
+    },
+    "content": {
+      "mainTitle": "Donde Cada Bebé Se Siente Querido",
+      "paragraph1": "Basados en el cuidado individualizado, nuestros cuidadores experimentados priorizan las necesidades únicas de cada niño, asegurando que se sientan queridos y apoyados desde el principio.",
+      "paragraph2": "A través de la exploración sensorial, los bebés interactúan con su entorno, sentando las bases para el crecimiento cognitivo y emocional.",
+      "secondaryTitle": "Nutriendo el Desarrollo Desde el Primer Día",
+      "paragraph3": "Las interacciones gentiles de nuestro equipo y el ambiente acogedor fomentan el desarrollo de conexiones sociales y un sentido de confianza.",
+      "paragraph4": "Entendemos que estos meses formativos son cruciales, y nuestro programa está diseñado para proporcionar el máximo cuidado, atención y estimulación para ayudar a los bebés a florecer durante sus primeras etapas de vida."
+    },
+    "highlights": {
+      "item1": "Cuidado individualizado para cada bebé",
+      "item2": "Ambiente seguro y acogedor",
+      "item3": "Personal experimentado y cariñoso"
+    },
+    "features": {
+      "individualizedCare": {
+        "title": "Cuidado Individualizado",
+        "description": "Cada bebé recibe atención personalizada adaptada a sus necesidades únicas y etapa de desarrollo."
+      },
+      "sensoryExploration": {
+        "title": "Exploración Sensorial",
+        "description": "Actividades estimulantes que promueven el crecimiento cognitivo y emocional a través del descubrimiento."
+      },
+      "gentleInteractions": {
+        "title": "Interacciones Gentiles",
+        "description": "Caricias suaves y voces dulces que construyen confianza y conexiones sociales."
+      },
+      "secureEnvironment": {
+        "title": "Ambiente Seguro",
+        "description": "Un refugio seguro diseñado para ayudar a tu pequeño a prosperar y florecer."
+      }
+    },
+    "trust": {
+      "title": "Licenciado y Certificado",
+      "subtitle": "Programa de cuidado infantil aprobado por el estado"
+    }
+  },
+  "toddlersPage": {
+    "meta": {
+      "title": "Programa Niños Pequeños (1-2 años) - ABC Kids Guardería Tampa",
+      "description": "¡Descubre, juega, crece! Nuestro programa para niños de 1-2 años fomenta la exploración a través de actividades prácticas que despiertan la imaginación.",
+      "keywords": "guardería niños pequeños Tampa, cuidado infantil 1-2 años, programa aprendizaje niños, educación temprana, desarrollo infantil Tampa"
+    },
+    "hero": {
+      "ageBadge": "1-2 Años",
+      "title": "Niños Pequeños",
+      "tagline": "Descubre, juega, crece.",
+      "description": "Guiados por la creencia de que el aprendizaje es un viaje emocionante, fomentamos la exploración a través de actividades prácticas que cautivan su imaginación."
+    },
+    "content": {
+      "mainTitle": "Un Mundo de Descubrimientos les Espera",
+      "paragraph1": "A medida que se sumergen en un mundo de colores, formas y juego, estas experiencias se convierten en los bloques de construcción para el desarrollo cognitivo.",
+      "paragraph2": "Al interactuar con otros niños pequeños, aprenden a compartir, comunicarse y desarrollar habilidades sociales esenciales en un entorno amigable.",
+      "secondaryTitle": "Celebrando Cada Descubrimiento",
+      "paragraph3": "Nuestros educadores dedicados crean un ambiente donde cada descubrimiento es celebrado, fomentando su entusiasmo por aprender.",
+      "paragraph4": "Despertamos un amor de por vida por la exploración al nutrir la curiosidad y proporcionar actividades atractivas y apropiadas para su edad que ayudan a los niños a prosperar."
+    },
+    "highlights": {
+      "item1": "Actividades de aprendizaje práctico",
+      "item2": "Desarrollo de habilidades sociales",
+      "item3": "Ambiente seguro y estimulante"
+    },
+    "features": {
+      "handsOnLearning": {
+        "title": "Aprendizaje Práctico",
+        "description": "Actividades atractivas que cautivan la imaginación y fomentan la exploración activa."
+      },
+      "cognitiveDevelopment": {
+        "title": "Desarrollo Cognitivo",
+        "description": "Colores, formas y juego se convierten en bloques de construcción para mentes en crecimiento."
+      },
+      "socialSkills": {
+        "title": "Habilidades Sociales",
+        "description": "Aprenden a compartir, comunicarse y construir amistades con sus compañeros."
+      },
+      "dedicatedEducators": {
+        "title": "Educadores Dedicados",
+        "description": "Maestros apasionados que celebran cada descubrimiento y logro."
+      }
+    },
+    "trust": {
+      "title": "Currículo Basado en Juego",
+      "subtitle": "Aprendizaje apropiado para el desarrollo"
+    }
+  },
+  "prekPage": {
+    "meta": {
+      "title": "Programa Pre-K (3-4 años) - ABC Kids Guardería Tampa",
+      "description": "¡Inicio seguro al Kindergarten! Nuestro programa Pre-K para niños de 3-4 años establece una base sólida con letras, números, lectoescritura y habilidades sociales.",
+      "keywords": "Pre-K Tampa, programa preescolar, educación 3-4 años, preparación kindergarten, aprendizaje temprano Tampa, guardería preescolar"
+    },
+    "hero": {
+      "ageBadge": "3-4 Años",
+      "title": "Pre-K",
+      "tagline": "Inicio Seguro al Kindergarten.",
+      "description": "Nuestro programa Pre-K, diseñado para niños de 3 a 4 años, establece una base sólida para una transición exitosa al kindergarten."
+    },
+    "content": {
+      "mainTitle": "Construyendo Bases Sólidas",
+      "paragraph1": "A través del aprendizaje estructurado, introducimos conceptos esenciales incluyendo letras, números, lectoescritura y habilidades matemáticas fundamentales.",
+      "paragraph2": "Nuestro currículo fomenta el crecimiento social al alentar el juego cooperativo y proyectos colaborativos, perfeccionando su capacidad para comunicarse y trabajar juntos de manera efectiva.",
+      "secondaryTitle": "Listos para el Éxito en Kindergarten",
+      "paragraph3": "La coordinación motora fina se desarrolla a través de actividades que promueven la preparación para la escritura, la coordinación ojo-mano y la expresión creativa.",
+      "paragraph4": "En esta edad crucial, creamos un ambiente estimulante donde los niños se desarrollan no solo académicamente, sino también social y emocionalmente, asegurando que comiencen su camino educativo con confianza."
+    },
+    "highlights": {
+      "item1": "Letras, números y lectoescritura",
+      "item2": "Juego cooperativo y crecimiento social",
+      "item3": "Preparación para kindergarten"
+    },
+    "features": {
+      "literacy": {
+        "title": "Lectoescritura",
+        "description": "Introducción a letras, fonética y habilidades de lectura temprana que despiertan el amor por los libros."
+      },
+      "math": {
+        "title": "Bases Matemáticas",
+        "description": "Números, conteo, formas y conceptos matemáticos básicos a través de actividades prácticas y divertidas."
+      },
+      "socialGrowth": {
+        "title": "Crecimiento Social",
+        "description": "Juego cooperativo y proyectos colaborativos que enseñan comunicación y trabajo en equipo."
+      },
+      "motorSkills": {
+        "title": "Motricidad Fina",
+        "description": "Preparación para escritura, coordinación ojo-mano y actividades de expresión creativa."
+      }
+    },
+    "trust": {
+      "title": "Listos para Kindergarten",
+      "subtitle": "Programa integral de preparación escolar"
+    }
+  },
+  "vpkPage": {
+    "meta": {
+      "title": "Programa VPK (4-5 años) - ABC Kids Guardería Tampa",
+      "description": "Excelencia VPK: Construyendo futuros brillantes juntos. Programa de Pre-Kindergarten Voluntario financiado por el estado para niños de 4-5 años con enfoque en lectoescritura, matemáticas y preparación escolar.",
+      "keywords": "VPK Tampa, Pre-Kindergarten Voluntario, educación 4-5 años, preescolar gratuito, preparación kindergarten Tampa, programa VPK gratis"
+    },
+    "hero": {
+      "ageBadge": "4-5 Años",
+      "title": "VPK",
+      "tagline": "Construyendo Futuros Brillantes Juntos.",
+      "description": "VPK (Pre-Kindergarten Voluntario) prepara el escenario para una transición exitosa al kindergarten, respaldado por apoyo estatal.",
+      "stateFunded": "Programa Financiado por el Estado"
+    },
+    "content": {
+      "mainTitle": "Excelencia en Educación Temprana",
+      "paragraph1": "Estamos dedicados a nutrir el crecimiento del lenguaje y cognitivo a través de experiencias interactivas que cautivan las mentes jóvenes.",
+      "paragraph2": "A medida que exploran conceptos matemáticos, su comprensión se profundiza y se desarrollan habilidades de resolución de problemas.",
+      "secondaryTitle": "Listos para el Éxito en Kindergarten",
+      "paragraph3": "Nuestro currículo atractivo pone especial énfasis en las habilidades de pre-lectura y pre-escritura, encendiendo su camino hacia la alfabetización.",
+      "paragraph4": "A través de aventuras de aprendizaje práctico, los niños no solo dominan las bases académicas esenciales, sino que también cultivan un amor por la exploración y el descubrimiento. Con este programa, los niños ganan la confianza y preparación que necesitan para comenzar su camino educativo con entusiasmo."
+    },
+    "highlights": {
+      "item1": "Programa VPK financiado por el estado",
+      "item2": "Enfoque en pre-lectura y pre-escritura",
+      "item3": "Currículo listo para kindergarten"
+    },
+    "features": {
+      "language": {
+        "title": "Desarrollo del Lenguaje",
+        "description": "Experiencias interactivas que nutren la comunicación y el desarrollo del vocabulario."
+      },
+      "math": {
+        "title": "Exploración Matemática",
+        "description": "Profundizando la comprensión de conceptos matemáticos y desarrollando habilidades de resolución de problemas."
+      },
+      "literacy": {
+        "title": "Habilidades de Pre-Lectura",
+        "description": "Énfasis especial en pre-lectura y pre-escritura para encender su camino hacia la alfabetización."
+      },
+      "confidence": {
+        "title": "Confianza Escolar",
+        "description": "Construyendo la preparación y el entusiasmo necesarios para comenzar el kindergarten con confianza."
+      }
+    },
+    "trust": {
+      "title": "Proveedor de VPK Aprobado por el Estado",
+      "subtitle": "Programa gratuito para familias de Florida"
+    }
+  },
+  "afterSchoolPage": {
+    "meta": {
+      "title": "Programa After School (5-12 años) - ABC Kids Tampa",
+      "description": "¿Salieron de la escuela? ¡Nosotros estamos aquí! Cuidado confiable y enriquecedor para niños de 5 a 12 años con actividades atractivas, aprendizaje, creatividad y diversión todo el año.",
+      "keywords": "cuidado after school Tampa, programa edad escolar, cuidado infantil 5-12 años, campamento de verano Tampa, cuidado vacaciones escolares, actividades de enriquecimiento"
+    },
+    "hero": {
+      "ageBadge": "5-12 Años",
+      "title": "After School",
+      "tagline": "¿Salieron de la escuela? ¡Nosotros estamos aquí!",
+      "description": "El programa de Edad Escolar es para niños de 5 a 12 años que, por cualquier razón, no asisten a la escuela en cualquier día del año.",
+      "flexibleCare": "Cuidado Flexible Todo el Año"
+    },
+    "content": {
+      "mainTitle": "Cuidado Enriquecedor Más Allá del Horario Escolar",
+      "paragraph1": "Ofrecemos cuidado confiable y enriquecedor que se extiende más allá de los períodos académicos, asegurando que los niños tengan un ambiente seguro y estimulante durante todo el año.",
+      "paragraph2": "Con una variedad de actividades cuidadosamente seleccionadas y atractivas, fomentamos la interacción social y brindamos oportunidades para el aprendizaje, la creatividad y la diversión.",
+      "secondaryTitle": "Manteniendo a los Niños Activos y Conectados",
+      "paragraph3": "Desde proyectos interactivos hasta actividades grupales, nuestro programa mantiene a los niños activamente involucrados y socialmente conectados.",
+      "paragraph4": "Puedes confiar en que el tiempo de tu hijo con nosotros será tanto agradable como significativo, fomentando el crecimiento y experiencias positivas."
+    },
+    "highlights": {
+      "item1": "Cuidado confiable todo el año",
+      "item2": "Actividades y proyectos atractivos",
+      "item3": "Conexión social y diversión"
+    },
+    "features": {
+      "yearRound": {
+        "title": "Cuidado Todo el Año",
+        "description": "Cuidado confiable que se extiende más allá del horario escolar, incluyendo días festivos y vacaciones de verano."
+      },
+      "activities": {
+        "title": "Actividades Atractivas",
+        "description": "Proyectos cuidadosamente seleccionados que fomentan la creatividad, el aprendizaje y la diversión."
+      },
+      "social": {
+        "title": "Conexión Social",
+        "description": "Actividades grupales que mantienen a los niños activamente involucrados y socialmente conectados."
+      },
+      "meaningful": {
+        "title": "Tiempo Significativo",
+        "description": "Experiencias agradables que fomentan el crecimiento y desarrollo positivo."
+      }
+    },
+    "trust": {
+      "title": "Horarios Flexibles",
+      "subtitle": "Disponible para vacaciones escolares y días festivos"
+    }
   }
 }

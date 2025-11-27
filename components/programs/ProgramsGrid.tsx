@@ -2,10 +2,27 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useRef, useEffect } from 'react';
-import { CheckCircleIcon, SparklesIcon } from '@heroicons/react/24/solid';
+import { CheckCircleIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 import { Link } from '@/i18n/routing';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+    faBabyCarriage, 
+    faChild,
+    faBook,
+    faGraduationCap,
+    faSchool
+} from '@fortawesome/free-solid-svg-icons';
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 type ProgramKey = 'infants' | 'toddlers' | 'prek' | 'vpk' | 'after_school';
+
+const programIcons: Record<ProgramKey, IconDefinition> = {
+    infants: faBabyCarriage,
+    toddlers: faChild,
+    prek: faBook,
+    vpk: faGraduationCap,
+    after_school: faSchool
+};
 
 const programColors = {
     infants: {
@@ -113,7 +130,7 @@ export default function ProgramsGrid() {
                                     {/* Icon circle - top right corner */}
                                     <div className="absolute right-6 top-6 z-10">
                                         <div className={`w-16 h-16 bg-linear-to-br ${colors.gradient} rounded-full shadow-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                                            <SparklesIcon className="w-8 h-8 text-white" />
+                                            <FontAwesomeIcon icon={programIcons[programKey]} className="text-2xl text-white" />
                                         </div>
                                     </div>
 
@@ -161,11 +178,11 @@ export default function ProgramsGrid() {
                                         </div>
 
                                         {/* CTA Button */}
-                                        <Link href="/contact" className="mt-8">
+                                        <Link href={`/programs/${programKey.replace('_', '-')}`} className="mt-8">
                                             <button className={`w-full bg-linear-to-r ${colors.button} text-white font-semibold py-4 px-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group-hover:scale-[1.02]`}>
                                                 <span className="flex items-center justify-center gap-2">
-                                                    Enroll Now
-                                                    <SparklesIcon className="w-5 h-5" />
+                                                    {t('learnMore')}
+                                                    <ArrowRightIcon className="w-5 h-5" />
                                                 </span>
                                             </button>
                                         </Link>

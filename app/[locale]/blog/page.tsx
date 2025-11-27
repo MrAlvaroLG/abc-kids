@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import BlogHero from "@/components/blog/BlogHero";
 import BlogGrid from "@/components/blog/BlogGrid";
+import ProgramsCTA from "@/components/programs/ProgramsCTA";
 import { client } from '@/sanity/lib/client';
 import { postsQuery } from '@/sanity/lib/queries';
 
@@ -30,6 +31,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
             <Navbar />
             <BlogHero />
             <BlogGrid posts={posts} />
+            <ProgramsCTA />
             <Footer />
         </main>
     );

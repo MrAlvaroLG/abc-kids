@@ -211,7 +211,7 @@ function ProgramCard({
 
                     {/* CTA Button */}
                     <Link
-                        href="/programs"
+                        href={`/programs/${programKey.replace('_', '-')}`}
                         className={`group/btn inline-flex items-center justify-center gap-2 px-6 py-3 bg-linear-to-r ${gradient} text-white rounded-xl font-bold text-sm shadow-lg hover:shadow-2xl transition-all duration-300 transform ${isHovered ? 'scale-105' : ''}`}
                     >
                         <span>{tSection('learnMore')}</span>
