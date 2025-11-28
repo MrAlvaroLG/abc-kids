@@ -38,8 +38,8 @@ export default function Footer() {
     const socialLinks = [
         { icon: faFacebook, href: 'https://www.facebook.com/abckidzpreschool', label: 'Facebook' },
         { icon: faInstagram, href: 'https://www.instagram.com/abc_kidz_preschool/', label: 'Instagram' },
-        { icon: faTiktok, href: 'https://www.tiktok.com/@abc.kidz.preschool?_t=ZT-90O84znEJap&_r=1', label: 'TikTok' },
-        { icon: faWhatsapp, href: 'https://wa.me/18135122511', label: 'WhatsApp' }
+        { icon: faTiktok, href: 'https://www.tiktok.com/@abc.kidz.preschool', label: 'TikTok' },
+        { icon: faWhatsapp, href: 'https://wa.me/18137704917', label: 'WhatsApp' }
     ];
 
     return (
