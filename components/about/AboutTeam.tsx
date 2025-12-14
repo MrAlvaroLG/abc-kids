@@ -13,10 +13,11 @@ export default function AboutTeam() {
     const sectionRef = useRef<HTMLElement>(null);
 
     const teamImages = [
-        { src: '/about/personal/photo5.jpeg', alt: 'Team Photo 1' },
-        { src: '/about/personal/photo7.jpeg', alt: 'Team Photo 2' },
-        { src: '/about/personal/photo8.jpeg', alt: 'Team Photo 3' },
-        { src: '/about/personal/photo11.jpeg', alt: 'Team Photo 4' }
+        { src: '/about/personal/photo7.jpeg', alt: 'Team Photo 1' },
+        { src: '/about/personal/photo8.jpeg', alt: 'Team Photo 2' },
+        { src: '/about/personal/photo11.jpeg', alt: 'Team Photo 3' },
+        { src: '/about/personal/photo12.jpeg', alt: 'Team Photo 4' }
+
     ];
 
     useEffect(() => {

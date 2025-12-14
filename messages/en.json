@@ -14,7 +14,7 @@
   "hero": {
     "title": "Where every child is a unique piece",
     "subtitle": "of the perfect puzzle",
-    "description": "At ABC Kids we create a safe, fun and educational environment where your child will develop their full potential. We are your home away from home.",
+    "description": "At ABC Kidz we create a safe, fun and educational environment where your child will develop their full potential. We are your home away from home.",
     "cta": {
       "primary": "Schedule a Visit",
       "secondary": "View Programs"
@@ -44,7 +44,7 @@
         },
         {
           "name": "Jessica Summers",
-          "text": "ABC kidz is a more than great daycare/school for kids to attend they are very friendly professional and caring for our little ones my son that went into kindergarten wants to come back here everyday with his sisters",
+          "text": "ABC Kidz is a more than great daycare/school for kids to attend they are very friendly professional and caring for our little ones my son that went into kindergarten wants to come back here everyday with his sisters",
           "rating": 5
         },
         {
@@ -226,9 +226,9 @@
   },
   "contactPage": {
     "meta": {
-      "title": "Contact ABC Kids Daycare Tampa | Schedule a Tour | (813) 512-2511",
-      "description": "Contact ABC Kids daycare in Tampa FL. Schedule a free tour, ask about enrollment, or get info on our childcare programs. Call (813) 512-2511 or fill out our form!",
-      "keywords": "contact ABC Kids Tampa, daycare tour Tampa, schedule daycare visit Tampa FL, daycare enrollment Tampa, childcare information Tampa, call daycare Tampa"
+      "title": "Contact ABC Kidz Daycare Tampa | Schedule a Tour | (813) 512-2511",
+      "description": "Contact ABC Kidz daycare in Tampa FL. Schedule a free tour, ask about enrollment, or get info on our childcare programs. Call (813) 512-2511 or fill out our form!",
+      "keywords": "contact ABC Kidz Tampa, daycare tour Tampa, schedule daycare visit Tampa FL, daycare enrollment Tampa, childcare information Tampa, call daycare Tampa"
     },
     "hero": {
       "badge": "We're here to help",
@@ -296,11 +296,11 @@
       },
       "social": {
         "title": "Follow Us on Social Media",
-        "subtitle": "Stay connected and see what's happening at ABC Kids!"
+        "subtitle": "Stay connected and see what's happening at ABC Kidz!"
       },
       "whatsapp": {
         "badge": "Fastest Response",
-        "title": "Chat with Us on WhatsApp",
+        "title": "Solve Your Questions!",
         "subtitle": "Get instant answers to your questions. We typically respond within minutes!",
         "button": "Start Chat"
       },
@@ -318,7 +318,7 @@
   "programsPage": {
     "meta": {
       "title": "Daycare Programs Tampa FL | Infant, Toddler, Pre-K, VPK & After School",
-      "description": "Explore ABC Kids' childcare programs in Tampa. Infant care (0-12mo), toddlers (1-2yr), Pre-K (3-4yr), FREE VPK, and after-school (5-12yr). Bilingual staff. Schedule a tour!",
+      "description": "Explore ABC Kidz' childcare programs in Tampa. Infant care (0-12mo), toddlers (1-2yr), Pre-K (3-4yr), FREE VPK, and after-school (5-12yr). Bilingual staff. Schedule a tour!",
       "keywords": "daycare programs Tampa, infant care Tampa FL, toddler program Tampa, Pre-K Tampa, VPK Tampa FL, after school Tampa, bilingual daycare, childcare Tampa"
     },
     "hero": {
@@ -374,15 +374,15 @@
   },
   "aboutPage": {
     "meta": {
-      "title": "About ABC Kids Daycare Tampa | Trusted Bilingual Childcare Since 2020",
-      "description": "Learn about ABC Kids - Tampa's trusted bilingual daycare center. Meet our experienced team, discover our mission, values, and why 500+ families choose us. Schedule a tour!",
-      "keywords": "about ABC Kids Tampa, Tampa daycare center, bilingual childcare Tampa, trusted daycare Tampa FL, early education Tampa, best daycare Tampa, childcare center near me"
+      "title": "About ABC Kidz Daycare Tampa | Trusted Bilingual Childcare Since 2020",
+      "description": "Learn about ABC Kidz - Tampa's trusted bilingual daycare center. Meet our experienced team, discover our mission, values, and why 500+ families choose us. Schedule a tour!",
+      "keywords": "about ABC Kidz Tampa, Tampa daycare center, bilingual childcare Tampa, trusted daycare Tampa FL, early education Tampa, best daycare Tampa, childcare center near me"
     },
     "hero": {
-      "badge": "Safe Environment",
-      "title": "Where Every Child",
-      "titleHighlight": "Becomes Family",
-      "subtitle": "We're building a nurturing space where your child can discover their unique potential while feeling completely loved and safe. More than a daycare - we're your child's home away from home.",
+      "badge": "Welcome to ABC Kidz",
+      "title": "Where Learning Is",
+      "titleHighlight": "Fun!",
+      "subtitle": "A nurturing environment that inspires curiosity and builds lifelong skills. At ABC Kidz we create a safe, fun and educational environment where your child will develop their full potential.",
       "features": {
         "feature1": "Personalized attention for every child",
         "feature2": "Safe and stimulating learning environment",
@@ -393,12 +393,12 @@
     "story": {
       "label": "Our Journey",
       "title": "A Story Written with Love",
-      "subtitle": "Built on passion and dedication - discover the heart behind ABC Kids.",
+      "subtitle": "Built on passion and dedication - discover the heart behind ABC Kidz.",
       "imageCaption": "Where memories are made",
       "imageCaptionSub": "Our loving team with happy children",
       "freshStart": "New Beginning",
       "freshStartSub": "Fresh passion, endless care",
-      "paragraph1": "ABC Kids was born from a simple yet powerful dream: to create a nurturing space where every child could discover their unique potential while feeling completely loved and safe.",
+      "paragraph1": "ABC Kidz was born from a simple yet powerful dream: to create a nurturing space where every child could discover their unique potential while feeling completely loved and safe.",
       "paragraph2": "Our founder, with extensive experience in early childhood education, envisioned more than just a daycare. She dreamed of a place where children would be educated with excellence while receiving the warmth and attention of a second family.",
       "paragraph3": "We are committed to becoming Tampa's premier bilingual child care center, dedicated to families who share our belief that every child deserves the very best start in life.",
       "pillarsTitle": "Our Foundation",
@@ -422,49 +422,90 @@
       },
       "mission": {
         "title": "Our Mission",
-        "text": "To provide exceptional education and nurturing care that empowers every child to grow, learn, and flourish - physically, cognitively, socially, and emotionally."
+        "text": "ABC Kidz Preschool, Inc, is a child development center dedicated to raising a generation of children to achieve their God-given potential and destiny."
       }
     },
+    "mission": {
+      "badge": "Our Purpose",
+      "title": "Our Mission",
+      "description": "ABC Kidz Preschool, Inc, is a child development center dedicated to raising a generation of children to achieve their God-given potential and destiny.",
+      "highlights": [
+        "Nurturing each child's unique gifts and talents",
+        "Creating a foundation for lifelong learning",
+        "Building strong community partnerships with families",
+        "Developing confident, compassionate, and capable children"
+      ]
+    },
+    "vision": {
+      "badge": "Where We're Headed",
+      "title": "Our Vision",
+      "description": "Our vision is to become the most trustworthy and enriching childcare center in the community, where every child feels safe, valued, and motivated to explore the world with curiosity and joy. We aspire to be a space where families find comprehensive support, and where children develop their cognitive, emotional, and social skills through meaningful experiences and active learning.",
+      "highlights": [
+        "A trusted sanctuary for children and families in our community",
+        "A space where every child feels valued and empowered",
+        "An environment that nurtures curiosity, joy, and growth",
+        "A partner in families' most important journey - raising their children"
+      ]
+    },
+    "philosophy": {
+      "badge": "How We Work",
+      "title": "Our Philosophy",
+      "description": "Our philosophy is based on the conviction that learning must be a joyful, meaningful experience full of discoveries. We firmly believe that working with children is a privilege that requires sensitivity, preparation, and passion. That's why we transform every moment into an opportunity for growth, integrating play, creativity, and curiosity as the main drivers of childhood development.",
+      "highlights": [
+        "Learning is joyful, meaningful, and discovery-filled",
+        "Every moment is an opportunity for growth and development",
+        "Play, creativity, and curiosity drive childhood development",
+        "Working with children is a sacred privilege requiring passion and preparation"
+      ]
+    },
     "values": {
-      "badge": "Our Foundation",
-      "title": "Values That Guide Us",
-      "subtitle": "Every decision we make is rooted in these core principles that define who we are",
-      "featuredLabel": "Our Promise",
-      "featuredTitle": "Where Every Child Matters",
-      "featuredDescription": "At ABC Kids, we believe every child deserves personalized attention, genuine love, and an environment where they can truly thrive. This isn't just what we do - it's who we are.",
+      "badge": "Our Core Values",
+      "title": "Eight Values That Guide Us",
+      "subtitle": "These principles define who we are and how we serve every child and family",
+      "featuredLabel": "Safety & Well-being",
+      "featuredTitle": "Safety and Well-being First",
+      "featuredDescription": "We guarantee a physically and emotionally safe environment where every child can grow with confidence, protected and cared for at all times.",
       "items": {
-        "love": {
-          "title": "Love & Care",
-          "description": "Every child is embraced with genuine affection, creating lasting emotional bonds."
-        },
         "safety": {
-          "title": "Safety First",
-          "description": "Certified facilities and trained staff ensuring complete peace of mind."
+          "title": "Safety and Well-being",
+          "description": "We guarantee a physically and emotionally safe environment where every child can grow with confidence, protected and cared for at all times."
         },
-        "education": {
-          "title": "Quality Education",
-          "description": "Excellence-driven curriculum adapted to each developmental stage."
+        "love": {
+          "title": "Love and Respect",
+          "description": "We promote relationships based on affection, empathy and respect towards every child, family and staff member."
         },
-        "excellence": {
-          "title": "Excellence",
-          "description": "Unwavering commitment to the highest standards in early childhood care."
+        "learning": {
+          "title": "Active Learning",
+          "description": "We encourage exploration, creativity and discovery through practical experiences that stimulate the child's natural curiosity."
         },
-        "community": {
-          "title": "Community",
-          "description": "Building strong partnerships with families for every child's success."
+        "diversity": {
+          "title": "Diversity and Inclusion",
+          "description": "We value and celebrate cultural, linguistic and personal differences. Every child is welcome and treated with equity."
         },
-        "innovation": {
-          "title": "Innovation",
-          "description": "Modern teaching methods that make learning engaging and fun."
+        "communication": {
+          "title": "Open Communication with Families",
+          "description": "We maintain constant, transparent and collaborative dialogue with parents to ensure each child's well-being and development."
+        },
+        "development": {
+          "title": "Integral Development",
+          "description": "We support cognitive, emotional, social and physical growth, recognizing that each developmental stage is unique and important."
+        },
+        "professionalism": {
+          "title": "Professionalism and Ethics",
+          "description": "Our team acts with responsibility, commitment and vocation, guaranteeing high-quality service."
+        },
+        "play": {
+          "title": "Play with Purpose",
+          "description": "We believe in the value of play as a fundamental tool for learning, expression and socialization."
         }
       }
     },
     "team": {
       "label": "Meet Our Team",
-      "title": "The Heart of ABC Kids",
+      "title": "The Heart of ABC Kidz",
       "subtitle": "Passionate educators dedicated to nurturing your child's potential every single day",
       "introTitle": "Making a Difference, One Child at a Time",
-      "introParagraph1": "Our team isn't just staff - they're family. Every educator at ABC Kids has been carefully chosen for their genuine passion for children and commitment to excellence in early education.",
+      "introParagraph1": "Our team isn't just staff - they're family. Every educator at ABC Kidz has been carefully chosen for their genuine passion for children and commitment to excellence in early education.",
       "introParagraph2": "United by our love for teaching and care, we create an environment where children feel safe to explore, learn, and grow into confident individuals.",
       "qualitiesTitle": "What Makes Us Special",
       "qualities": [
@@ -473,10 +514,10 @@
         "Dedicated to making every child feel valued and heard",
         "Safe and nurturing environment where children thrive"
       ],
-      "closingStatement": "For us, your child isn't just a student - they become part of our ABC Kids family."
+      "closingStatement": "For us, your child isn't just a student - they become part of our ABC Kidz family."
     },
     "gallery": {
-      "badge": "Life at ABC Kids",
+      "badge": "Life at ABC Kidz",
       "title": "Moments That Matter",
       "subtitle": "Glimpses of joy, learning, and growth from our daily adventures",
       "filters": {
@@ -494,9 +535,9 @@
   },
   "termsPage": {
     "meta": {
-      "title": "Terms & Policies | ABC Kids Daycare Tampa | Parent Handbook",
-      "description": "Read ABC Kids daycare terms, enrollment policies, hours, payments, and safety procedures. Download the complete parent handbook. Tampa's trusted childcare center.",
-      "keywords": "ABC Kids policies, daycare enrollment Tampa, daycare hours Tampa, childcare terms conditions, parent handbook daycare, daycare safety policies"
+      "title": "Terms & Policies | ABC Kidz Daycare Tampa | Parent Handbook",
+      "description": "Read ABC Kidz daycare terms, enrollment policies, hours, payments, and safety procedures. Download the complete parent handbook. Tampa's trusted childcare center.",
+      "keywords": "ABC Kidz policies, daycare enrollment Tampa, daycare hours Tampa, childcare terms conditions, parent handbook daycare, daycare safety policies"
     },
     "hero": {
       "title": "Terms and Conditions",
@@ -610,8 +651,8 @@
   },
   "blogPage": {
     "meta": {
-      "title": "Parenting Tips & Child Development Blog | ABC Kids Tampa",
-      "description": "Expert parenting tips, child development guides, and educational activities from ABC Kids Tampa. Resources for Tampa parents on early childhood education.",
+      "title": "Parenting Tips & Child Development Blog | ABC Kidz Tampa",
+      "description": "Expert parenting tips, child development guides, and educational activities from ABC Kidz Tampa. Resources for Tampa parents on early childhood education.",
       "keywords": "parenting blog Tampa, child development tips, daycare activities ideas, preschool education blog, Tampa childcare resources, early childhood tips"
     },
     "hero": {
@@ -626,7 +667,7 @@
   },
   "infantsPage": {
     "meta": {
-      "title": "Infant Daycare Tampa FL | Baby Care 0-12 Months | ABC Kids",
+      "title": "Infant Daycare Tampa FL | Baby Care 0-12 Months | ABC Kidz",
       "description": "Tampa's trusted infant daycare for babies 0-12 months. Experienced caregivers, individualized care, sensory development activities. Safe & nurturing. Schedule a tour!",
       "keywords": "infant daycare Tampa, baby daycare Tampa FL, newborn childcare Tampa, infant care near me, baby care center Tampa, daycare for babies Tampa"
     },
@@ -674,7 +715,7 @@
   },
   "toddlersPage": {
     "meta": {
-      "title": "Toddler Daycare Tampa FL | Ages 1-2 Years | ABC Kids",
+      "title": "Toddler Daycare Tampa FL | Ages 1-2 Years | ABC Kidz",
       "description": "Best toddler daycare in Tampa for ages 1-2 years. Hands-on learning, social skill development, cognitive activities. Bilingual staff. Schedule your free tour today!",
       "keywords": "toddler daycare Tampa, toddler program Tampa FL, daycare for 1 year old Tampa, daycare for 2 year old Tampa, early learning Tampa, toddler care near me"
     },
@@ -722,7 +763,7 @@
   },
   "prekPage": {
     "meta": {
-      "title": "Pre-K Preschool Tampa FL | Ages 3-4 | Kindergarten Prep | ABC Kids",
+      "title": "Pre-K Preschool Tampa FL | Ages 3-4 | Kindergarten Prep | ABC Kidz",
       "description": "Top-rated Pre-K preschool in Tampa for ages 3-4. Kindergarten preparation, literacy, math foundations, social skills development. Bilingual program. Enroll today!",
       "keywords": "Pre-K Tampa FL, preschool Tampa, preschool near me Tampa, kindergarten prep Tampa, preschool 3 year old Tampa, preschool 4 year old Tampa, best preschool Tampa"
     },
@@ -770,8 +811,8 @@
   },
   "vpkPage": {
     "meta": {
-      "title": "FREE VPK Program Tampa FL | Voluntary Pre-K Ages 4-5 | ABC Kids",
-      "description": "Enroll in Tampa's FREE VPK program at ABC Kids! State-funded Pre-Kindergarten for 4-5 year olds. School readiness, literacy, math prep. Approved VPK provider. Apply now!",
+      "title": "FREE VPK Program Tampa FL | Voluntary Pre-K Ages 4-5 | ABC Kidz",
+      "description": "Enroll in Tampa's FREE VPK program at ABC Kidz! State-funded Pre-Kindergarten for 4-5 year olds. School readiness, literacy, math prep. Approved VPK provider. Apply now!",
       "keywords": "VPK Tampa FL, free VPK Tampa, Voluntary Prekindergarten Tampa, VPK program near me, free preschool Tampa, VPK providers Tampa, state-funded preschool Florida"
     },
     "hero": {
@@ -819,7 +860,7 @@
   },
   "afterSchoolPage": {
     "meta": {
-      "title": "After School Care Tampa FL | Ages 5-12 | Summer Camp | ABC Kids",
+      "title": "After School Care Tampa FL | Ages 5-12 | Summer Camp | ABC Kidz",
       "description": "Reliable after school care in Tampa for ages 5-12. Homework help, enrichment activities, summer camps, school breaks. Safe & fun environment. Flexible scheduling!",
       "keywords": "after school care Tampa, after school program Tampa FL, summer camp Tampa, school age childcare Tampa, before and after school care, kids camp Tampa"
     },

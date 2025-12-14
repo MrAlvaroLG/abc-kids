@@ -2,7 +2,9 @@ import { getTranslations } from 'next-intl/server';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import AboutHero from '@/components/about/AboutHero';
-import AboutStory from '@/components/about/AboutStory';
+import AboutMission from '@/components/about/AboutMission';
+import AboutVision from '@/components/about/AboutVision';
+import AboutPhilosophy from '@/components/about/AboutPhilosophy';
 import AboutValues from '@/components/about/AboutValues';
 import AboutTeam from '@/components/about/AboutTeam';
 import ProgramsCTA from '@/components/programs/ProgramsCTA';
@@ -28,7 +30,9 @@ export default function AboutPage() {
         <main className="min-h-screen">
             <Navbar />
             <AboutHero />
-            <AboutStory />
+            <AboutMission />
+            <AboutVision />
+            <AboutPhilosophy />
             <AboutValues />
             <AboutTeam />
             <ProgramsCTA />

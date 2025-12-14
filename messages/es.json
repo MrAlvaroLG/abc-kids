@@ -14,7 +14,7 @@
   "hero": {
     "title": "Donde cada niño es una pieza única",
     "subtitle": "del rompecabezas perfecto",
-    "description": "En ABC Kids creamos un ambiente seguro, divertido y educativo donde tu hijo desarrollará todo su potencial. Con más de 15 años de experiencia, somos el hogar lejos del hogar.",
+    "description": "En ABC Kidz creamos un ambiente seguro, divertido y educativo donde tu hijo desarrollará todo su potencial. Con más de 15 años de experiencia, somos el hogar lejos del hogar.",
     "cta": {
       "primary": "Agendar una Visita",
       "secondary": "Ver Programas"
@@ -226,9 +226,9 @@
   },
   "contactPage": {
     "meta": {
-      "title": "Contacto ABC Kids Guardería Tampa | Agenda tu Visita | (813) 512-2511",
-      "description": "Contacta ABC Kids guardería en Tampa FL. Agenda una visita gratis, pregunta sobre inscripciones o info sobre nuestros programas. ¡Llama al (813) 512-2511!",
-      "keywords": "contacto ABC Kids Tampa, visita guardería Tampa, agendar cita guardería Tampa FL, inscripción guardería Tampa, información cuidado infantil Tampa"
+      "title": "Contacto ABC Kidz Guardería Tampa | Agenda tu Visita | (813) 512-2511",
+      "description": "Contacta ABC Kidz guardería en Tampa FL. Agenda una visita gratis, pregunta sobre inscripciones o info sobre nuestros programas. ¡Llama al (813) 512-2511!",
+      "keywords": "contacto ABC Kidz Tampa, visita guardería Tampa, agendar cita guardería Tampa FL, inscripción guardería Tampa, información cuidado infantil Tampa"
     },
     "hero": {
       "badge": "Estamos aquí para ayudarte",
@@ -296,11 +296,11 @@
       },
       "social": {
         "title": "Síguenos en Redes Sociales",
-        "subtitle": "¡Mantente conectado y mira lo que pasa en ABC Kids!"
+        "subtitle": "¡Mantente conectado y mira lo que pasa en ABC Kidz!"
       },
       "whatsapp": {
         "badge": "Respuesta más Rápida",
-        "title": "Chatea con Nosotros por WhatsApp",
+        "title": "¡Resuelve tus dudas!",
         "subtitle": "Obtén respuestas instantáneas a tus preguntas. ¡Normalmente respondemos en minutos!",
         "button": "Iniciar Chat"
       },
@@ -318,7 +318,7 @@
   "programsPage": {
     "meta": {
       "title": "Programas de Guardería Tampa FL | Bebés, Toddlers, Pre-K, VPK Gratis",
-      "description": "Descubre los programas de ABC Kids en Tampa. Cuidado de bebés (0-12m), toddlers (1-2 años), Pre-K, VPK GRATIS, y after school. Personal bilingüe. ¡Agenda tu visita!",
+      "description": "Descubre los programas de ABC Kidz en Tampa. Cuidado de bebés (0-12m), toddlers (1-2 años), Pre-K, VPK GRATIS, y after school. Personal bilingüe. ¡Agenda tu visita!",
       "keywords": "programas guardería Tampa, cuidado bebés Tampa, programa toddlers Tampa, Pre-K Tampa, VPK gratis Tampa, after school Tampa, guardería bilingüe"
     },
     "hero": {
@@ -374,15 +374,15 @@
   },
   "aboutPage": {
     "meta": {
-      "title": "Sobre ABC Kids Guardería Tampa | Cuidado Infantil Bilingüe de Confianza",
-      "description": "Conoce ABC Kids - la guardería bilingüe de confianza en Tampa. Conoce nuestro equipo, misión y por qué más de 500 familias nos eligen. ¡Agenda una visita!",
-      "keywords": "sobre ABC Kids Tampa, guardería Tampa, cuidado infantil bilingüe Tampa, guardería de confianza Tampa FL, mejor guardería Tampa, centro de cuidado infantil"
+      "title": "Sobre ABC Kidz Guardería Tampa | Cuidado Infantil Bilingüe de Confianza",
+      "description": "Conoce ABC Kidz - la guardería bilingüe de confianza en Tampa. Conoce nuestro equipo, misión y por qué más de 500 familias nos eligen. ¡Agenda una visita!",
+      "keywords": "sobre ABC Kidz Tampa, guardería Tampa, cuidado infantil bilingüe Tampa, guardería de confianza Tampa FL, mejor guardería Tampa, centro de cuidado infantil"
     },
     "hero": {
-      "badge": "Ambiente Seguro",
-      "title": "Donde Cada Niño",
-      "titleHighlight": "Se Vuelve Familia",
-      "subtitle": "Estamos construyendo un espacio nutritivo donde tu hijo puede descubrir su potencial único mientras se siente completamente amado y seguro. Más que una guardería - somos el hogar lejos del hogar para tu hijo.",
+      "badge": "Bienvenido a ABC Kidz",
+      "title": "¡Donde el Aprendizaje Es",
+      "titleHighlight": "Divertido!",
+      "subtitle": "Un ambiente nutritivo que inspira curiosidad y construye habilidades para la vida. En ABC Kidz creamos un ambiente seguro, divertido y educativo donde tu hijo desarrollará su pleno potencial.",
       "features": {
         "feature1": "Atención personalizada para cada niño",
         "feature2": "Ambiente de aprendizaje seguro y estimulante",
@@ -393,12 +393,12 @@
     "story": {
       "label": "Nuestro Camino",
       "title": "Una Historia Escrita con Amor",
-      "subtitle": "Construida con pasión y dedicación - descubre el corazón detrás de ABC Kids.",
+      "subtitle": "Construida con pasión y dedicación - descubre el corazón detrás de ABC Kidz.",
       "imageCaption": "Donde se crean los recuerdos",
       "imageCaptionSub": "Nuestro cariñoso equipo con niños felices",
       "freshStart": "Nuevo Comienzo",
       "freshStartSub": "Pasión fresca, cuidado infinito",
-      "paragraph1": "ABC Kids nació de un sueño simple pero poderoso: crear un espacio nutritivo donde cada niño pudiera descubrir su potencial único mientras se siente completamente amado y seguro.",
+      "paragraph1": "ABC Kidz nació de un sueño simple pero poderoso: crear un espacio nutritivo donde cada niño pudiera descubrir su potencial único mientras se siente completamente amado y seguro.",
       "paragraph2": "Nuestra fundadora, con amplia experiencia en educación infantil, imaginó más que solo una guardería. Soñó con un lugar donde los niños fueran educados con excelencia mientras reciben el calor y la atención de una segunda familia.",
       "paragraph3": "Estamos comprometidos a convertirnos en el principal centro de cuidado infantil bilingüe de Tampa, dedicados a las familias que comparten nuestra creencia de que cada niño merece el mejor comienzo en la vida.",
       "pillarsTitle": "Nuestra Base",
@@ -422,49 +422,90 @@
       },
       "mission": {
         "title": "Nuestra Misión",
-        "text": "Proporcionar educación excepcional y cuidado nutritivo que empodere a cada niño para crecer, aprender y florecer - física, cognitiva, social y emocionalmente."
+        "text": "ABC Kidz Preschool, Inc, es un centro de desarrollo infantil dedicado a crear una generación de niños que alcancen su potencial dado por Dios y su destino."
       }
     },
+    "mission": {
+      "badge": "Nuestro Propósito",
+      "title": "Nuestra Misión",
+      "description": "ABC Kidz Preschool, Inc, es un centro de desarrollo infantil dedicado a criar una generación de niños que logren su potencial divino y su destino.",
+      "highlights": [
+        "Nutrir los dones y talentos únicos de cada niño",
+        "Crear una base para el aprendizaje de por vida",
+        "Construir alianzas comunitarias sólidas con las familias",
+        "Desarrollar niños confiados, compasivos y capaces"
+      ]
+    },
+    "vision": {
+      "badge": "Hacia Dónde Vamos",
+      "title": "Nuestra Visión",
+      "description": "Nuestra visión es convertirnos en el centro de cuidado infantil más confiable y enriquecedor de la comunidad, donde cada niño se sienta seguro, valorado y motivado a explorar el mundo con curiosidad y alegría. Aspiramos a ser un espacio donde las familias encuentren apoyo integral, y donde los niños desarrollen sus habilidades cognitivas, emocionales y sociales a través de experiencias significativas y aprendizaje activo.",
+      "highlights": [
+        "Un santuario de confianza para niños y familias de nuestra comunidad",
+        "Un espacio donde cada niño se sienta valorado y empoderado",
+        "Un ambiente que nutre la curiosidad, la alegría y el crecimiento",
+        "Un socio en el viaje más importante de las familias - criar a sus hijos"
+      ]
+    },
+    "philosophy": {
+      "badge": "Cómo Trabajamos",
+      "title": "Nuestra Filosofía",
+      "description": "Nuestra filosofía se basa en la convicción de que el aprendizaje debe ser una experiencia alegre, significativa y llena de descubrimientos. Creemos firmemente que trabajar con niños es un privilegio que requiere sensibilidad, preparación y pasión. Por eso transformamos cada momento en una oportunidad de crecimiento, integrando el juego, la creatividad y la curiosidad como motores principales del desarrollo infantil.",
+      "highlights": [
+        "El aprendizaje es alegre, significativo y lleno de descubrimientos",
+        "Cada momento es una oportunidad para el crecimiento y desarrollo",
+        "El juego, la creatividad y la curiosidad impulsan el desarrollo infantil",
+        "Trabajar con niños es un privilegio sagrado que requiere pasión y preparación"
+      ]
+    },
     "values": {
-      "badge": "Nuestra Base",
-      "title": "Valores Que Nos Guían",
-      "subtitle": "Cada decisión que tomamos está arraigada en estos principios fundamentales que definen quiénes somos",
-      "featuredLabel": "Nuestra Promesa",
-      "featuredTitle": "Donde Cada Niño Importa",
-      "featuredDescription": "En ABC Kids, creemos que cada niño merece atención personalizada, amor genuino y un ambiente donde puedan verdaderamente prosperar. Esto no es solo lo que hacemos - es quienes somos.",
+      "badge": "Nuestros Valores Fundamentales",
+      "title": "Ocho Valores Que Nos Guían",
+      "subtitle": "Estos principios definen quiénes somos y cómo servimos a cada niño y familia",
+      "featuredLabel": "Seguridad y Bienestar",
+      "featuredTitle": "Seguridad y Bienestar Primero",
+      "featuredDescription": "Garantizamos un entorno físico y emocional seguro donde cada niño puede crecer con confianza, protegido y atendido en todo momento.",
       "items": {
-        "love": {
-          "title": "Amor y Cariño",
-          "description": "Cada niño es abrazado con afecto genuino, creando vínculos emocionales duraderos."
-        },
         "safety": {
-          "title": "Seguridad Primero",
-          "description": "Instalaciones certificadas y personal capacitado asegurando completa tranquilidad."
+          "title": "Seguridad y Bienestar",
+          "description": "Garantizamos un entorno físico y emocional seguro donde cada niño puede crecer con confianza, protegido y atendido en todo momento."
         },
-        "education": {
-          "title": "Educación de Calidad",
-          "description": "Currículo orientado a la excelencia adaptado a cada etapa de desarrollo."
+        "love": {
+          "title": "Amor y Respeto",
+          "description": "Promovemos relaciones basadas en el cariño, la empatía y el respeto hacia cada niño, familia y miembro del personal."
         },
-        "excellence": {
-          "title": "Excelencia",
-          "description": "Compromiso inquebrantable con los más altos estándares en cuidado infantil temprano."
+        "learning": {
+          "title": "Aprendizaje Activo",
+          "description": "Fomentamos la exploración, la creatividad y el descubrimiento a través de experiencias prácticas que estimulan la curiosidad natural del niño."
         },
-        "community": {
-          "title": "Comunidad",
-          "description": "Construyendo alianzas fuertes con las familias para el éxito de cada niño."
+        "diversity": {
+          "title": "Diversidad e Inclusión",
+          "description": "Valoramos y celebramos las diferencias culturales, lingüísticas y personales. Todos los niños son bienvenidos y tratados con equidad."
         },
-        "innovation": {
-          "title": "Innovación",
-          "description": "Métodos de enseñanza modernos que hacen el aprendizaje atractivo y divertido."
+        "communication": {
+          "title": "Comunicación Abierta con las Familias",
+          "description": "Mantenemos un diálogo constante, transparente y colaborativo con los padres para asegurar el bienestar y desarrollo de cada niño."
+        },
+        "development": {
+          "title": "Desarrollo Integral",
+          "description": "Apoyamos el crecimiento cognitivo, emocional, social y físico del niño, reconociendo que cada etapa del desarrollo es única e importante."
+        },
+        "professionalism": {
+          "title": "Profesionalismo y Ética",
+          "description": "Nuestro equipo actúa con responsabilidad, compromiso y vocación, garantizando un servicio de alta calidad."
+        },
+        "play": {
+          "title": "Juego con Propósito",
+          "description": "Creemos en el valor del juego como herramienta fundamental de aprendizaje, expresión y socialización."
         }
       }
     },
     "team": {
       "label": "Conoce Nuestro Equipo",
-      "title": "El Corazón de ABC Kids",
+      "title": "El Corazón de ABC Kidz",
       "subtitle": "Educadores apasionados dedicados a nutrir el potencial de tu hijo cada día",
       "introTitle": "Haciendo la Diferencia, Un Niño a la Vez",
-      "introParagraph1": "Nuestro equipo no es solo personal - son familia. Cada educador en ABC Kids ha sido cuidadosamente elegido por su genuina pasión por los niños y compromiso con la excelencia en educación temprana.",
+      "introParagraph1": "Nuestro equipo no es solo personal - son familia. Cada educador en ABC Kidz ha sido cuidadosamente elegido por su genuina pasión por los niños y compromiso con la excelencia en educación temprana.",
       "introParagraph2": "Unidos por nuestro amor por la enseñanza y el cuidado, creamos un ambiente donde los niños se sienten seguros para explorar, aprender y crecer como individuos seguros de sí mismos.",
       "qualitiesTitle": "Lo Que Nos Hace Especiales",
       "qualities": [
@@ -473,10 +514,10 @@
         "Dedicados a hacer que cada niño se sienta valorado y escuchado",
         "Ambiente seguro y acogedor donde los niños prosperan"
       ],
-      "closingStatement": "Para nosotros, tu hijo no es solo un estudiante - se convierte en parte de nuestra familia ABC Kids."
+      "closingStatement": "Para nosotros, tu hijo no es solo un estudiante - se convierte en parte de nuestra familia ABC Kidz."
     },
     "gallery": {
-      "badge": "La Vida en ABC Kids",
+      "badge": "La Vida en ABC Kidz",
       "title": "Momentos que Importan",
       "subtitle": "Destellos de alegría, aprendizaje y crecimiento de nuestras aventuras diarias",
       "filters": {
@@ -494,9 +535,9 @@
   },
   "termsPage": {
     "meta": {
-      "title": "Términos y Condiciones - ABC Kids | Políticas y Servicios",
+      "title": "Términos y Condiciones - ABC Kidz | Políticas y Servicios",
       "description": "Lee nuestros términos y condiciones, políticas de inscripción, horarios y pagos. Descarga el manual completo para padres.",
-      "keywords": "términos ABC Kids, políticas guardería Tampa, manual padres, condiciones servicio, inscripción"
+      "keywords": "términos ABC Kidz, políticas guardería Tampa, manual padres, condiciones servicio, inscripción"
     },
     "hero": {
       "title": "Términos y Condiciones",
@@ -610,8 +651,8 @@
   },
   "blogPage": {
     "meta": {
-      "title": "Blog - ABC Kids | Consejos y Recursos para Padres",
-      "description": "Lee nuestros últimos artículos sobre desarrollo infantil, consejos para padres, actividades educativas y más del equipo de ABC Kids.",
+      "title": "Blog - ABC Kidz | Consejos y Recursos para Padres",
+      "description": "Lee nuestros últimos artículos sobre desarrollo infantil, consejos para padres, actividades educativas y más del equipo de ABC Kidz.",
       "keywords": "blog para padres, consejos desarrollo infantil, actividades guardería, educación preescolar, blog cuidado infantil Tampa"
     },
     "hero": {
@@ -626,7 +667,7 @@
   },
   "infantsPage": {
     "meta": {
-      "title": "Guardería para Bebés Tampa FL | Cuidado 0-12 Meses | ABC Kids",
+      "title": "Guardería para Bebés Tampa FL | Cuidado 0-12 Meses | ABC Kidz",
       "description": "La mejor guardería para bebés en Tampa. Cuidado de bebés de 0-12 meses con personal experimentado, atención individualizada y ambiente seguro. ¡Agenda tu visita!",
       "keywords": "guardería bebés Tampa, cuidado bebés Tampa FL, guardería recién nacidos, cuidado infantil bebés Tampa, daycare bebés Tampa, guardería cerca de mí"
     },
@@ -674,7 +715,7 @@
   },
   "toddlersPage": {
     "meta": {
-      "title": "Guardería Niños Pequeños Tampa FL | Edades 1-2 Años | ABC Kids",
+      "title": "Guardería Niños Pequeños Tampa FL | Edades 1-2 Años | ABC Kidz",
       "description": "La mejor guardería para niños pequeños en Tampa. Programa para edades 1-2 años con aprendizaje práctico, desarrollo social y personal bilingüe. ¡Agenda tu visita!",
       "keywords": "guardería niños pequeños Tampa, programa toddlers Tampa FL, guardería 1 año Tampa, guardería 2 años Tampa, educación temprana Tampa, cuidado infantil"
     },
@@ -722,7 +763,7 @@
   },
   "prekPage": {
     "meta": {
-      "title": "Pre-K Preescolar Tampa FL | Edades 3-4 | Preparación Kindergarten | ABC Kids",
+      "title": "Pre-K Preescolar Tampa FL | Edades 3-4 | Preparación Kindergarten | ABC Kidz",
       "description": "El mejor programa Pre-K en Tampa para niños de 3-4 años. Preparación para kindergarten, lectoescritura, matemáticas, desarrollo social. Programa bilingüe. ¡Inscríbete hoy!",
       "keywords": "Pre-K Tampa FL, preescolar Tampa, preescolar cerca de mí Tampa, preparación kindergarten Tampa, preescolar 3 años Tampa, preescolar 4 años Tampa, mejor preescolar Tampa"
     },
@@ -770,8 +811,8 @@
   },
   "vpkPage": {
     "meta": {
-      "title": "Programa VPK GRATIS Tampa FL | Pre-K Voluntario 4-5 Años | ABC Kids",
-      "description": "¡Inscríbete en el programa VPK GRATIS de Tampa en ABC Kids! Pre-Kindergarten financiado por Florida para niños 4-5 años. Lectoescritura, matemáticas. ¡Proveedor VPK aprobado!",
+      "title": "Programa VPK GRATIS Tampa FL | Pre-K Voluntario 4-5 Años | ABC Kidz",
+      "description": "¡Inscríbete en el programa VPK GRATIS de Tampa en ABC Kidz! Pre-Kindergarten financiado por Florida para niños 4-5 años. Lectoescritura, matemáticas. ¡Proveedor VPK aprobado!",
       "keywords": "VPK Tampa FL, VPK gratis Tampa, Pre-Kindergarten Voluntario Tampa, programa VPK cerca de mí, preescolar gratis Tampa, proveedor VPK Tampa, preescolar gratuito Florida"
     },
     "hero": {
@@ -819,7 +860,7 @@
   },
   "afterSchoolPage": {
     "meta": {
-      "title": "After School Tampa FL | Cuidado Después de Escuela 5-12 Años | ABC Kids",
+      "title": "After School Tampa FL | Cuidado Después de Escuela 5-12 Años | ABC Kidz",
       "description": "Cuidado after school confiable en Tampa para niños 5-12 años. Ayuda con tareas, actividades de enriquecimiento, campamentos de verano. ¡Ambiente seguro y divertido!",
       "keywords": "after school Tampa, programa después de escuela Tampa FL, campamento verano Tampa, cuidado edad escolar Tampa, antes y después de escuela, campamento niños Tampa"
     },
