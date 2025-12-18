@@ -154,6 +154,10 @@
       "noCommitment": "No commitment",
       "response24h": "24-hour response",
       "free": "100% free"
+    },
+    "socialMedia": {
+      "title": "Discover Our Daily Moments!",
+      "subtitle": "Visit our social media and explore the activities, projects, and moments your child will enjoy."
     }
   },
   "locationSection": {
@@ -528,7 +532,7 @@
     },
     "cta": {
       "title": "Want to meet us in person?",
-      "subtitle": "Schedule a free tour and discover why Tampa families trust us.",
+      "subtitle": "Schedule a tour and discover why Tampa families trust us.",
       "scheduleTour": "Schedule Free Tour",
       "callNow": "Call Now"
     }

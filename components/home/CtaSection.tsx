@@ -5,7 +5,8 @@ import { Link } from '@/i18n/routing';
 import { SparklesIcon, CalendarIcon, StarIcon, HeartIcon, AcademicCapIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 import { CheckCircleIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { seoConfig } from '@/components/seo/seo.config';
 
 export default function CtaSection() {
     const t = useTranslations('ctaSection');
@@ -141,8 +142,64 @@ export default function CtaSection() {
                                         </div>
                                     </div>
 
+                                    {/* Social Media Section */}
+                                    <div className="mt-12 pt-10 border-t border-navy-900/10">
+                                        <div className="text-center mb-6">
+                                            <h3 className="text-xl sm:text-4xl font-bold text-navy-900 mb-2">
+                                                {t('socialMedia.title')}
+                                            </h3>
+                                            <p className="text-sm sm:text-base text-navy-900/60 max-w-lg mx-auto">
+                                                {t('socialMedia.subtitle')}
+                                            </p>
+                                        </div>
+                                        
+                                        <div className="flex items-center justify-center gap-4">
+                                            {/* Facebook */}
+                                            <a
+                                                href={seoConfig.social.facebook}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label="Facebook"
+                                                className="group w-14 h-14 bg-linear-to-br from-navy-900/5 to-navy-900/10 hover:from-[#1877F2] hover:to-[#1877F2] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-[#1877F2]/30"
+                                            >
+                                                <FontAwesomeIcon 
+                                                    icon={faFacebook} 
+                                                    className="text-2xl text-navy-900/70 group-hover:text-white transition-colors duration-300" 
+                                                />
+                                            </a>
+
+                                            {/* Instagram */}
+                                            <a
+                                                href={seoConfig.social.instagram}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label="Instagram"
+                                                className="group w-14 h-14 bg-linear-to-br from-navy-900/5 to-navy-900/10 hover:from-[#E4405F] hover:via-[#833AB4] hover:to-[#FCAF45] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-[#E4405F]/30"
+                                            >
+                                                <FontAwesomeIcon 
+                                                    icon={faInstagram} 
+                                                    className="text-2xl text-navy-900/70 group-hover:text-white transition-colors duration-300" 
+                                                />
+                                            </a>
+
+                                            {/* TikTok */}
+                                            <a
+                                                href={seoConfig.social.tiktok}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label="TikTok"
+                                                className="group w-14 h-14 bg-linear-to-br from-navy-900/5 to-navy-900/10 hover:from-[#000000] hover:to-[#000000] rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-black/30"
+                                            >
+                                                <FontAwesomeIcon 
+                                                    icon={faTiktok} 
+                                                    className="text-2xl text-navy-900/70 group-hover:text-white transition-colors duration-300" 
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
+
                                     {/* Disclaimer */}
-                                    <p className="text-sm text-navy-900/50 flex items-center gap-2">
+                                    <p className="text-sm text-navy-900/50 flex items-center gap-2 mt-8">
                                         <CheckCircleIcon className="w-4 h-4 text-accent" />
                                         {t('disclaimer')}
                                     </p>

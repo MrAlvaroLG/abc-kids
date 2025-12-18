@@ -40,7 +40,7 @@ ${formData.message}
         `.trim();
         
         // Abrir el cliente de correo con mailto
-        const mailtoLink = `mailto:alvarolg.developer@gmail.com?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:abckidzdirector@gmail.com?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
         
         // Simular envío y resetear
