@@ -29,7 +29,7 @@ export default function AboutHero() {
                         </div>
 
                         {/* Title */}
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-[1.1]">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-white mb-6 leading-[1.1]">
                             {t('title')}
                             <span className="block mt-2 text-transparent bg-clip-text bg-linear-to-r from-accent via-yellow-300 to-accent">
                                 {t('titleHighlight')}
