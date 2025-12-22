@@ -68,6 +68,27 @@ export default function TrustSection() {
                     </p>
                 </div>
 
+                {/* Featured Trust Banner */}
+                <div className={`max-w-4xl mx-auto mb-12 md:mb-16 transition-all duration-1000 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    <div className="relative rounded-3xl overflow-hidden">
+                        {/* Content - Centered */}
+                        <div className="relative z-10 text-center pb-10">
+                            {/* Animated Counter */}
+                            <div className="mb-6">
+                                <AnimatedCounter target={120} isVisible={isVisible} />
+                            </div>
+
+                            {/* Text */}
+                            <p className="text-xl md:text-2xl lg:text-3xl text-navy-900/80 leading-relaxed max-w-2xl mx-auto">
+                                {t('familiesTrust')}
+                            </p>
+                        </div>
+
+                        {/* Decorative accent line */}
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-accent/30 to-transparent" />
+                    </div>
+                </div>
+
                 {/* Google Rating Card */}
                 <div className={`max-w-4xl mx-auto mb-12 md:mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                     <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-navy-900/5">
@@ -177,6 +198,45 @@ function TestimonialCard({
                     <p className="text-xs text-navy-900/50">Google Review</p>
                 </div>
             </div>
+        </div>
+    );
+}
+
+// Animated Counter Component
+function AnimatedCounter({ target, isVisible }: { target: number; isVisible: boolean }) {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        if (!isVisible) return;
+
+        let startTime: number | null = null;
+        const duration = 2000; // 2 seconds animation
+
+        const animate = (currentTime: number) => {
+            if (!startTime) startTime = currentTime;
+            const progress = Math.min((currentTime - startTime) / duration, 1);
+            
+            // Easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            const currentCount = Math.floor(easeOutQuart * target);
+            
+            setCount(currentCount);
+
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                setCount(target);
+            }
+        };
+
+        requestAnimationFrame(animate);
+    }, [isVisible, target]);
+
+    return (
+        <div className="inline-flex items-baseline gap-2">
+            <span className="text-7xl md:text-8xl lg:text-9xl font-black text-transparent bg-clip-text bg-linear-to-r from-blue-800 via-navy-900 to-blue-800">
+                {count}+
+            </span>
         </div>
     );
 }

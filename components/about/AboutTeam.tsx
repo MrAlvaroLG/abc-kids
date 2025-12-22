@@ -12,14 +12,6 @@ export default function AboutTeam() {
     const [activeSlide, setActiveSlide] = useState(0);
     const sectionRef = useRef<HTMLElement>(null);
 
-    const teamImages = [
-        { src: '/about/personal/photo7.jpeg', alt: 'Team Photo 1' },
-        { src: '/about/personal/photo8.jpeg', alt: 'Team Photo 2' },
-        { src: '/about/personal/photo11.jpeg', alt: 'Team Photo 3' },
-        { src: '/about/personal/photo12.jpeg', alt: 'Team Photo 4' }
-
-    ];
-
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -36,14 +28,6 @@ export default function AboutTeam() {
 
         return () => observer.disconnect();
     }, []);
-
-    // Auto-advance carousel
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setActiveSlide((prev) => (prev + 1) % teamImages.length);
-        }, 5000);
-        return () => clearInterval(interval);
-    }, [teamImages.length]);
 
     const qualities = t.raw('qualities') as string[];
 
@@ -119,68 +103,6 @@ export default function AboutTeam() {
                                 </div>
                             ))}
                         </div>
-                    </div>
-                </div>
-
-                {/* Full Width Carousel */}
-                <div className={`max-w-7xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    {/* Main Carousel */}
-                    <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-21/9">
-                        {teamImages.map((image, index) => (
-                            <div
-                                key={index}
-                                className={`absolute inset-0 transition-all duration-700 ${
-                                    index === activeSlide 
-                                        ? 'opacity-100 scale-100' 
-                                        : 'opacity-0 scale-105'
-                                }`}
-                            >
-                                <Image
-                                    src={image.src}
-                                    alt={image.alt}
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute inset-0 bg-linear-to-t from-navy-900/60 via-transparent to-transparent" />
-                            </div>
-                        ))}
-
-                        {/* Carousel Indicators */}
-                        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-                            {teamImages.map((_, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => setActiveSlide(index)}
-                                    className={`transition-all duration-300 rounded-full ${
-                                        index === activeSlide 
-                                            ? 'w-10 h-2 bg-accent' 
-                                            : 'w-2 h-2 bg-white/50 hover:bg-white/70'
-                                    }`}
-                                />
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Thumbnail Nav */}
-                    <div className="grid grid-cols-4 gap-4 mt-6">
-                        {teamImages.map((image, index) => (
-                            <button
-                                key={index}
-                                onClick={() => setActiveSlide(index)}
-                                className={`relative rounded-2xl overflow-hidden aspect-video transition-all duration-300 ${
-                                    index === activeSlide 
-                                        ? 'ring-2 ring-accent ring-offset-2 ring-offset-navy-900' 
-                                        : 'opacity-60 hover:opacity-100'
-                                }`}
-                            >
-                                <Image
-                                    src={image.src}
-                                    alt={image.alt}
-                                    fill
-                                    className="object-cover"
-                                />
-                            </button>
-                        ))}
                     </div>
                 </div>
             </div>

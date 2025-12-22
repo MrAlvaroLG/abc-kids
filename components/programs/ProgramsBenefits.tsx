@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { 
     UserGroupIcon, 
     HeartIcon, 
@@ -95,6 +96,63 @@ export default function ProgramsBenefits() {
                             </div>
                         );
                     })}
+                </div>
+
+                {/* Photo Collage */}
+                <div className={`mt-20 max-w-6xl mx-auto transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    <div className="grid grid-cols-12 grid-rows-6 gap-3 h-[400px] sm:h-[500px] lg:h-[600px]">
+                        {/* Main large image */}
+                        <div className="col-span-7 row-span-4 relative rounded-3xl overflow-hidden shadow-2xl group">
+                            <Image
+                                src="/about/personal/photo5.jpeg"
+                                alt="ABC Kids Team"
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-linear-to-t from-navy-900/60 via-transparent to-transparent" />
+                        </div>
+
+                        {/* Top right image */}
+                        <div className="col-span-5 row-span-3 relative rounded-3xl overflow-hidden shadow-2xl group">
+                            <Image
+                                src="/about/kids/photo1.jpeg"
+                                alt="Happy Kids at ABC Kids"
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-linear-to-t from-navy-900/40 via-transparent to-transparent" />
+                        </div>
+
+                        {/* Bottom left */}
+                        <div className="col-span-4 row-span-2 relative rounded-2xl overflow-hidden shadow-xl group">
+                            <Image
+                                src="/about/kids/photo2.jpeg"
+                                alt="Learning Activities"
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                        </div>
+
+                        {/* Bottom middle */}
+                        <div className="col-span-3 row-span-2 relative rounded-2xl overflow-hidden shadow-xl group">
+                            <Image
+                                src="/about/personal/photo7.jpeg"
+                                alt="Our Educators"
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                        </div>
+
+                        {/* Bottom right */}
+                        <div className="col-span-5 row-span-3 relative rounded-2xl overflow-hidden shadow-xl group">
+                            <Image
+                                src="/about/kids/photo11.jpeg"
+                                alt="Playtime Fun"
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

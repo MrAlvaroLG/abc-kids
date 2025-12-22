@@ -1,9 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from '@/i18n/routing';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faBabyCarriage, 
@@ -13,11 +14,38 @@ import {
     faSchool
 } from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import Image from 'next/image';
+
+const carouselImages = [
+    { src: '/home/photo7.jpg', alt: 'ABC Kids Learning Environment' },
+    { src: '/home/photo2.jpg', alt: 'Children Learning Activities' },
+    { src: '/home/photo4.jpg', alt: 'Fun Learning Moments' },
+    { src: '/home/photo5.jpg', alt: 'Interactive Learning' },
+    { src: '/home/photo6.jpg', alt: 'Creative Activities' },
+];
 
 export default function ProgramsSection() {
     const t = useTranslations('programsSection');
     const [isVisible, setIsVisible] = useState(false);
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [isAutoPlaying, setIsAutoPlaying] = useState(true);
     const sectionRef = useRef<HTMLElement>(null);
+    const autoPlayRef = useRef<NodeJS.Timeout | null>(null);
+
+    const nextSlide = useCallback(() => {
+        setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+    }, []);
+
+    const prevSlide = useCallback(() => {
+        setCurrentSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+    }, []);
+
+    const goToSlide = useCallback((index: number) => {
+        setCurrentSlide(index);
+        setIsAutoPlaying(false);
+        if (autoPlayRef.current) clearTimeout(autoPlayRef.current);
+        autoPlayRef.current = setTimeout(() => setIsAutoPlaying(true), 5000);
+    }, []);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -39,6 +67,21 @@ export default function ProgramsSection() {
             if (currentSection) {
                 observer.unobserve(currentSection);
             }
+        };
+    }, []);
+
+    // Auto-play carousel
+    useEffect(() => {
+        if (!isAutoPlaying) return;
+        
+        const interval = setInterval(nextSlide, 4000);
+        return () => clearInterval(interval);
+    }, [isAutoPlaying, nextSlide]);
+
+    // Cleanup timeout on unmount
+    useEffect(() => {
+        return () => {
+            if (autoPlayRef.current) clearTimeout(autoPlayRef.current);
         };
     }, []);
 
@@ -111,6 +154,83 @@ export default function ProgramsSection() {
                     <p className="text-base sm:text-lg text-navy-900/60">
                         {t('subtitle')}
                     </p>
+                </div>
+
+                {/* Photo Carousel */}
+                <div className={`max-w-6xl mx-auto mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
+                        {/* Main Carousel Container */}
+                        <div className="relative aspect-[4/3] sm:aspect-video md:aspect-[21/9]">
+                            {carouselImages.map((image, index) => (
+                                <div
+                                    key={index}
+                                    className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                                        index === currentSlide 
+                                            ? 'opacity-100 scale-100' 
+                                            : 'opacity-0 scale-105'
+                                    }`}
+                                >
+                                    <Image
+                                        src={image.src}
+                                        alt={image.alt}
+                                        fill
+                                        className="object-cover"
+                                        priority={index === 0}
+                                    />
+                                </div>
+                            ))}
+                            
+                            {/* Gradient Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 via-navy-900/10 to-transparent" />
+                            
+                            {/* Navigation Arrows */}
+                            <button
+                                onClick={() => { prevSlide(); setIsAutoPlaying(false); }}
+                                className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
+                                aria-label="Previous slide"
+                            >
+                                <ChevronLeftIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+                            </button>
+                            <button
+                                onClick={() => { nextSlide(); setIsAutoPlaying(false); }}
+                                className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
+                                aria-label="Next slide"
+                            >
+                                <ChevronRightIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+                            </button>
+
+                            {/* Bottom Content */}
+                            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                                <div className="flex items-end justify-between gap-4">
+                                    {/* Dots Indicator */}
+                                    <div className="flex items-center gap-2">
+                                        {carouselImages.map((_, index) => (
+                                            <button
+                                                key={index}
+                                                onClick={() => goToSlide(index)}
+                                                className={`transition-all duration-300 rounded-full ${
+                                                    index === currentSlide
+                                                        ? 'w-8 h-2 bg-accent'
+                                                        : 'w-2 h-2 bg-white/50 hover:bg-white/70'
+                                                }`}
+                                                aria-label={`Go to slide ${index + 1}`}
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {/* Progress Bar */}
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/20">
+                            <div 
+                                className="h-full bg-accent transition-all duration-300 ease-linear"
+                                style={{ 
+                                    width: `${((currentSlide + 1) / carouselImages.length) * 100}%`,
+                                }}
+                            />
+                        </div>
+                    </div>
                 </div>
 
                 {/* Programs Grid 2x2 */}

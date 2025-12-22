@@ -33,6 +33,7 @@
       "verified": "Verified Reviews",
       "reviews": "reviews"
     },
+    "familiesTrust": "families have trusted us with the care and education of their children",
     "testimonials": {
       "title": "What our parents say on Google",
       "role": "Verified Google Review",
@@ -62,7 +63,7 @@
   },
   "programsSection": {
     "title": "Our Programs",
-    "subtitle": "Educational programs designed for each stage of your child's development",
+    "subtitle": "Each program is carefully planned to turn everyday experiences into meaningful learning opportunities",
     "cta": "View all programs",
     "learnMore": "Learn More",
     "ageLabels": {
@@ -384,9 +385,9 @@
     },
     "hero": {
       "badge": "Welcome to ABC Kidz",
-      "title": "Where Learning Is",
-      "titleHighlight": "Fun!",
-      "subtitle": "A nurturing environment that inspires curiosity and builds lifelong skills. At ABC Kidz we create a safe, fun and educational environment where your child will develop their full potential.",
+      "title": "A Caring Team",
+      "titleHighlight": "Focused on Early Development",
+      "subtitle": "With a thoughtful approach to learning and care, we support families by providing a safe and enriching environment for every child.",
       "features": {
         "feature1": "Personalized attention for every child",
         "feature2": "Safe and stimulating learning environment",
