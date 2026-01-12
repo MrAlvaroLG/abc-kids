@@ -1,4 +1,4 @@
-import { HTMLAttributes, ReactNode } from 'react';
+import { HTMLAttributes, ReactNode, forwardRef } from 'react';
 import { cn } from '@/lib/utils';
 
 interface SectionProps extends HTMLAttributes<HTMLElement> {
@@ -10,16 +10,17 @@ interface SectionProps extends HTMLAttributes<HTMLElement> {
     containerClassName?: string; // Class for the container div
 }
 
-export function Section({ 
+export const Section = forwardRef<HTMLElement, SectionProps>(({ 
     children, 
     noPadding = false, 
     container = true,
     className,
     containerClassName,
     ...props 
-}: SectionProps) {
+}, ref) => {
     return (
         <section 
+            ref={ref}
             className={cn(
                 // Vertical rhythm: mobile vs desktop
                 !noPadding && "py-[var(--spacing-section)] lg:py-[var(--spacing-section-lg)]",
@@ -36,4 +37,6 @@ export function Section({
             )}
         </section>
     );
-}
+});
+
+Section.displayName = "Section";
