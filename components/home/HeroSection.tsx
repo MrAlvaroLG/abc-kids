@@ -110,7 +110,7 @@ export default function HeroSection() {
                                         <div className="relative w-full h-full rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
                                             <Image 
                                                 src="/hero.jpeg" 
-                                                alt="ABC Kids Daycare"
+                                                alt="ABC Kidz Preschool Daycare"
                                                 fill
                                                 className="object-cover"
                                                 priority

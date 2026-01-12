@@ -26,7 +26,7 @@ export default function Navbar() {
                 <Link href="/" className="transition-transform hover:scale-105 duration-300">
                     <Image 
                         src="/logo.png" 
-                        alt="ABC Kids Logo" 
+                        alt="ABC Kidz Preschool Logo" 
                         width={9101} 
                         height={6744}
                         className="h-11 md:h-13 w-auto"

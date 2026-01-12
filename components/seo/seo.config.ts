@@ -92,7 +92,7 @@ export const seoConfig = {
     // ============================================
     site: {
         url: "https://abckidstampa.com",
-        name: "ABC Kids Daycare Tampa",
+        name: "ABC Kidz Preschool Daycare Tampa",
         locales: ["en", "es"] as const,
         defaultLocale: "en" as const,
     },
@@ -203,7 +203,7 @@ export const seoConfig = {
             "Pre-K Tampa",
             "best daycare near me",
             "affordable daycare Tampa",
-            "ABC Kids daycare",
+            "ABC Kidz Preschool",
             "childcare center Tampa",
             "early childhood education Tampa",
             "daycare Hillsborough County",

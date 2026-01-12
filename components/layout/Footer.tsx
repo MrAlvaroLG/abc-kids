@@ -58,7 +58,7 @@ export default function Footer() {
                         <div className="lg:col-span-1">
                             <div className="mb-6">
                                 <h3 className="text-2xl font-bold mb-2">
-                                    ABC <span className="text-accent">Kids</span>
+                                    ABC <span className="text-accent">Kidz Preschool</span>
                                 </h3>
                                 <p className="text-white/70 text-sm leading-relaxed">
                                     {t('description')}
@@ -169,7 +169,7 @@ export default function Footer() {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
                         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                             <p className="text-sm text-white/50 text-center md:text-left">
-                                © {currentYear} ABC Kids. {t('rights')}
+                                © {currentYear} ABC Kidz Preschool. {t('rights')}
                             </p>
                             <div className="flex flex-wrap justify-center gap-6">
                                 <Link 
