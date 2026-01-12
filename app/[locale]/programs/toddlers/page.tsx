@@ -207,7 +207,7 @@ export default async function ToddlersPage() {
                             <div className="relative order-1 lg:order-2">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/toddlers/Toddlers2.jpg"
+                                        src="/programs/toddlers/Toddlers3.jpg"
                                         alt="Toddlers playing and learning"
                                         width={600}
                                         height={500}

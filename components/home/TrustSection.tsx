@@ -91,7 +91,12 @@ export default function TrustSection() {
 
                 {/* Google Rating Card */}
                 <div className={`max-w-4xl mx-auto mb-12 md:mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-navy-900/5">
+                    <a 
+                        href="https://www.google.com/maps/place/ABC+Kidz+Preschool+-+DayCare/@28.0699994,-82.4795099,17z/data=!4m16!1m9!3m8!1s0x6524446035a9944b:0x64bb5d534004770e!2sABC+Kidz+Preschool+-+DayCare!8m2!3d28.0699947!4d-82.476935!9m1!1b1!16s%2Fg%2F11v60zpynx!3m5!1s0x6524446035a9944b:0x64bb5d534004770e!8m2!3d28.0699947!4d-82.476935!16s%2Fg%2F11v60zpynx?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-navy-900/5 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+                    >
                         {/* Google Logo & Rating */}
                         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                             {/* Left: Google Logo */}
@@ -133,7 +138,7 @@ export default function TrustSection() {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 {/* Testimonials Grid */}

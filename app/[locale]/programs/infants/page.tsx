@@ -103,7 +103,7 @@ export default async function InfantsPage() {
                             <div className="relative">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/infants/Infant1.jpg"
+                                        src="/programs/infants/Infant3.jpg"
                                         alt="Infant care at ABC Kids"
                                         width={600}
                                         height={500}
