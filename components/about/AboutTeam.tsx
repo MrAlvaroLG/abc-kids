@@ -43,11 +43,6 @@ export default function AboutTeam() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Header */}
                 <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/20 mb-8">
-                        <UserGroupIcon className="w-5 h-5 text-accent" />
-                        <span className="text-white/90 text-sm font-medium">{t('label')}</span>
-                    </div>
-                    
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
                         {t('title')}
                     </h2>

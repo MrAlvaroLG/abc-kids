@@ -10,6 +10,16 @@
     --color-surface: #FFFFFF;
     --color-dark: #0B1220;
     --color-light: #FFFFFF;
+
+    /* Radius System */
+    --radius-lg: 1.5rem; /* 24px - Large Cards */
+    --radius-md: 1rem;   /* 16px - Standard Cards/Buttons */
+    --radius-sm: 0.5rem; /* 8px - Small elements */
+
+    /* Spacing System (Semantic) */
+    --spacing-container: 2rem; /* Mobile padding */
+    --spacing-section: 4rem;   /* Mobile section gap */
+    --spacing-section-lg: 8rem; /* Desktop section gap */
 }
 
 body {

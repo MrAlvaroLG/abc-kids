@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ProgramsCTA from '@/components/programs/ProgramsCTA';
+import ProgramNavigation from '@/components/programs/ProgramNavigation';
 import { CheckCircleIcon, SparklesIcon, PuzzlePieceIcon, UserGroupIcon, AcademicCapIcon } from '@heroicons/react/24/solid';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -224,6 +225,9 @@ export default async function ToddlersPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Navigation */}
+            <ProgramNavigation current="toddlers" />
 
             {/* CTA Section */}
             <ProgramsCTA />

@@ -6,6 +6,10 @@
     "about": "About Us",
     "terms": "Terms"
   },
+  "common": {
+    "previousProgram": "Previous Program",
+    "nextProgram": "Next Program"
+  },
   "language": {
     "en": "English",
     "es": "Spanish",
@@ -384,7 +388,7 @@
       "keywords": "about ABC Kidz Tampa, Tampa daycare center, bilingual childcare Tampa, trusted daycare Tampa FL, early education Tampa, best daycare Tampa, childcare center near me"
     },
     "hero": {
-      "badge": "Welcome to ABC Kidz",
+      "badge": "Welcome to ABC Kidz Preschool",
       "title": "A Caring Team",
       "titleHighlight": "Focused on Early Development",
       "subtitle": "With a thoughtful approach to learning and care, we support families by providing a safe and enriching environment for every child.",
@@ -578,8 +582,7 @@
             "content": [
               "Children must be dropped off and picked up personally by parents or authorized guardians",
               "Signature required on check-in and check-out log",
-              "Arrivals after 9:30 AM may disrupt scheduled activities",
-              "Late pick-ups (after 6:00 PM) incur additional charges of $1 per minute"
+              "No entries are accepted after 9:30 AM as they disrupt activities"
             ]
           },
           {
@@ -592,25 +595,26 @@
         "title": "Payments and Fees",
         "items": [
           {
-            "subtitle": "Registration and Monthly Fee",
-            "content": "A non-refundable initial registration fee is required at enrollment. Monthly fees are paid in advance on the first day of each month."
+            "subtitle": "Registration and Weekly Tuition",
+            "content": "A non-refundable initial registration fee is due upon enrollment. Tuition payments are strictly due on a weekly basis and must be settled in full every Monday."
           },
           {
-            "subtitle": "Payment Methods",
+            "subtitle": "Accepted Payment Methods",
             "content": [
               "Bank transfer or ACH (preferred)",
               "Credit or debit card",
               "Check or money order",
-              "Late payments incur a $25 charge after 5 days"
+              "Late pick-up fee: $10 plus $1 per minute",
+              "A non-negotiable late fee of $15 will be automatically applied every Tuesday at 9:30 AM to any outstanding balance"
             ]
           },
           {
-            "subtitle": "Refund Policy",
-            "content": "No refunds are granted for absences, vacations or holidays. 30 days written notice is required to cancel enrollment."
+            "subtitle": "Refund and Cancellation Policy",
+            "content": "No credits or refunds are issued for absences, vacations, or statutory holidays. Formal written notice must be submitted a minimum of two (2) weeks prior to the intended cancellation of enrollment."
           },
           {
-            "subtitle": "Additional Charges",
-            "content": "Additional services such as field trips, school photos or special events may have extra charges that will be communicated in advance."
+            "subtitle": "Additional Fees",
+            "content": "Ancillary services such as educational field trips, professional school portraits, or designated special events may incur supplementary charges, which will be disclosed in advance."
           }
         ]
       },
@@ -628,7 +632,7 @@
           },
           {
             "subtitle": "Medications",
-            "content": "Medications will only be administered with written parental authorization and in their original labeled container. Staff must be informed about allergies or special medical conditions."
+            "content": "Medications will not be administered unless an authorized person is present."
           },
           {
             "subtitle": "Discipline",

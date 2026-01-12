@@ -6,6 +6,10 @@
     "about": "Sobre Nosotros",
     "terms": "Términos"
   },
+  "common": {
+    "previousProgram": "Programa Anterior",
+    "nextProgram": "Siguiente Programa"
+  },
   "language": {
     "en": "Inglés",
     "es": "Español",
@@ -384,7 +388,7 @@
       "keywords": "sobre ABC Kidz Tampa, guardería Tampa, cuidado infantil bilingüe Tampa, guardería de confianza Tampa FL, mejor guardería Tampa, centro de cuidado infantil"
     },
     "hero": {
-      "badge": "Bienvenido a ABC Kidz",
+      "badge": "Bienvenido a ABC Kidz Preschool",
       "title": "Un equipo atento",
       "titleHighlight": "Centrado en el desarrollo temprano",
       "subtitle": "Con un enfoque reflexivo hacia el aprendizaje y el cuidado, apoyamos a las familias brindando un entorno seguro y enriquecedor para cada niño.",
@@ -578,8 +582,7 @@
             "content": [
               "Los niños deben ser entregados y recogidos personalmente por los padres o tutores autorizados",
               "Se requiere firma en el registro de entrada y salida",
-              "Llegadas después de las 9:30 AM pueden interrumpir las actividades programadas",
-              "Recogidas tardías (después de las 6:00 PM) incurren en cargos adicionales de $1 por minuto"
+              "No se aceptan entradas después de las 9:30 AM porque interrumpen las actividades"
             ]
           },
           {
@@ -592,25 +595,26 @@
         "title": "Pagos y Tarifas",
         "items": [
           {
-            "subtitle": "Matrícula y Mensualidad",
-            "content": "Se requiere el pago de una matrícula inicial no reembolsable al momento de la inscripción. Las mensualidades se pagan por adelantado el primer día de cada mes."
+            "subtitle": "Inscripción y Colegiatura Semanal",
+            "content": "Se requiere el pago de una matrícula inicial no reembolsable al momento de la inscripción. Los pagos de colegiatura se realizan estrictamente de forma semanal y deben liquidarse en su totalidad cada lunes."
           },
           {
-            "subtitle": "Métodos de Pago",
+            "subtitle": "Métodos de Pago Aceptados",
             "content": [
               "Transferencia bancaria o ACH (preferido)",
               "Tarjeta de crédito o débito",
               "Cheque o money order",
-              "Los pagos atrasados incurren en un cargo de $25 después de 5 días"
+              "Cargo por recogida tardía: $10 más $1 por minuto",
+              "Se aplicará automáticamente un cargo por mora no negociable de $15 todos los martes a las 9:30 AM a cualquier saldo pendiente"
             ]
           },
           {
-            "subtitle": "Política de Reembolsos",
-            "content": "No se otorgan reembolsos por ausencias, vacaciones o días festivos. Se requiere aviso de 30 días por escrito para cancelar la inscripción."
+            "subtitle": "Política de Reembolsos y Cancelación",
+            "content": "No se otorgan créditos ni reembolsos por ausencias, vacaciones o días festivos. Se requiere una notificación formal por escrito con un mínimo de dos (2) semanas de antelación para la cancelación de la inscripción."
           },
           {
             "subtitle": "Cargos Adicionales",
-            "content": "Los servicios adicionales como excursiones, fotos escolares o eventos especiales pueden tener cargos extra que se comunicarán con anticipación."
+            "content": "Los servicios auxiliares como excursiones educativas, fotos escolares profesionales o eventos especiales designados pueden tener cargos suplementarios que se comunicarán con anticipación."
           }
         ]
       },
@@ -628,7 +632,7 @@
           },
           {
             "subtitle": "Medicamentos",
-            "content": "Solo se administrarán medicamentos con autorización escrita de los padres y en su envase original con etiqueta. El personal debe ser informado sobre alergias o condiciones médicas especiales."
+            "content": "No se administrarán medicamentos a menos que una persona autorizada esté presente."
           },
           {
             "subtitle": "Disciplina",

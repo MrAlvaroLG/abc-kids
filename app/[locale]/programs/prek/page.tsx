@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ProgramsCTA from '@/components/programs/ProgramsCTA';
+import ProgramNavigation from '@/components/programs/ProgramNavigation';
 import { CheckCircleIcon, BookOpenIcon, CalculatorIcon, UserGroupIcon, PencilIcon } from '@heroicons/react/24/solid';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -103,7 +104,7 @@ export default async function PreKPage() {
                             <div className="relative">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/prek/prek1.jpg"
+                                        src="/programs/prek/prek1.JPG"
                                         alt="Pre-K learning at ABC Kids"
                                         width={600}
                                         height={500}
@@ -207,7 +208,7 @@ export default async function PreKPage() {
                             <div className="relative order-1 lg:order-2">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/prek/prek2.jpg"
+                                        src="/programs/prek/prek2.JPG"
                                         alt="Pre-K activities and learning"
                                         width={600}
                                         height={500}
@@ -224,6 +225,9 @@ export default async function PreKPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Navigation */}
+            <ProgramNavigation current="prek" />
 
             {/* CTA Section */}
             <ProgramsCTA />

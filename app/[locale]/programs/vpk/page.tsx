@@ -1,9 +1,11 @@
+
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ProgramsCTA from '@/components/programs/ProgramsCTA';
-import { CheckCircleIcon, AcademicCapIcon, LanguageIcon, CalculatorIcon, BookOpenIcon } from '@heroicons/react/24/solid';
+import ProgramNavigation from '@/components/programs/ProgramNavigation';
+import { CheckCircleIcon, LanguageIcon, CalculatorIcon, BookOpenIcon, AcademicCapIcon } from '@heroicons/react/24/solid';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -230,6 +232,9 @@ export default async function VPKPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Navigation */}
+            <ProgramNavigation current="vpk" />
 
             {/* CTA Section */}
             <ProgramsCTA />

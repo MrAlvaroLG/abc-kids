@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ProgramsCTA from '@/components/programs/ProgramsCTA';
+import ProgramNavigation from '@/components/programs/ProgramNavigation';
 import { CheckCircleIcon, HeartIcon, SparklesIcon, HandRaisedIcon, ShieldCheckIcon } from '@heroicons/react/24/solid';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -224,6 +225,9 @@ export default async function InfantsPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Navigation */}
+            <ProgramNavigation current="infants" />
 
             {/* CTA Section */}
             <ProgramsCTA />

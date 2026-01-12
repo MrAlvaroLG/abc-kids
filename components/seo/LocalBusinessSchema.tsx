@@ -95,6 +95,7 @@ export default function LocalBusinessSchema() {
 
     return (
         <script
+            id="local-business-schema"
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
