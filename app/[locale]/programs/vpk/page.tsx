@@ -101,6 +101,92 @@ export default async function VPKPage() {
                 </div>
             </section>
 
+            {/* News Feature Banner */}
+            <section className="relative py-12 bg-linear-to-br from-green-50 via-white to-teal-50 border-y border-green-100/50">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-5xl mx-auto">
+                        {/* Featured Badge */}
+                        <div className="text-center mb-6">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r from-green-500 to-teal-600 rounded-full shadow-lg">
+                                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+                                </svg>
+                                <span className="text-white text-sm font-bold uppercase tracking-wider">As Featured In</span>
+                            </div>
+                        </div>
+
+                        {/* Main Feature Card */}
+                        <a 
+                            href="https://baynews9.com/fl/tampa/news/2025/07/15/summer-boost-program"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block group"
+                        >
+                            <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-green-100 hover:border-green-300 hover:-translate-y-1">
+                                {/* Gradient Accent Bar */}
+                                <div className="h-2 bg-linear-to-r from-green-500 via-teal-500 to-green-600" />
+                                
+                                <div className="p-6 sm:p-8">
+                                    <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-6 items-center">
+                                        {/* News Source Badge */}
+                                        <div className="flex justify-center md:justify-start">
+                                            <div className="relative">
+                                                <div className="bg-linear-to-br from-green-600 to-green-900 text-white px-6 py-4 rounded-2xl shadow-lg font-bold text-xl min-w-[140px] text-center">
+                                                    BAY NEWS 9
+                                                </div>
+                                                {/* Verified Badge */}
+                                                <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+                                                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Content */}
+                                        <div className="text-center md:text-left">
+                                            <h3 className="text-xl sm:text-2xl font-bold text-navy-900 mb-3 group-hover:text-green-600 transition-colors duration-300">
+                                                Early Learning Coalition receives funding for summer program
+                                            </h3>
+                                            <p className="text-navy-900/70 mb-4 leading-relaxed">
+                                                ABC Kidz Preschool featured as a showcase program helping children prepare for kindergarten through the Summer Boost Program initiative.
+                                            </p>
+                                            
+                                            {/* Quote */}
+                                            <div className="bg-linear-to-r from-green-50 to-teal-50 border-l-4 border-green-500 p-4 rounded-lg mb-4">
+                                                <p className="text-navy-900/80 italic text-sm sm:text-base">
+                                                    "It's the first step to build a strong foundation, not only for kindergarten but for lifelong learning."
+                                                </p>
+                                                <p className="text-navy-900/60 text-xs sm:text-sm mt-2 font-semibold">
+                                                    — Miryam Huby, Lead VPK Teacher at ABC Kidz Preschool
+                                                </p>
+                                            </div>
+
+                                            {/* CTA */}
+                                            <div className="inline-flex items-center gap-2 text-green-600 font-semibold group-hover:gap-3 transition-all duration-300">
+                                                <span>Read Full Coverage</span>
+                                                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                </svg>
+                                            </div>
+
+                                            {/* Date */}
+                                            <p className="text-navy-900/40 text-xs sm:text-sm mt-3">
+                                                Published: July 15, 2025
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Decorative corner accent */}
+                                <div className="absolute top-0 right-0 w-40 h-40 bg-linear-to-br from-green-200/30 to-teal-200/30 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
             {/* Main Content Section */}
             <section className="py-20 md:py-32 bg-white">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">

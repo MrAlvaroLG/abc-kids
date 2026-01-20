@@ -156,8 +156,43 @@ export default function ProgramsSection() {
                     </p>
                 </div>
 
+                {/* YouTube Video */}
+                <div className={`max-w-6xl mx-auto mb-16 transition-all duration-1000 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-navy-900/5">
+                        <div className="relative aspect-video w-full">
+                            <iframe
+                                className="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/PC4E-8OJoGE"
+                                title="ABC Kidz Preschool Programs Introduction"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                {/* Programs Grid 2x2 */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto mb-16">
+                    {programs.map((program, index) => (
+                        <ProgramCard
+                            key={program.key}
+                            programKey={program.key}
+                            icon={program.icon}
+                            ageRange={program.ageRange}
+                            ageLabel={program.ageLabel}
+                            gradient={program.gradient}
+                            bgColor={program.bgColor}
+                            lightBg={program.lightBg}
+                            isVisible={isVisible}
+                            delay={index * 100}
+                            className={program.className}
+                        />
+                    ))}
+                </div>
+
                 {/* Photo Carousel */}
-                <div className={`max-w-6xl mx-auto mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <div className={`max-w-6xl mx-auto mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                     <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
                         {/* Main Carousel Container */}
                         <div className="relative aspect-[4/3] sm:aspect-video md:aspect-[21/9]">
@@ -231,25 +266,6 @@ export default function ProgramsSection() {
                             />
                         </div>
                     </div>
-                </div>
-
-                {/* Programs Grid 2x2 */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto mb-16">
-                    {programs.map((program, index) => (
-                        <ProgramCard
-                            key={program.key}
-                            programKey={program.key}
-                            icon={program.icon}
-                            ageRange={program.ageRange}
-                            ageLabel={program.ageLabel}
-                            gradient={program.gradient}
-                            bgColor={program.bgColor}
-                            lightBg={program.lightBg}
-                            isVisible={isVisible}
-                            delay={index * 100}
-                            className={program.className}
-                        />
-                    ))}
                 </div>
 
                 {/* CTA Button */}
