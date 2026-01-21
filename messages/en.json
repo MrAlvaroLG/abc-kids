@@ -865,6 +865,15 @@
     "trust": {
       "title": "State-Approved VPK Provider",
       "subtitle": "Free program for Florida families"
+    },
+    "newsFeature": {
+      "badge": "As Featured In",
+      "headline": "Early Learning Coalition receives funding for summer program",
+      "description": "ABC Kidz Preschool featured as a showcase program helping children prepare for kindergarten through the Summer Boost Program initiative.",
+      "quote": "It's the first step to build a strong foundation, not only for kindergarten but for lifelong learning.",
+      "attribution": "— Miryam Huby, Lead VPK Teacher at ABC Kidz Preschool",
+      "cta": "Read Full Coverage",
+      "publishedDate": "Published: July 15, 2025"
     }
   },
   "afterSchoolPage": {

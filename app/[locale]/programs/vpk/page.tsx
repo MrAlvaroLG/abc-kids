@@ -112,7 +112,7 @@ export default async function VPKPage() {
                                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
                                     <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
                                 </svg>
-                                <span className="text-white text-sm font-bold uppercase tracking-wider">As Featured In</span>
+                                <span className="text-white text-sm font-bold uppercase tracking-wider">{t('newsFeature.badge')}</span>
                             </div>
                         </div>
 
@@ -147,25 +147,25 @@ export default async function VPKPage() {
                                         {/* Content */}
                                         <div className="text-center md:text-left">
                                             <h3 className="text-xl sm:text-2xl font-bold text-navy-900 mb-3 group-hover:text-green-600 transition-colors duration-300">
-                                                Early Learning Coalition receives funding for summer program
+                                                {t('newsFeature.headline')}
                                             </h3>
                                             <p className="text-navy-900/70 mb-4 leading-relaxed">
-                                                ABC Kidz Preschool featured as a showcase program helping children prepare for kindergarten through the Summer Boost Program initiative.
+                                                {t('newsFeature.description')}
                                             </p>
                                             
                                             {/* Quote */}
                                             <div className="bg-linear-to-r from-green-50 to-teal-50 border-l-4 border-green-500 p-4 rounded-lg mb-4">
                                                 <p className="text-navy-900/80 italic text-sm sm:text-base">
-                                                    "It's the first step to build a strong foundation, not only for kindergarten but for lifelong learning."
+                                                    "{t('newsFeature.quote')}"
                                                 </p>
                                                 <p className="text-navy-900/60 text-xs sm:text-sm mt-2 font-semibold">
-                                                    — Miryam Huby, Lead VPK Teacher at ABC Kidz Preschool
+                                                    {t('newsFeature.attribution')}
                                                 </p>
                                             </div>
 
                                             {/* CTA */}
                                             <div className="inline-flex items-center gap-2 text-green-600 font-semibold group-hover:gap-3 transition-all duration-300">
-                                                <span>Read Full Coverage</span>
+                                                <span>{t('newsFeature.cta')}</span>
                                                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                                 </svg>
@@ -173,7 +173,7 @@ export default async function VPKPage() {
 
                                             {/* Date */}
                                             <p className="text-navy-900/40 text-xs sm:text-sm mt-3">
-                                                Published: July 15, 2025
+                                                {t('newsFeature.publishedDate')}
                                             </p>
                                         </div>
                                     </div>
@@ -186,6 +186,22 @@ export default async function VPKPage() {
                     </div>
                 </div>
             </section>
+
+            {/* YouTube Video */}
+                <div className="max-w-6xl mx-auto my-16">
+                    <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-navy-900/5">
+                        <div className="relative aspect-video w-full">
+                            <iframe
+                                className="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/yshTqwfLcW8?si=YIqWBHcGIdNjfRag"
+                                title="ABC Kidz Preschool Programs Introduction"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                </div>
 
             {/* Main Content Section */}
             <section className="py-20 md:py-32 bg-white">

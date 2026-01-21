@@ -865,6 +865,15 @@
     "trust": {
       "title": "Proveedor de VPK Aprobado por el Estado",
       "subtitle": "Programa gratuito para familias de Florida"
+    },
+    "newsFeature": {
+      "badge": "Destacado En",
+      "headline": "Coalición de Aprendizaje Temprano recibe fondos para programa de verano",
+      "description": "ABC Kidz Preschool destacado como programa ejemplar que ayuda a los niños a prepararse para kindergarten a través de la iniciativa del Programa Summer Boost.",
+      "quote": "Es el primer paso para construir una base sólida, no solo para kindergarten sino para el aprendizaje de por vida.",
+      "attribution": "— Miryam Huby, Maestra Principal de VPK en ABC Kidz Preschool",
+      "cta": "Leer Cobertura Completa",
+      "publishedDate": "Publicado: 15 de Julio, 2025"
     }
   },
   "afterSchoolPage": {
