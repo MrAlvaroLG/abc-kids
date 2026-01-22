@@ -110,7 +110,7 @@ export default async function AfterSchoolPage() {
                             <div className="relative">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/school-age/Age1.jpg"
+                                        src="/programs/school-age/afterSch1.jpg"
                                         alt="School Age program at ABC Kids"
                                         width={600}
                                         height={500}
@@ -214,7 +214,7 @@ export default async function AfterSchoolPage() {
                             <div className="relative order-1 lg:order-2">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/school-age/Age2.jpg"
+                                        src="/programs/school-age/afterSch2.jpg"
                                         alt="School age children activities"
                                         width={600}
                                         height={500}
