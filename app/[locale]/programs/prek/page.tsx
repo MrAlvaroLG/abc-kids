@@ -104,7 +104,7 @@ export default async function PreKPage() {
                             <div className="relative">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/prek/prek1.JPG"
+                                        src="/programs/prek/prek1.jpeg"
                                         alt="Pre-K learning at ABC Kids"
                                         width={600}
                                         height={500}
@@ -208,7 +208,7 @@ export default async function PreKPage() {
                             <div className="relative order-1 lg:order-2">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/prek/prek2.JPG"
+                                        src="/programs/prek/prek2.jpeg"
                                         alt="Pre-K activities and learning"
                                         width={600}
                                         height={500}

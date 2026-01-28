@@ -213,7 +213,7 @@ export default async function VPKPage() {
                             <div className="relative">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/vpk/vpk1.jpg"
+                                        src="/programs/vpk/vpk3.jpeg"
                                         alt="VPK learning at ABC Kids"
                                         width={600}
                                         height={500}
@@ -317,7 +317,7 @@ export default async function VPKPage() {
                             <div className="relative order-1 lg:order-2">
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/programs/vpk/vpk2.jpg"
+                                        src="/programs/vpk/vpk4.jpeg"
                                         alt="VPK students learning"
                                         width={600}
                                         height={500}
