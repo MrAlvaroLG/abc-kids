@@ -91,7 +91,7 @@ export const seoConfig = {
     // SITIO WEB
     // ============================================
     site: {
-        url: "https://abckidstampa.com",
+        url: "https://www.abckidzpreschool.com",
         name: "ABC Kidz Preschool Daycare Tampa",
         locales: ["en", "es"] as const,
         defaultLocale: "en" as const,
