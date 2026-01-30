@@ -5,6 +5,7 @@ import { Link } from '@/i18n/routing';
 import { CalendarIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { trackWhatsappClick, trackScheduleVisitClick } from '@/lib/gaEvents';
 
 export default function ProgramsCTA() {
     const t = useTranslations('programsPage.cta');
@@ -38,6 +39,7 @@ export default function ProgramsCTA() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative inline-flex items-center justify-center gap-4 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-lg py-5 px-10 rounded-full shadow-2xl transition-all duration-300 hover:shadow-[#25D366]/30 hover:-translate-y-1 hover:scale-105 w-full sm:w-auto whitespace-nowrap"
+                            onClick={trackWhatsappClick}
                         >
                             <FontAwesomeIcon icon={faWhatsapp} className="fa-xl shrink-0" />
                             <span>{t('whatsapp')}</span>
@@ -45,7 +47,10 @@ export default function ProgramsCTA() {
 
                         {/* Schedule Visit Button */}
                         <Link href="/contact" className="w-full sm:w-auto">
-                            <button className="group relative inline-flex items-center justify-center gap-4 bg-accent hover:bg-accent-hover text-navy-900 font-bold text-lg py-5 px-10 rounded-full shadow-2xl transition-all duration-300 hover:shadow-accent/20 hover:-translate-y-1 hover:scale-105 w-full whitespace-nowrap">
+                            <button
+                                className="group relative inline-flex items-center justify-center gap-4 bg-accent hover:bg-accent-hover text-navy-900 font-bold text-lg py-5 px-10 rounded-full shadow-2xl transition-all duration-300 hover:shadow-accent/20 hover:-translate-y-1 hover:scale-105 w-full whitespace-nowrap"
+                                onClick={trackScheduleVisitClick}
+                            >
                                 <CalendarIcon className="w-6 h-6 shrink-0" />
                                 <span>{t('scheduleVisit')}</span>
                                 <ArrowRightIcon className="w-5 h-5 shrink-0 group-hover:translate-x-1 transition-transform duration-300" />

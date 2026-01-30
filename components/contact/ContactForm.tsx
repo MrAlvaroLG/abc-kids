@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import { trackContactFormSubmit } from '@/lib/gaEvents';
 import { 
     UserIcon,
     EnvelopeIcon,
@@ -26,7 +27,6 @@ export default function ContactForm() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setSending(true);
-        
         // Crear el contenido del email
         const subjectLine = `[ABC Kids Contact] ${formData.subject || 'General Inquiry'} - ${formData.name}`;
         const body = `
@@ -38,11 +38,9 @@ Subject: ${formData.subject}
 Message:
 ${formData.message}
         `.trim();
-        
         // Abrir el cliente de correo con mailto
         const mailtoLink = `mailto:abckidzdirector@gmail.com?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
-        
         // Simular envío y resetear
         setTimeout(() => {
             setSending(false);
@@ -52,6 +50,7 @@ ${formData.message}
                 setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
             }, 3000);
         }, 500);
+        trackContactFormSubmit();
     };
 
     const subjects = [

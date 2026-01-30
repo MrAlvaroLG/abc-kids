@@ -7,6 +7,7 @@ import { CheckCircleIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { seoConfig } from '@/components/seo/seo.config';
+import { trackWhatsappClick, trackScheduleVisitClick } from '@/lib/gaEvents';
 
 export default function CtaSection() {
     const t = useTranslations('ctaSection');
@@ -95,6 +96,7 @@ export default function CtaSection() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="group relative inline-flex items-center justify-center gap-4 px-10 py-6 bg-linear-to-r from-[#25D366] via-[#128C7E] to-[#25D366] text-white rounded-2xl font-bold text-lg shadow-2xl hover:shadow-[#25D366]/50 transition-all duration-500 hover:scale-105 overflow-hidden w-full sm:w-auto whitespace-nowrap"
+                                            onClick={trackWhatsappClick}
                                         >
                                             {/* Shimmer effect */}
                                             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-linear-to-r from-transparent via-white/30 to-transparent" />
@@ -110,6 +112,7 @@ export default function CtaSection() {
                                         <Link
                                             href="/contact"
                                             className="group relative inline-flex items-center justify-center gap-4 px-10 py-6 bg-linear-to-r from-accent via-accent-hover to-accent text-navy-900 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-accent/50 transition-all duration-500 hover:scale-105 overflow-hidden w-full sm:w-auto whitespace-nowrap"
+                                            onClick={trackScheduleVisitClick}
                                         >
                                             {/* Shimmer effect */}
                                             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-linear-to-r from-transparent via-white/40 to-transparent" />
