@@ -17,8 +17,8 @@ export const seoConfig = {
         legalName: "ABC Kidz Preschool Daycare LLC",
         type: "ChildCare",
         description: {
-            en: "Premier bilingual daycare and preschool in Tampa, FL. We offer infant care, toddler programs, Pre-K, VPK, and after-school programs in a safe, nurturing environment. Trusted by 500+ families.",
-            es: "Guardería y preescolar bilingüe de primera categoría en Tampa, FL. Ofrecemos cuidado de bebés, programas para niños pequeños, Pre-K, VPK y programas después de la escuela en un ambiente seguro y acogedor."
+            en: "Premier daycare and preschool in Tampa, FL. We offer infant care, toddler programs, Pre-K, VPK, and after-school programs in a safe, nurturing environment. Trusted by 500+ families.",
+            es: "Guardería y preescolar de primera categoría en Tampa, FL. Ofrecemos cuidado de bebés, programas para niños pequeños, Pre-K, VPK y programas después de la escuela en un ambiente seguro y acogedor."
         },
         slogan: {
             en: "Where Every Child is a Unique Piece of the Perfect Puzzle",
@@ -173,7 +173,6 @@ export const seoConfig = {
     amenities: [
         "Outdoor Playground",
         "Security Cameras",
-        "Bilingual Staff",
         "Nutritious Meals Provided",
         "Air Conditioned Classrooms",
         "Secure Entry System",
@@ -207,8 +206,6 @@ export const seoConfig = {
             "childcare center Tampa",
             "early childhood education Tampa",
             "daycare Hillsborough County",
-            "bilingual daycare Tampa",
-            "Spanish daycare Tampa",
             "daycare Brandon FL",
             "preschool near me Tampa",
             "after school program Tampa",
@@ -216,7 +213,6 @@ export const seoConfig = {
         es: [
             "guardería Tampa",
             "daycare Tampa español",
-            "guardería bilingüe Tampa",
             "cuidado infantil Tampa",
             "preescolar Tampa",
             "VPK Tampa",

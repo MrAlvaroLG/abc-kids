@@ -30,90 +30,98 @@ const fredoka = Fredoka({
  * 
  * La información se importa desde seo.config.ts para facilitar su mantenimiento.
  */
-export const metadata: Metadata = {
-    // Base URL para resolver URLs relativas en metadata
-    metadataBase: new URL(seoConfig.site.url),
+export async function generateMetadata({
+    params
+}: {
+    params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+    const { locale } = await params;
     
-    // Título por defecto y template para páginas hijas
-    title: {
-        default: `${seoConfig.business.name} Tampa | Best Childcare & Preschool in Tampa FL`,
-        template: `%s | ${seoConfig.site.name}`
-    },
-    
-    // Descripción optimizada con keywords locales
-    description: seoConfig.business.description.en,
-    
-    // Keywords importantes para SEO local
-    keywords: seoConfig.keywords.en,
-    
-    // Información del autor/empresa
-    authors: [{ name: seoConfig.business.name, url: seoConfig.site.url }],
-    creator: seoConfig.business.name,
-    publisher: seoConfig.business.name,
-    
-    // Configuración de robots
-    robots: {
-        index: true,
-        follow: true,
-        nocache: false,
-        googleBot: {
+    // Obtener traducciones para metadatos desde seoConfig
+    const description = locale === 'es' ? seoConfig.business.description.es : seoConfig.business.description.en;
+    const siteName = seoConfig.site.name;
+
+    return {
+        // Base URL para resolver URLs relativas en metadata
+        metadataBase: new URL(seoConfig.site.url),
+        
+        // Título por defecto y template para páginas hijas
+        title: {
+            default: `${seoConfig.business.name} Tampa | ${locale === 'es' ? 'La Mejor Guardería' : 'Best Childcare & Preschool'}`,
+            template: `%s | ${siteName}`
+        },
+        
+        // Descripción optimizada con keywords locales
+        description: description,
+        
+        // Keywords importantes para SEO local
+        keywords: locale === 'es' ? seoConfig.keywords.es : seoConfig.keywords.en,
+        
+        // Información del autor/empresa
+        authors: [{ name: seoConfig.business.name, url: seoConfig.site.url }],
+        creator: seoConfig.business.name,
+        publisher: seoConfig.business.name,
+        
+        // Idioma alternativo (Canonical y Hreflang automático para la home/root)
+        alternates: {
+            canonical: `/${locale}`,
+            languages: {
+                'en': '/en',
+                'es': '/es',
+            },
+        },
+
+        // Configuración de robots
+        robots: {
             index: true,
             follow: true,
-            noimageindex: false,
-            'max-video-preview': -1,
-            'max-image-preview': 'large',
-            'max-snippet': -1,
+            nocache: false,
+            googleBot: {
+                index: true,
+                follow: true,
+                noimageindex: false,
+                'max-video-preview': -1,
+                'max-image-preview': 'large',
+                'max-snippet': -1,
+            },
         },
-    },
-    
-    // Open Graph para Facebook, LinkedIn, etc.
-    openGraph: {
-        type: "website",
-        locale: "en_US",
-        alternateLocale: ["es_US"],
-        url: seoConfig.site.url,
-        siteName: seoConfig.site.name,
-        title: `${seoConfig.site.name} | Best Childcare & Preschool`,
-        description: `Tampa's top-rated daycare center. Infant care, toddlers, Pre-K, VPK & after-school programs. Bilingual staff. Trusted by 500+ happy families!`,
-        images: [
-            {
-                url: seoConfig.images.ogImage,
-                width: seoConfig.images.ogImageDimensions.width,
-                height: seoConfig.images.ogImageDimensions.height,
-                alt: `${seoConfig.business.name} - Happy Children Learning and Playing`,
-                type: "image/jpeg",
-            }
-        ],
-    },
-    
-    // Twitter/X Card
-    twitter: {
-        card: "summary_large_image",
-        title: `${seoConfig.site.name} | Best Childcare & Preschool`,
-        description: "Tampa's top-rated daycare. Infant care, Pre-K, VPK & after-school. Schedule your tour today!",
-        images: [seoConfig.images.ogImage],
-        creator: seoConfig.social.twitter || undefined,
-        site: seoConfig.social.twitter || undefined,
-    },
-    
-    // Verificación de Google Search Console
-    verification: {
-        google: seoConfig.verification.google || undefined,
-    },
-    
-    // URLs canónicas y alternativas de idioma
-    alternates: {
-        canonical: seoConfig.site.url,
-        languages: {
-            'en': `${seoConfig.site.url}/en`,
-            'es': `${seoConfig.site.url}/es`,
-            'x-default': `${seoConfig.site.url}/en`,
+        
+        // Open Graph para Facebook, LinkedIn, etc.
+        openGraph: {
+            type: "website",
+            locale: locale === 'es' ? 'es_US' : 'en_US',
+            alternateLocale: locale === 'es' ? ['en_US'] : ['es_US'],
+            url: seoConfig.site.url,
+            siteName: siteName,
+            title: `${siteName} | ${locale === 'es' ? 'La Mejor Guardería' : 'Best Childcare & Preschool'}`,
+            description: description,
+            images: [
+                {
+                    url: `${seoConfig.site.url}${seoConfig.images.ogImage}`,
+                    width: seoConfig.images.ogImageDimensions.width,
+                    height: seoConfig.images.ogImageDimensions.height,
+                    alt: `${seoConfig.business.name} - Happy Children Learning and Playing`,
+                    type: "image/jpeg",
+                }
+            ],
         },
-    },
-    
-    // Categoría del sitio
-    category: "childcare",
-};
+        
+        // Twitter/X Card
+        twitter: {
+            card: "summary_large_image",
+            title: `${siteName} | ${locale === 'es' ? 'La Mejor Guardería' : 'Best Childcare & Preschool'}`,
+            description: description,
+            images: [seoConfig.images.ogImage],
+            creator: seoConfig.social.twitter || undefined,
+            site: seoConfig.social.twitter || undefined,
+        },
+        
+        // Verificación de Google Search Console
+        verification: {
+            google: "google-site-verification-code", // TODO: Update based on real needs or env
+        }
+    };
+}
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -136,11 +144,8 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale}>
-            <head>
-                {/* Schema.org LocalBusiness para SEO local */}
-                <LocalBusinessSchema />
-            </head>
             <body className={`${poppins.variable} ${fredoka.variable} bg-bg antialiased`}>
+                <LocalBusinessSchema locale={locale} />
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>

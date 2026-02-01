@@ -10,9 +10,16 @@
 
 import { seoConfig } from './seo.config';
 
-export default function LocalBusinessSchema() {
+interface LocalBusinessSchemaProps {
+    locale: string;
+}
+
+export default function LocalBusinessSchema({ locale }: LocalBusinessSchemaProps) {
     const { business, contact, hours, social, site, images, ratings, serviceAreas, programs, amenities, payment } = seoConfig;
     
+    // Select description based on locale
+    const description = locale === 'es' ? business.description.es : business.description.en;
+
     const schema = {
         "@context": "https://schema.org",
         "@type": business.type,
@@ -21,9 +28,9 @@ export default function LocalBusinessSchema() {
             `${site.url}${images.ogImage}`,
             ...images.gallery.map(img => `${site.url}${img}`)
         ],
-        "description": business.description.en,
+        "description": description,
         "@id": site.url,
-        "url": site.url,
+        "url": `${site.url}/${locale}`,
         "telephone": contact.phone.main,
         "email": contact.email,
         "priceRange": business.priceRange,

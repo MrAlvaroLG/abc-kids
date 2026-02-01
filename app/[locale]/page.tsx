@@ -20,45 +20,73 @@ export async function generateMetadata({
     params: Promise<{ locale: string }> 
 }): Promise<Metadata> {
     const { locale } = await params;
-    const { site, business, keywords } = seoConfig;
+    const { site, business } = seoConfig;
     
-    // Metadata en español
-    if (locale === 'es') {
-        return {
-            title: `${business.name} Tampa | La Mejor Guardería y Preescolar en Tampa FL`,
-            description: business.description.es,
-            keywords: keywords.es,
-            alternates: {
-                canonical: `${site.url}/es`,
-                languages: {
-                    'en': `${site.url}/en`,
-                    'es': `${site.url}/es`,
-                },
-            },
-            openGraph: {
-                title: `${business.name} Tampa | La Mejor Guardería en Tampa`,
-                description: "Guardería bilingüe en Tampa. Cuidado de bebés, Pre-K, VPK. ¡Agenda tu visita!",
-                locale: "es_US",
-            },
-        };
-    }
-    
-    // Metadata en inglés (por defecto)
+    // Obtener la URL base limpia
+    const baseUrl = site.url;
+
+    const isEs = locale === 'es';
+
     return {
-        title: `${business.name} Tampa | Best Childcare & Preschool in Tampa FL`,
-        description: `${business.name} is Tampa's #1 rated daycare and preschool. Infant care, toddler programs, Pre-K, VPK, and after-school. Bilingual staff. Trusted by 500+ families. Secure facility with cameras. Schedule your free tour today!`,
-        keywords: keywords.en,
+        // Título optimizado: Marca | Keyword Principal | Ubicación
+        title: isEs 
+            ? `${business.name} | Mejor Guardería y VPK en Tampa, FL`
+            : `${business.name} | Premier Daycare & VPK in Tampa, FL`,
+            
+        // Descripción optimizada para CTR (Click Through Rate)
+        description: isEs
+            ? "La guardería hispana #1 en Tampa (33612). Ofrecemos cuidado de bebés, VPK gratis y programas after-school en un entorno seguro y amoroso. ¡Agenda tu visita!"
+            : "Top-rated preschool in Tampa (33612). Free VPK, infant care & secure after-school programs. Nurturing environment with cameras. Book your tour!",
+            
+        // Keywords específicas de alto valor
+        keywords: isEs 
+            ? ["guardería tampa", "vpk gratis tampa", "cuidado de niños 33612", "daycare en español", "abc kidz preschool"]
+            : ["daycare tampa", "free vpk tampa", "infant care 33612", "preschool tampa", "abc kidz"],
+
+        // Configuración crítica pata SEO Internacional
         alternates: {
-            canonical: `${site.url}/en`,
+            // La versión canónica es la de este idioma específico
+            canonical: `${baseUrl}/${locale}`,
+            // Vinculamos los idiomas entre sí
             languages: {
-                'en': `${site.url}/en`,
-                'es': `${site.url}/es`,
+                'en': `${baseUrl}/en`,
+                'es': `${baseUrl}/es`,
             },
         },
+
+        // OpenGraph para compartir en redes (Facebook/WhatsApp)
         openGraph: {
-            title: `${site.name} | Best Childcare & Preschool`,
-            description: "Tampa's top-rated daycare. Infant care, Pre-K, VPK & after-school. Schedule your tour!",
-            locale: "en_US",
+            title: isEs 
+                ? "¡La Mejor Educación para tu Hijo en Tampa!"
+                : "The Best Start for Your Child in Tampa!",
+            description: isEs
+                ? "Descubre por qué cientos de familias latinas confían en ABC Kidz. Seguridad, amor y educación."
+                : "Discover why hundreds of families trust ABC Kidz. Safety, love, and education.",
+            url: `${baseUrl}/${locale}`,
+            siteName: business.name,
+            locale: isEs ? "es_US" : "en_US",
+            type: "website",
+            images: [
+                {
+                    url: `${baseUrl}/opengraph-image.jpg`, // Asegúrate de tener esta imagen
+                    width: 1200,
+                    height: 630,
+                    alt: "ABC Kidz Preschool Happy Children",
+                },
+            ],
+        },
+        
+        // Robot directives
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                'max-video-preview': -1,
+                'max-image-preview': 'large',
+                'max-snippet': -1,
+            },
         },
     };
 }

@@ -33,7 +33,6 @@ export function HomeHeroVisual() {
                                 className="object-cover"
                                 priority
                                 quality={75}
-                                unoptimized
                                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
                             />
                             {/* Glassmorphism overlay */}
