@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 import { seoConfig } from "@/components/seo/seo.config";
+import { generateAlternates } from "@/lib/seo-utils";
 import "../globals.css";
 
 const poppins = Poppins({
@@ -37,8 +38,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
     const { locale } = await params;
     
+    // Validar locale y establecer tipo seguro
+    const validLocale = (locale === 'en' || locale === 'es') ? locale : 'en';
+    
     // Obtener traducciones para metadatos desde seoConfig
-    const description = locale === 'es' ? seoConfig.business.description.es : seoConfig.business.description.en;
+    const description = validLocale === 'es' ? seoConfig.business.description.es : seoConfig.business.description.en;
     const siteName = seoConfig.site.name;
 
     return {
@@ -47,7 +51,7 @@ export async function generateMetadata({
         
         // Título por defecto y template para páginas hijas
         title: {
-            default: `${seoConfig.business.name} Tampa | ${locale === 'es' ? 'La Mejor Guardería' : 'Best Childcare & Preschool'}`,
+            default: `${seoConfig.business.name} Tampa | ${validLocale === 'es' ? 'La Mejor Guardería' : 'Best Childcare & Preschool'}`,
             template: `%s | ${siteName}`
         },
         
@@ -55,21 +59,15 @@ export async function generateMetadata({
         description: description,
         
         // Keywords importantes para SEO local
-        keywords: locale === 'es' ? seoConfig.keywords.es : seoConfig.keywords.en,
+        keywords: validLocale === 'es' ? seoConfig.keywords.es : seoConfig.keywords.en,
         
         // Información del autor/empresa
         authors: [{ name: seoConfig.business.name, url: seoConfig.site.url }],
         creator: seoConfig.business.name,
         publisher: seoConfig.business.name,
         
-        // Idioma alternativo (Canonical y Hreflang automático para la home/root)
-        alternates: {
-            canonical: `/${locale}`,
-            languages: {
-                'en': '/en',
-                'es': '/es',
-            },
-        },
+        // Canonical y Hreflang DINÁMICOS usando utilidad
+        alternates: generateAlternates(validLocale, '/'),
 
         // Configuración de robots
         robots: {

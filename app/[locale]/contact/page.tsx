@@ -7,20 +7,30 @@ import ContactForm from '@/components/contact/ContactForm';
 import { ContactDetails, BusinessHours } from '@/components/contact/ContactInfo';
 import ContactSocialResponse from '@/components/contact/ContactSocialResponse';
 import ContactMap from '@/components/contact/ContactMap';
+import { generateAlternates, generateCanonicalUrl } from '@/lib/seo-utils';
+import { seoConfig } from '@/components/seo/seo.config';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
+    const validLocale = (locale === 'en' || locale === 'es') ? locale : 'en';
     const t = await getTranslations({ locale, namespace: 'contactPage.meta' });
     
     return {
         title: t('title'),
         description: t('description'),
         keywords: t('keywords'),
+        
+        // Canonical y hreflang tags dinámicos
+        alternates: generateAlternates(validLocale, '/contact'),
+        
         openGraph: {
             title: t('title'),
             description: t('description'),
             type: 'website',
-            locale,
+            url: generateCanonicalUrl(validLocale, '/contact'),
+            siteName: seoConfig.business.name,
+            locale: validLocale === 'es' ? 'es_US' : 'en_US',
+            alternateLocale: validLocale === 'es' ? ['en_US'] : ['es_US'],
         },
         twitter: {
             card: 'summary_large_image',

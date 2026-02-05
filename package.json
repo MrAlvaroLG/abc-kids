@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seo:check": "node scripts/check-internal-links.js https://www.abckidzpreschool.com/en",
+    "seo:check-local": "node scripts/check-internal-links.js http://localhost:3000/en"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",

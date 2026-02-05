@@ -5,19 +5,29 @@ import Footer from '@/components/layout/Footer';
 import ProgramsCTA from '@/components/programs/ProgramsCTA';
 import ProgramNavigation from '@/components/programs/ProgramNavigation';
 import { CheckCircleIcon, HeartIcon, SparklesIcon, HandRaisedIcon, ShieldCheckIcon } from '@heroicons/react/24/solid';
+import { generateAlternates, generateCanonicalUrl } from '@/lib/seo-utils';
+import { seoConfig } from '@/components/seo/seo.config';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
+    const validLocale = (locale === 'en' || locale === 'es') ? locale : 'en';
     const t = await getTranslations({ locale, namespace: 'infantsPage' });
     
     return {
         title: t('meta.title'),
         description: t('meta.description'),
         keywords: t('meta.keywords'),
+        
+        // Canonical y hreflang tags dinámicos
+        alternates: generateAlternates(validLocale, '/programs/infants'),
+        
         openGraph: {
             title: t('meta.title'),
             description: t('meta.description'),
             type: 'website',
+            url: generateCanonicalUrl(validLocale, '/programs/infants'),
+            siteName: seoConfig.business.name,
+            locale: validLocale === 'es' ? 'es_US' : 'en_US',
         },
     };
 }

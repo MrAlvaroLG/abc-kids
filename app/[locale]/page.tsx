@@ -7,6 +7,7 @@ import ProgramsSection from "@/components/home/ProgramsSection";
 import CtaSection from "@/components/home/CtaSection";
 import LocationSection from "@/components/home/LocationSection";
 import { seoConfig } from "@/components/seo/seo.config";
+import { generateAlternates, generateCanonicalUrl } from "@/lib/seo-utils";
 
 /**
  * Metadata específica para la página de inicio
@@ -20,12 +21,13 @@ export async function generateMetadata({
     params: Promise<{ locale: string }> 
 }): Promise<Metadata> {
     const { locale } = await params;
+    const validLocale = (locale === 'en' || locale === 'es') ? locale : 'en';
     const { site, business } = seoConfig;
     
     // Obtener la URL base limpia
     const baseUrl = site.url;
 
-    const isEs = locale === 'es';
+    const isEs = validLocale === 'es';
 
     return {
         // Título optimizado: Marca | Keyword Principal | Ubicación
@@ -43,16 +45,8 @@ export async function generateMetadata({
             ? ["guardería tampa", "vpk gratis tampa", "cuidado de niños 33612", "daycare en español", "abc kidz preschool"]
             : ["daycare tampa", "free vpk tampa", "infant care 33612", "preschool tampa", "abc kidz"],
 
-        // Configuración crítica pata SEO Internacional
-        alternates: {
-            // La versión canónica es la de este idioma específico
-            canonical: `${baseUrl}/${locale}`,
-            // Vinculamos los idiomas entre sí
-            languages: {
-                'en': `${baseUrl}/en`,
-                'es': `${baseUrl}/es`,
-            },
-        },
+        // Canonical y hreflang usando utilidad dinámica
+        alternates: generateAlternates(validLocale, '/'),
 
         // OpenGraph para compartir en redes (Facebook/WhatsApp)
         openGraph: {
@@ -62,9 +56,10 @@ export async function generateMetadata({
             description: isEs
                 ? "Descubre por qué cientos de familias latinas confían en ABC Kidz. Seguridad, amor y educación."
                 : "Discover why hundreds of families trust ABC Kidz. Safety, love, and education.",
-            url: `${baseUrl}/${locale}`,
+            url: generateCanonicalUrl(validLocale, '/'),
             siteName: business.name,
             locale: isEs ? "es_US" : "en_US",
+            alternateLocale: isEs ? ['en_US'] : ['es_US'],
             type: "website",
             images: [
                 {
