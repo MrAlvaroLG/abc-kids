@@ -31,6 +31,11 @@ export default function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
+  // Excluir /studio del middleware de next-intl
+  if (pathname.startsWith('/studio')) {
+    return NextResponse.next();
+  }
+
   const unwantedParams = ['ref', 'utm_source', 'utm_medium', 'utm_campaign'];
   const hasUnwantedParams = unwantedParams.some(param =>
     request.nextUrl.searchParams.has(param)
