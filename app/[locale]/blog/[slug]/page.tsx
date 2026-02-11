@@ -39,16 +39,23 @@ async function getPost(slug: string) {
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-    const { slug } = await params;
+    const { locale, slug } = await params;
     const post = await getPost(slug);
 
     if (!post) {
         notFound();
     }
+    const allTranslations = [
+        {
+            language: post.language || locale,
+            slug: post.slug.current
+        },
+        ...(post.translations || [])
+    ];
 
     return (
         <main className="min-h-screen">
-            <Navbar />
+            <Navbar translations={allTranslations} />
             <BlogPost post={post} />
             <Footer />
         </main>

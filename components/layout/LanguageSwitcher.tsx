@@ -5,7 +5,13 @@ import { useRouter, usePathname } from '@/i18n/routing';
 import { LanguageIcon } from '@heroicons/react/24/outline';
 import { useTransition } from 'react';
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+    translations?: {
+        language: string;
+        slug: string;
+    }[];
+}
+export default function LanguageSwitcher({ translations }: LanguageSwitcherProps = {}) {
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
@@ -13,7 +19,15 @@ export default function LanguageSwitcher() {
 
     const toggleLanguage = () => {
         const newLocale = locale === 'en' ? 'es' : 'en';
+        
         startTransition(() => {
+            if (translations && translations.length > 0) {
+                const translation = translations.find(t => t.language === newLocale);
+                if (translation) {
+                    router.push(`/blog/${translation.slug}`, { locale: newLocale });
+                    return;
+                }
+            }
             router.replace(pathname, { locale: newLocale });
         });
     };

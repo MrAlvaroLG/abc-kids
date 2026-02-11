@@ -6,7 +6,13 @@ import { Link } from '@/i18n/routing'
 import Image from 'next/image'
 import LanguageSwitcher from './LanguageSwitcher'
 
-export default function Navbar() {
+interface NavbarProps {
+    translations?: {
+        language: string;
+        slug: string;
+    }[];
+}
+export default function Navbar({ translations }: NavbarProps = {}) {
     const [isOpen, setIsOpen] = useState(false)
     const t = useTranslations('navbar')
 
@@ -75,7 +81,7 @@ export default function Navbar() {
                 
                 <div className="flex items-center gap-2">
                     {/* Selector de idioma - visible siempre */}
-                    <LanguageSwitcher />
+                    <LanguageSwitcher translations={translations} />
                     
                     {/* Botón hamburguesa - solo móvil */}
                     <button 
