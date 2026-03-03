@@ -5,7 +5,7 @@ declare global {
     }
 }
 
-export const GA_MEASUREMENT_ID = 'G-XBGR1Q31GW';
+export const GA_MEASUREMENT_ID = 'G-MPZRGMGF4L';
 
 export const pageview = (url: string) => {
     window.gtag('config', GA_MEASUREMENT_ID, {
